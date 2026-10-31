@@ -1,0 +1,3774 @@
+{
+ "questions": {
+  "pregnant": "Are you currently pregnant?",
+  "recent childbirth": "Have you given birth recently (in the last 6 weeks)?",
+  "newborn baby": "Is the patient a baby younger than 1 month?",
+  "child under five": "Is the patient a child younger than 5 years?",
+  "known diabetes": "Have you been told you have diabetes?",
+  "chronic smoker": "Do you smoke, or have you had long exposure to smoke or dust?",
+  "alcohol use": "Have you been drinking alcohol heavily recently?",
+  "mosquito exposure": "Have you had many mosquito bites recently, or live in/travelled to a malaria or dengue area?",
+  "stray animal": "Was the animal a stray, unvaccinated, or behaving strangely?",
+  "recent infection": "Have you had an infection recently (wound, chest, urine, stomach or other)?",
+  "recent surgery or childbirth": "Have you had surgery, childbirth, or been bedridden for a long time recently?",
+  "contaminated flood water exposure": "Have you waded or worked in flood water or wet muddy fields recently?",
+  "contaminated water or food": "Have you recently eaten or drunk food or water that may be unclean?",
+  "heat exposure": "Have you been working or staying in strong heat or direct sun?",
+  "pesticide exposure": "Have you sprayed, touched or swallowed pesticide or farm chemicals?",
+  "dust or pollen trigger": "Do dust, pollen or a season seem to trigger it?",
+  "stress": "Have you been under a lot of stress or sleeping poorly?",
+  "fall": "Did this follow a fall or accident?",
+  "wound": "Do you have a wound or cut (especially a dirty or deep one)?",
+  "animal bite": "Were you bitten by an animal?",
+  "dog bite": "Were you bitten by a dog?",
+  "scratch from animal": "Were you scratched by an animal?",
+  "broken skin": "Is the skin broken or bleeding where it happened?",
+  "snake bite": "Were you bitten by a snake?",
+  "scorpion sting": "Were you stung by a scorpion?",
+  "electric shock": "Did you get an electric shock?",
+  "choking on food": "Did this start while eating or after something went down the wrong way?",
+  "cannot speak": "Are you unable to speak?",
+  "cannot move limb": "Are you unable to move the injured arm or leg?",
+  "bleeding from bite": "Is the bite wound bleeding?",
+  "fang marks": "Can you see fang marks or puncture holes?",
+  "bleeding gums": "Are your gums bleeding?",
+  "heavy bleeding": "Is there heavy bleeding that is hard to stop?",
+  "deep wound": "Is the wound deep or gaping?",
+  "blood spurting": "Is blood spurting out?",
+  "clutching throat": "Is the person clutching their throat?",
+  "burn at contact point": "Is there a burn where the current touched the body?",
+  "severe burn": "Is the burn large, deep, white or charred?",
+  "large burn area": "Is the burn larger than the person's palm?",
+  "burn on face or hands": "Is the burn on the face, hands, feet or genitals?",
+  "charred or white skin": "Is the burnt skin white, leathery or charred?",
+  "minor burn": "Is it a small burn or scald (smaller than your palm)?",
+  "blisters": "Are there blisters?",
+  "small blisters": "Are there a few small blisters?",
+  "smoke inhalation": "Did the person breathe in smoke?",
+  "loss of consciousness": "Did the person lose consciousness or pass out?",
+  "fainting": "Have you fainted or passed out?",
+  "face drooping": "Is one side of the face drooping?",
+  "arm weakness": "Is one arm or leg weak or unable to lift?",
+  "slurred speech": "Is speech slurred or hard to understand?",
+  "sudden confusion": "Did confusion or trouble understanding start suddenly?",
+  "sudden vision loss": "Did you suddenly lose vision (in one or both eyes)?",
+  "loss of balance": "Have you suddenly lost your balance or coordination?",
+  "numbness on one side": "Is there numbness on one side of the body or face?",
+  "high blood pressure reading": "Has a blood pressure reading been high (for example 180/110 or above for crisis; above 140/90 otherwise)?",
+  "blurred vision": "Is your vision blurred?",
+  "nosebleed": "Do you have a nosebleed?",
+  "fast heartbeat": "Is your heart beating very fast?",
+  "fast breathing": "Are you (or the child) breathing much faster than normal?",
+  "cold clammy skin": "Is the skin cold, clammy or mottled?",
+  "very little urine": "Have you passed very little or no urine in the last 8 hours?",
+  "stiff neck": "Is your neck stiff or painful to bend forward?",
+  "light sensitivity": "Are you sensitive to light right now?",
+  "drowsiness": "Are you unusually sleepy or hard to wake?",
+  "rash that does not fade": "Is there a rash that does not fade when you press a glass on it?",
+  "convulsions": "Has there been a fit, convulsion or uncontrolled jerking?",
+  "tongue biting": "Did the person bite their tongue?",
+  "confusion after episode": "Was there confusion or sleepiness after the episode?",
+  "loss of bladder control": "Did you lose control of your bladder or bowels?",
+  "drooping eyelids": "Are the eyelids drooping or is it hard to keep eyes open?",
+  "excessive salivation": "Is there excessive drooling or watering of the mouth?",
+  "heavy sweating": "Are you sweating heavily?",
+  "small pupils": "Are the pupils very small (pinpoint)?",
+  "muscle twitching": "Is there muscle twitching or tremors?",
+  "high body temperature": "Does the body feel extremely hot (very high temperature)?",
+  "hot dry skin": "Is the skin hot and dry?",
+  "extreme thirst": "Are you extremely thirsty?",
+  "fruity breath": "Does the breath smell fruity or like nail polish remover?",
+  "fast deep breathing": "Are you breathing deeply and rapidly?",
+  "swelling of face and hands": "Is there swelling of the face and hands?",
+  "upper abdominal pain": "Do you have pain in the upper abdomen?",
+  "shoulder tip pain": "Is there pain at the tip of the shoulder?",
+  "severe lower abdominal pain": "Is the lower abdominal pain severe?",
+  "vaginal bleeding": "Is there vaginal bleeding?",
+  "heavy vaginal bleeding": "Is the vaginal bleeding heavy (soaking a pad in under an hour)?",
+  "large blood clots": "Are you passing large blood clots?",
+  "chest indrawing": "Does the child's lower chest pull inward when breathing in?",
+  "unable to drink or feed": "Is the patient unable to drink or feed?",
+  "blue lips": "Are the lips or face turning blue or grey?",
+  "watery diarrhea": "Do you have frequent, very watery stools?",
+  "rice water stools": "Are the stools pale and watery like rice water?",
+  "sunken eyes": "Do the eyes look sunken?",
+  "dry mouth": "Is the mouth very dry?",
+  "skin pinch goes back slowly": "When the belly skin is pinched and released, does it go back slowly?",
+  "lethargy": "Is the patient unusually weak, floppy or hard to wake?",
+  "severe abdominal pain": "Is the abdominal pain severe?",
+  "repeated vomiting": "Have you vomited many times?",
+  "swollen abdomen": "Is the belly swollen or hard?",
+  "not passing stool or gas": "Have you been unable to pass stool or gas?",
+  "rigid abdomen": "Is the belly rock hard and painful to touch?",
+  "vomiting green fluid": "Are you vomiting green or yellow-green fluid?",
+  "painful groin bulge": "Is there a painful bulge in the groin or belly?",
+  "hard tender lump": "Is the lump hard and very tender?",
+  "bulge cannot be pushed back": "Can the bulge no longer be pushed back in?",
+  "redness over lump": "Is the skin over the lump red or dark?",
+  "sudden testicular pain": "Did severe pain in a testicle start suddenly?",
+  "testicular swelling": "Is a testicle swollen?",
+  "vomiting blood": "Have you vomited blood or coffee-ground material?",
+  "black tarry stools": "Are your stools black and sticky like tar?",
+  "fluid from ear or nose": "Is clear fluid or blood coming from the nose or ear?",
+  "unequal pupils": "Are the pupils unequal in size?",
+  "thoughts of self harm": "Are you having thoughts of harming yourself or ending your life?",
+  "hopelessness": "Are you feeling hopeless or in severe emotional distress?",
+  "feeling unsafe": "Do you feel unsafe or unable to keep yourself safe?",
+  "jaw stiffness": "Is your jaw stiff or hard to open?",
+  "difficulty opening mouth": "Do you have trouble opening your mouth?",
+  "muscle spasms": "Are you having painful muscle spasms?",
+  "not feeding well": "Is the baby feeding poorly or refusing to feed?",
+  "feels cold": "Does the baby feel cold to touch?",
+  "sudden shortness of breath": "Did shortness of breath start suddenly?",
+  "swollen painful leg": "Is one leg swollen, warm and painful?",
+  "coughing blood": "Are you coughing up blood?",
+  "severe upper abdominal pain": "Do you have severe pain in the upper abdomen?",
+  "pain radiating to back": "Does the pain spread through to your back?",
+  "high fever": "Do you have a high fever?",
+  "chills and shivering": "Do you have chills and shivering?",
+  "fever in cycles": "Does the fever come and go in cycles?",
+  "sweating": "Have you been sweating more than usual, without an obvious reason?",
+  "pain behind eyes": "Do you have pain behind the eyes?",
+  "joint pain": "Do you have joint pain?",
+  "severe joint pain": "Is the joint pain severe?",
+  "swollen joints": "Are your joints swollen?",
+  "prolonged fever": "Has the fever lasted several days and kept rising?",
+  "cough for more than two weeks": "Have you had a cough for more than two weeks?",
+  "blood in sputum": "Is there blood in your sputum?",
+  "evening fever": "Do you get fever mostly in the evening?",
+  "night sweats": "Do you drench your sheets with sweat at night?",
+  "weight loss": "Have you lost weight without trying?",
+  "calf pain": "Do you have severe pain in the calf muscles?",
+  "jaundice": "Are your eyes or skin yellow?",
+  "dark urine": "Is your urine dark brown or tea-coloured?",
+  "pale stools": "Are your stools pale or clay-coloured?",
+  "upper right abdominal pain": "Is the pain in the upper right abdomen?",
+  "rash starting on face": "Did a red rash start on the face and spread downward?",
+  "white spots in mouth": "Are there tiny white spots inside the cheeks?",
+  "red swollen skin": "Is there a red, swollen area of skin?",
+  "painful skin": "Is the area very painful to touch?",
+  "pus": "Is there pus?",
+  "warm skin": "Does the area feel hot to touch?",
+  "spreading redness": "Is the redness spreading?",
+  "severe local pain": "Is there severe pain at the sting site?",
+  "restlessness": "Are you very restless or unable to stay still?",
+  "cold hands and feet": "Are your hands and feet cold?",
+  "flank pain": "Do you have pain in your side or lower back?",
+  "pain after fatty meals": "Does the pain come after fatty or heavy meals?",
+  "pain radiating to right shoulder": "Does the pain spread to the right shoulder?",
+  "swollen legs": "Are both legs swollen?",
+  "breathless lying flat": "Do you get breathless when lying flat?",
+  "rapid weight gain": "Have you gained weight quickly over a few days?",
+  "cough at night": "Do you cough or wake breathless at night?",
+  "cough": "Do you have a cough?",
+  "palpitations": "Do you feel your heart pounding or racing?",
+  "pale skin": "Do you look pale?",
+  "ear pain": "Do you have ear pain?",
+  "ear discharge": "Is there discharge from the ear?",
+  "reduced hearing": "Has your hearing reduced?",
+  "tugging ear": "Is the child tugging at the ear or unusually irritable?",
+  "tooth pain": "Do you have tooth pain?",
+  "swollen gum or cheek": "Is your gum or cheek swollen?",
+  "pain when chewing": "Does it hurt to chew?",
+  "bad taste in mouth": "Do you have a bad taste in the mouth?",
+  "eye pain": "Do you have eye pain?",
+  "something in eye": "Does it feel like something is in your eye?",
+  "eye injury": "Was your eye hit or injured?",
+  "severe pain after injury": "Is there severe pain after an injury?",
+  "deformity": "Does the limb look bent or misshapen?",
+  "bruising": "Is there bruising?",
+  "visible wasting": "Is the child very thin with visible wasting of muscles?",
+  "swelling of both feet": "Is there swelling of both feet?",
+  "hair changes": "Has the child's hair become thin, pale or easily pulled out?",
+  "abdominal discomfort": "Do you have vague abdominal discomfort?",
+  "itching around anus": "Is there itching around the anus (especially at night)?",
+  "visible worms in stool": "Have you seen worms in the stool?",
+  "loss of appetite": "Have you lost your appetite?",
+  "wheezing": "Are you wheezing when you breathe?",
+  "facial pain": "Do you have pain or pressure in the face (cheeks, forehead)?",
+  "thick nasal discharge": "Is the nasal discharge thick or coloured?",
+  "reduced smell": "Has your sense of smell reduced?",
+  "itchy nose": "Is your nose itchy?",
+  "itchy blister rash": "Do you have an itchy rash with blisters?",
+  "blisters in different stages": "Are there blisters, scabs and spots all at the same time?",
+  "intense itching worse at night": "Is there intense itching that is worse at night?",
+  "rash between fingers": "Is there a rash between the fingers or on the wrists?",
+  "family members itching": "Are others in your household also itching?",
+  "tiny skin burrows": "Can you see tiny thin lines (burrows) on the skin?",
+  "ring-shaped rash": "Is there a ring-shaped red patch?",
+  "scaly skin": "Is the skin scaly?",
+  "itchy skin": "Is your skin itchy?",
+  "spreading patch": "Is the patch slowly spreading?",
+  "hives": "Do you have hives or raised, itchy welts on your skin?",
+  "raised welts": "Do you have raised welts that come and go?",
+  "red painful skin": "Is the burnt skin red and painful?",
+  "burning upper abdominal pain": "Do you have a burning pain in the upper abdomen?",
+  "bloating": "Do you feel bloated?",
+  "belching": "Do you belch a lot?",
+  "pain related to meals": "Is the pain related to eating (better or worse after meals)?",
+  "heartburn": "Do you have heartburn (burning in the chest after eating)?",
+  "sour taste in mouth": "Do you get a sour or bitter taste in the mouth?",
+  "regurgitation": "Does food or acid come back up into your throat?",
+  "burning chest after meals": "Do you get a burning feeling in the chest after meals?",
+  "worse lying down": "Is it worse when you lie down?",
+  "increased thirst": "Are you more thirsty than usual?",
+  "slow healing wounds": "Are your wounds healing slowly?",
+  "tingling in feet": "Do you have tingling or numbness in your feet?",
+  "shortness of breath on exertion": "Do you get breathless when walking or doing work?",
+  "brittle nails": "Are your nails brittle or spoon-shaped?",
+  "back pain": "Do you have back pain?",
+  "stiffness": "Is your back stiff?",
+  "pain after lifting": "Did the pain start after lifting or straining?",
+  "pain worse with movement": "Is the pain worse with movement?",
+  "dull headache": "Do you have a dull, pressing headache?",
+  "band-like head pressure": "Does it feel like a tight band around your head?",
+  "neck tightness": "Is your neck tight?",
+  "headache": "Do you have a headache?",
+  "muscle pain": "Do you have muscle or body aches?",
+  "irregular heartbeat": "Is your heartbeat irregular?",
+  "weakness": "Do you feel very weak?",
+  "swollen lips": "Are your lips swollen?",
+  "swollen face": "Is your face swollen?",
+  "swollen tongue": "Is your tongue swollen?",
+  "tingling in mouth": "Is there tingling, itching or a burning feeling in your mouth or throat?",
+  "rash after taking medicine": "Did a rash or hives start after you began taking a medicine?",
+  "new medicine started": "Have you started a new medicine in the last few weeks?",
+  "mouth sores": "Do you have sores or blisters inside your mouth or on your lips?",
+  "peeling skin": "Is your skin peeling off in sheets or patches?",
+  "insect sting": "Were you stung or bitten by an insect (bee, wasp, ant, etc.)?",
+  "pain at sting site": "Is there pain where you were stung or bitten?",
+  "swelling at sting site": "Is there swelling where you were stung or bitten?",
+  "redness": "Is the area red?",
+  "red rash": "Do you have a red rash?",
+  "itchy rash after contact": "Did an itchy rash appear on skin that touched a plant, soap, jewellery or chemical?",
+  "dry cracked skin": "Is your skin dry and cracked?",
+  "dry itchy patches": "Do you have dry, very itchy patches of skin that come and go?",
+  "rash in skin folds": "Is the rash in skin folds such as the elbows, behind the knees or the neck?",
+  "family history of allergy": "Does allergy, asthma or eczema run in your family?",
+  "swollen eyelids": "Are your eyelids puffy or swollen?",
+  "honey coloured crusts": "Are there honey-coloured crusts on the sores?",
+  "sores around mouth and nose": "Are there sores around the mouth and nose?",
+  "itchy scalp": "Is your scalp very itchy?",
+  "visible lice or nits": "Can you see tiny lice or white egg cases stuck to the hair?",
+  "dry nose": "Is your nose dry or crusted?",
+  "nose injury": "Did you recently knock or injure your nose?",
+  "hunger": "Do you feel suddenly very hungry?",
+  "missed meal": "Did you miss or delay a meal, or take extra diabetes medicine or exercise a lot?",
+  "shaking": "Are you shaky or trembling?",
+  "knee pain": "Do you have knee pain?",
+  "pain on climbing stairs": "Is the pain worse when climbing stairs or getting up from sitting?",
+  "hard stools": "Are your stools hard and dry?",
+  "straining to pass stool": "Do you strain to pass stool?",
+  "scratch marks on scalp": "Are there scratch marks or small sores on the scalp or back of the neck?",
+  "ate wild plant or mushroom": "Did the person eat a wild plant, seeds, berries or mushrooms?",
+  "baby not kicking": "Has the baby stopped kicking or moving in the belly?",
+  "barking cough": "Is the cough harsh and barking, like a seal?",
+  "black scab at bite site": "Is there a dark or black scab at a bite or skin spot?",
+  "blisters on palms and soles": "Are there small blisters on the palms of the hands or soles of the feet?",
+  "bloody stools": "Is there blood or mucus in the stool?",
+  "breast pain": "Do you have pain in a breast?",
+  "bright red blood with stool": "Have you seen bright red blood on the toilet paper or after passing stool?",
+  "burning pain on one side": "Is there burning or stabbing pain on one side of the body or face?",
+  "closed room burning fuel": "Were you in a closed room with a burning stove, charcoal, wood or fuel?",
+  "drank illicit liquor": "Did the person drink home-made or illicit liquor?",
+  "drank kerosene": "Did the person swallow kerosene or petrol?",
+  "eyelid lump": "Is there a painful red lump on the edge of the eyelid?",
+  "fear of dying": "Do you have a sudden strong feeling of fear or that you might die?",
+  "fear of water": "Is the person afraid of water or unable to drink because of throat spasms?",
+  "feeling cold": "Do you feel cold much more than other people do?",
+  "fluid leaking from vagina": "Is fluid leaking from the vagina?",
+  "foul smelling vaginal discharge": "Is there a foul-smelling discharge from the vagina?",
+  "grey membrane in throat": "Is there a grey or white coating at the back of the throat?",
+  "hair loss": "Are you losing hair more than usual?",
+  "halos around lights": "Do you see rainbow rings (halos) around lights?",
+  "heavy periods": "Are your periods heavier than usual?",
+  "hoarse voice": "Is the voice hoarse or lost?",
+  "loss of interest": "Have you lost interest in things you used to enjoy?",
+  "low mood": "Have you been feeling low, sad or empty for weeks?",
+  "lump near anus": "Is there a lump or swelling near the anus?",
+  "morning stiffness": "Are your joints stiff for more than an hour in the morning?",
+  "noisy breathing": "Is the breathing noisy, with a harsh sound when breathing in?",
+  "numb skin patch": "Is there a patch of skin where you cannot feel touch or pain?",
+  "numbness in arms or legs": "Is there numbness or loss of feeling in the arms or legs?",
+  "numbness in hands or feet": "Are your hands or feet numb?",
+  "one-sided nasal discharge": "Is there a foul-smelling discharge from only one side of the nose?",
+  "pain radiating down leg": "Does the pain shoot down one leg?",
+  "painful blistering rash on one side": "Is there a painful rash with blisters in a band on one side of the body?",
+  "painful periods": "Do you get painful cramps with your periods?",
+  "poor sleep": "Are you sleeping badly?",
+  "recurrent fever with painful glands": "Do you get repeated fevers with painful swollen glands in the groin or armpit?",
+  "red hot breast": "Is an area of the breast red and hot?",
+  "red rash in nappy area": "Is there a red rash in the nappy (diaper) area?",
+  "red swollen gums": "Are the gums red and swollen?",
+  "reduced baby movements": "Is the baby moving less than usual in the belly?",
+  "regular tightening of abdomen": "Is the belly tightening regularly, like waves of pain?",
+  "rescued from water": "Was the person pulled out of water after going under?",
+  "seeing things": "Is the person seeing or hearing things that are not there?",
+  "something in ear": "Has something been pushed into the ear?",
+  "something in nose": "Has something been pushed into the nose?",
+  "spinning sensation": "Do you feel the room is spinning around you?",
+  "stiffening of body": "Did the body suddenly stiffen?",
+  "swallowed object": "Did the child swallow a coin, battery, magnet or other object?",
+  "swallowed poison": "Did the person swallow poison, rat killer, strong chemicals or too many tablets?",
+  "swelling in neck": "Is there a swelling in the front of the neck?",
+  "swollen cheeks": "Are the cheeks swollen in front of the ears?",
+  "testicular pain": "Do you have pain in a testicle?",
+  "thickened skin": "Is the skin of a swollen leg or arm thick and hard?",
+  "unable to pass urine": "Have you been unable to pass urine even though you feel the need?",
+  "vaginal discharge": "Is there an unusual discharge from the vagina?",
+  "vaginal itching": "Is there itching around the vagina?",
+  "vomiting after coughing": "Does the child vomit after a bout of coughing?",
+  "weight gain": "Have you put on weight without eating more?",
+  "white patches in mouth": "Are there white patches in the mouth that do not wipe off?",
+  "whooping sound": "Does the child make a high-pitched 'whoop' sound after coughing?",
+  "work in bushes or fields": "Have you recently worked in bushes, tall grass or fields?",
+  "worse at night": "Is it worse at night?",
+  "joint looks out of place": "Does the joint look out of place, as if it has popped out?"
+ },
+ "synonyms": {
+  "diarrhea": [
+   "dast",
+   "loose motion",
+   "loose motions",
+   "loose stools",
+   "patle dast",
+   "running stomach",
+   "virechanalu",
+   "watery motions",
+   "दस्त",
+   "విరేచనాలు"
+  ],
+  "watery diarrhea": [
+   "rice water",
+   "too many loose motions",
+   "watery motions"
+  ],
+  "fever": [
+   "body heat",
+   "body is hot",
+   "bukhaar",
+   "bukhar",
+   "feeling hot",
+   "fever",
+   "high temperature",
+   "jwar",
+   "jwaram",
+   "temperature",
+   "बुखार",
+   "జ్వరం"
+  ],
+  "high fever": [
+   "bahut tez bukhar",
+   "burning with fever",
+   "ekkuva jwaram",
+   "fever 103",
+   "fever 104",
+   "fever above 102",
+   "fever above 103",
+   "fever is very high",
+   "fever of 103",
+   "fever of 104",
+   "high grade fever",
+   "tez bukhar",
+   "very high fever",
+   "very high temperature",
+   "तेज बुखार",
+   "ఎక్కువ జ్వరం"
+  ],
+  "chills and shivering": [
+   "kampakampa",
+   "kapkapi",
+   "rigors",
+   "shaking with cold",
+   "shivering",
+   "thand lagna",
+   "vanuku"
+  ],
+  "muscle pain": [
+   "badan dard",
+   "body ache",
+   "body aches",
+   "body pain",
+   "body pains",
+   "muscle aches",
+   "olu noppulu",
+   "बदन दर्द",
+   "ఒళ్ళు నొప్పులు"
+  ],
+  "joint pain": [
+   "elbow pain",
+   "hip pain",
+   "jodon ka dard",
+   "jodon mein dard",
+   "joint is painful",
+   "joints are paining",
+   "joints hurt",
+   "knee is painful",
+   "knee pain",
+   "pain in joint",
+   "pain in joints",
+   "pain in knee",
+   "pain in the knee",
+   "painful elbow",
+   "painful joint",
+   "painful knee",
+   "painful shoulder",
+   "painful wrist",
+   "shoulder pain",
+   "wrist pain",
+   "जोड़ों में दर्द"
+  ],
+  "headache": [
+   "head hurts",
+   "head is aching",
+   "head is paining",
+   "head pain",
+   "heaviness in head",
+   "sar dard",
+   "sir dard",
+   "sirdard",
+   "tala noppi",
+   "talanoppi",
+   "सर दर्द",
+   "सिरदर्द",
+   "తల నొప్పి",
+   "తలనొప్పి"
+  ],
+  "severe headache": [
+   "head is splitting",
+   "unbearable headache",
+   "worst headache"
+  ],
+  "vomiting": [
+   "puking",
+   "throwing up",
+   "ulti",
+   "ulti ho rahi",
+   "ulti hona",
+   "vaantulu",
+   "vantulu",
+   "vomits",
+   "vomitting",
+   "उल्टी",
+   "వాంతులు"
+  ],
+  "nausea": [
+   "feeling sick",
+   "queasy"
+  ],
+  "dizzy": [
+   "chakkar",
+   "chakkar aa rahe hain",
+   "chakkar aana",
+   "feeling giddy",
+   "giddiness",
+   "head spinning",
+   "kallu tiragadam",
+   "kallu tirugutunnayi",
+   "light headed",
+   "lightheaded",
+   "चक्कर",
+   "కళ్ళు తిరగడం"
+  ],
+  "fainting": [
+   "blacked out",
+   "collapsed",
+   "fainted",
+   "fell unconscious",
+   "passed out"
+  ],
+  "loss of consciousness": [
+   "behosh",
+   "behoshi",
+   "not responding",
+   "spruha tappadam",
+   "spruha tappindi",
+   "unconscious",
+   "unresponsive",
+   "won't wake up",
+   "बेहोश",
+   "बेहोशी",
+   "స్పృహ తప్పడం",
+   "స్పృహ తప్పింది"
+  ],
+  "convulsions": [
+   "daura pad raha",
+   "fit",
+   "fits",
+   "frothing at mouth",
+   "jerking",
+   "mirgi",
+   "moorcha",
+   "murcha",
+   "seizure",
+   "seizures",
+   "shaking all over",
+   "दौरा",
+   "मिर्गी",
+   "మూర్ఛ"
+  ],
+  "snake bite": [
+   "bitten by a snake",
+   "bitten by snake",
+   "paamu",
+   "paamu kaatu",
+   "paamu karichindi",
+   "saanp ne kaata",
+   "saanp ne kata",
+   "saap ne kaata",
+   "snake bit",
+   "snake has bitten",
+   "साँप ने काटा",
+   "सांप ने काटा",
+   "పాము కరిచింది",
+   "పాము కాటు"
+  ],
+  "animal bite": [
+   "bit me",
+   "bitten by a cat",
+   "bitten by an animal",
+   "cat bite",
+   "monkey bite"
+  ],
+  "dog bite": [
+   "bitten by a dog",
+   "bitten by dog",
+   "dog bit",
+   "dog has bitten",
+   "kukka kaatu",
+   "kukka karichindi",
+   "kutte ne kaata",
+   "kutte ne kata",
+   "कुत्ते ने काटा",
+   "కుక్క కరిచింది",
+   "కుక్క కాటు"
+  ],
+  "scorpion sting": [
+   "bichchu ne kaata",
+   "bichhu ne kaata",
+   "scorpion bit",
+   "scorpion stung",
+   "stung by a scorpion",
+   "telu kuttadam",
+   "telu kuttindi",
+   "बिच्छू ने काटा",
+   "తేలు కుట్టింది"
+  ],
+  "pesticide exposure": [
+   "drank pesticide",
+   "drank poison",
+   "farm chemical",
+   "insecticide",
+   "poison spray",
+   "sprayed pesticide",
+   "swallowed pesticide"
+  ],
+  "pregnant": [
+   "antenatal",
+   "expecting",
+   "garbham",
+   "garbhavati",
+   "garbhvati",
+   "months pregnant",
+   "pregnancy",
+   "weeks pregnant",
+   "गर्भवती",
+   "గర్భవతి"
+  ],
+  "recent childbirth": [
+   "after childbirth",
+   "after delivery",
+   "after normal delivery",
+   "baby was born",
+   "delivered a baby",
+   "delivered recently",
+   "delivery two days ago",
+   "gave birth",
+   "had a baby",
+   "just delivered",
+   "post delivery",
+   "post partum",
+   "postpartum"
+  ],
+  "newborn baby": [
+   "baby is a few days old",
+   "days old baby",
+   "few days old",
+   "new born",
+   "newborn"
+  ],
+  "child under five": [
+   "baby",
+   "infant",
+   "my child",
+   "my daughter",
+   "my son",
+   "toddler"
+  ],
+  "heavy vaginal bleeding": [
+   "bleeding a lot after delivery",
+   "bleeding heavily",
+   "heavy bleeding after delivery",
+   "soaking pads"
+  ],
+  "vaginal bleeding": [
+   "bleeding from vagina",
+   "bleeding while pregnant",
+   "spotting in pregnancy"
+  ],
+  "vomiting blood": [
+   "blood in vomit",
+   "coffee ground vomit",
+   "khoon ki ulti",
+   "raktham vantulu",
+   "throwing up blood",
+   "vomited blood",
+   "खून की उल्टी",
+   "రక్తం వాంతులు"
+  ],
+  "black tarry stools": [
+   "black coloured stool",
+   "black motions",
+   "black stool",
+   "kaala mal",
+   "kala pakhana",
+   "tarry stool",
+   "काला मल"
+  ],
+  "blood in sputum": [
+   "blood in phlegm",
+   "blood with cough",
+   "coughing up blood",
+   "spitting blood"
+  ],
+  "coughing blood": [
+   "coughing up blood",
+   "spitting blood"
+  ],
+  "cough for more than two weeks": [
+   "cough for 2 months",
+   "cough for 3 weeks",
+   "cough for a long time",
+   "cough for a month",
+   "cough for four weeks",
+   "cough for many weeks",
+   "cough for more than 2 weeks",
+   "cough for more than 3 weeks",
+   "cough for more than a month",
+   "cough for more than three weeks",
+   "cough for over a month",
+   "cough for over two weeks",
+   "cough for six weeks",
+   "cough for two weeks",
+   "cough for weeks",
+   "cough since a month",
+   "cough since weeks",
+   "long standing cough"
+  ],
+  "night sweats": [
+   "drenched at night",
+   "sweating at night",
+   "sweats at night"
+  ],
+  "weight loss": [
+   "becoming thin",
+   "getting thin",
+   "losing weight",
+   "lost weight"
+  ],
+  "jaundice": [
+   "eyes are yellow",
+   "kaamerlu",
+   "kamerlu",
+   "peelia",
+   "peeliya",
+   "piliya",
+   "skin is yellow",
+   "turned yellow",
+   "yellow eyes",
+   "yellow urine and eyes",
+   "yellowish",
+   "पीलिया",
+   "కామెర్లు"
+  ],
+  "dark urine": [
+   "brown urine",
+   "cola coloured urine",
+   "tea coloured urine",
+   "urine is dark"
+  ],
+  "stiff neck": [
+   "cannot bend neck",
+   "neck is stiff",
+   "neck pain and fever",
+   "neck stiffness"
+  ],
+  "light sensitivity": [
+   "bright light hurts",
+   "cannot see light",
+   "light hurts",
+   "photophobia"
+  ],
+  "face drooping": [
+   "face drooping",
+   "face has fallen on one side",
+   "face is crooked",
+   "facial droop",
+   "mouth is twisted"
+  ],
+  "arm weakness": [
+   "arm is weak",
+   "cannot lift arm",
+   "leg is weak",
+   "one side weak",
+   "paralysed",
+   "paralysis",
+   "weakness on one side"
+  ],
+  "slurred speech": [
+   "cannot speak properly",
+   "difficulty speaking",
+   "slurring",
+   "speech is slurred",
+   "words are unclear"
+  ],
+  "sudden vision loss": [
+   "lost vision suddenly",
+   "sudden blindness",
+   "suddenly cannot see"
+  ],
+  "high blood pressure reading": [
+   "blood pressure is high",
+   "blood pressure is very high",
+   "bp high",
+   "bp is 180",
+   "bp is high",
+   "high bp"
+  ],
+  "heavy bleeding": [
+   "bleeding a lot",
+   "bleeding heavily",
+   "bleeding is not stopping",
+   "bleeding won't stop",
+   "bleeding wont stop",
+   "blood is not stopping"
+  ],
+  "blood spurting": [
+   "blood is spurting",
+   "blood squirting",
+   "pumping blood"
+  ],
+  "fast breathing": [
+   "breathing fast",
+   "breathing very fast",
+   "fast breaths",
+   "rapid breathing"
+  ],
+  "chest indrawing": [
+   "chest going in",
+   "chest is sucking in",
+   "chest pulling in",
+   "ribs pulling in"
+  ],
+  "unable to drink or feed": [
+   "not able to drink",
+   "not breastfeeding",
+   "not drinking",
+   "not feeding",
+   "not sucking",
+   "not taking milk",
+   "refusing to feed",
+   "won't drink"
+  ],
+  "lethargy": [
+   "floppy",
+   "limp",
+   "not active",
+   "not playing",
+   "unusually sleepy",
+   "very sleepy",
+   "weak and sleepy"
+  ],
+  "sunken eyes": [
+   "eyes are sunken",
+   "eyes sunken",
+   "sunken eye"
+  ],
+  "extreme thirst": [
+   "always thirsty",
+   "excessive thirst",
+   "too much thirst",
+   "very thirsty"
+  ],
+  "increased thirst": [
+   "more thirsty",
+   "thirsty all the time",
+   "very thirsty"
+  ],
+  "frequent urination": [
+   "going to toilet often",
+   "passing urine often",
+   "urinating a lot",
+   "urine too often"
+  ],
+  "very little urine": [
+   "little urine",
+   "no urine",
+   "not passing urine",
+   "passing very less urine",
+   "urine has stopped"
+  ],
+  "mosquito exposure": [
+   "bitten by mosquitoes",
+   "dengue cases",
+   "dengue in my area",
+   "malaria area",
+   "mosquito bites",
+   "mosquitoes"
+  ],
+  "contaminated flood water exposure": [
+   "flood water",
+   "paddy field",
+   "rice field water",
+   "stagnant water",
+   "waded through water",
+   "walked in flood"
+  ],
+  "contaminated water or food": [
+   "bore water",
+   "contaminated food",
+   "contaminated water",
+   "dirty water",
+   "stale food",
+   "street food",
+   "tap water was dirty",
+   "unclean water"
+  ],
+  "heat exposure": [
+   "field work in heat",
+   "heat wave",
+   "in the hot sun",
+   "stayed in the sun",
+   "sun stroke",
+   "sunstroke",
+   "too much heat",
+   "working in the sun"
+  ],
+  "high body temperature": [
+   "body is burning hot",
+   "body is extremely hot",
+   "very hot body"
+  ],
+  "electric shock": [
+   "current shock",
+   "electric shock",
+   "electrocuted",
+   "got a shock",
+   "lightning",
+   "touched live wire"
+  ],
+  "choking on food": [
+   "choking",
+   "food stuck in throat",
+   "something stuck in throat",
+   "swallowed wrong"
+  ],
+  "cannot speak": [
+   "cannot say a word",
+   "cannot talk",
+   "unable to talk"
+  ],
+  "thoughts of self harm": [
+   "don't want to live",
+   "dont want to live",
+   "end my life",
+   "harm myself",
+   "hurt myself",
+   "kill myself",
+   "self harm",
+   "self-harm",
+   "suicidal",
+   "want to die",
+   "wish i was dead"
+  ],
+  "hopelessness": [
+   "feel worthless",
+   "hopeless",
+   "life is meaningless",
+   "no way out"
+  ],
+  "jaw stiffness": [
+   "jaw is locked",
+   "jaw is stiff",
+   "jaw tight",
+   "lock jaw",
+   "lockjaw"
+  ],
+  "muscle spasms": [
+   "body is stiffening",
+   "muscle spasm",
+   "painful spasms",
+   "spasms"
+  ],
+  "wound": [
+   "cut",
+   "dirty wound",
+   "gash",
+   "injury",
+   "laceration",
+   "nail injury",
+   "rusty nail"
+  ],
+  "deep wound": [
+   "deep cut",
+   "deep injury",
+   "gaping wound",
+   "wound is deep"
+  ],
+  "head injury": [
+   "blow to the head",
+   "fell on head",
+   "head hit",
+   "head trauma",
+   "hit her head",
+   "hit his head",
+   "hit my head",
+   "hit the head"
+  ],
+  "fluid from ear or nose": [
+   "blood from ear",
+   "blood from nose after injury",
+   "clear fluid from nose",
+   "fluid from ear"
+  ],
+  "severe pain after injury": [
+   "accident",
+   "bone broke",
+   "bone is broken",
+   "broken bone",
+   "fell down",
+   "fell from",
+   "fracture",
+   "hit by"
+  ],
+  "cannot move limb": [
+   "can't move arm",
+   "can't move her arm",
+   "can't move his arm",
+   "can't move leg",
+   "can't move my leg",
+   "cannot bend the knee",
+   "cannot move arm",
+   "cannot move her leg",
+   "cannot move his leg",
+   "cannot move leg",
+   "cannot move the arm",
+   "cannot move the joint",
+   "cannot move the knee",
+   "cannot move the leg",
+   "cannot use the arm",
+   "cannot use the leg",
+   "cannot walk",
+   "cannot walk after fall",
+   "limb is not moving",
+   "not able to move arm",
+   "not able to move leg",
+   "not able to walk",
+   "refuses to walk",
+   "unable to move the arm",
+   "unable to move the leg",
+   "unable to walk",
+   "will not walk"
+  ],
+  "deformity": [
+   "bent",
+   "bone sticking out",
+   "limb looks crooked",
+   "looks twisted"
+  ],
+  "severe burn": [
+   "badly burned",
+   "big burn",
+   "burns all over",
+   "burnt badly",
+   "burnt in fire",
+   "caught fire",
+   "fire burn"
+  ],
+  "minor burn": [
+   "boiling water",
+   "burnt my hand",
+   "hot oil spilled",
+   "hot water spilled",
+   "scalded",
+   "small burn"
+  ],
+  "swollen painful leg": [
+   "calf pain and swelling",
+   "calf swollen",
+   "leg is swollen and painful",
+   "leg swelling and pain",
+   "one leg is swollen",
+   "one leg swollen",
+   "painful swollen leg",
+   "swollen calf"
+  ],
+  "swelling of face and hands": [
+   "face is swollen",
+   "face puffy",
+   "hands swollen",
+   "swollen face"
+  ],
+  "swollen legs": [
+   "feet swollen",
+   "kaallo vaapu",
+   "legs swollen",
+   "pairon mein sujan",
+   "pedal edema",
+   "swelling in both legs",
+   "swelling of legs",
+   "पैरों में सूजन",
+   "కాళ్ళ వాపు"
+  ],
+  "swelling of both feet": [
+   "both feet swollen",
+   "feet are puffy",
+   "swollen feet in child"
+  ],
+  "blue lips": [
+   "blue face",
+   "bluish lips",
+   "cyanosis",
+   "lips are blue",
+   "lips turning blue",
+   "turning blue"
+  ],
+  "cold clammy skin": [
+   "clammy",
+   "cold and clammy",
+   "cold sweat",
+   "skin is cold and sweaty"
+  ],
+  "palpitations": [
+   "fluttering",
+   "heart beating fast",
+   "heart is beating fast",
+   "heart is racing",
+   "heart pounding",
+   "heart racing"
+  ],
+  "fast heartbeat": [
+   "heart beating fast",
+   "heart racing",
+   "pulse is fast",
+   "rapid heartbeat"
+  ],
+  "tooth pain": [
+   "daant dard",
+   "pallu noppi",
+   "tooth ache",
+   "tooth hurts",
+   "tooth is paining",
+   "toothache",
+   "दांत दर्द",
+   "పంటి నొప్పి"
+  ],
+  "swollen gum or cheek": [
+   "cheek is swollen",
+   "face swollen near tooth",
+   "gum swelling",
+   "swollen cheek",
+   "swollen gums"
+  ],
+  "ear pain": [
+   "chevi noppi",
+   "ear ache",
+   "ear hurts",
+   "ear is paining",
+   "earache",
+   "kaan dard",
+   "pain in ear",
+   "कान दर्द",
+   "చెవి నొప్పి"
+  ],
+  "ear discharge": [
+   "ear is discharging",
+   "ear is leaking",
+   "fluid from ear",
+   "pus from ear"
+  ],
+  "eye pain": [
+   "eye hurts",
+   "eye is paining",
+   "pain in eye"
+  ],
+  "something in eye": [
+   "dust in eye",
+   "foreign body in eye",
+   "insect in eye",
+   "particle in eye",
+   "something went in my eye"
+  ],
+  "eye injury": [
+   "eye got hit",
+   "eye hurt by",
+   "eye injury",
+   "eye poked",
+   "eye was hit",
+   "hit in the eye",
+   "injured my eye",
+   "poked in the eye",
+   "something hit my eye",
+   "stick hit eye"
+  ],
+  "itchy skin": [
+   "body itching",
+   "durada",
+   "itch all over",
+   "itching",
+   "itching all over",
+   "khujlee",
+   "khujli",
+   "skin itching",
+   "खुजली",
+   "దురద"
+  ],
+  "intense itching worse at night": [
+   "itching at night",
+   "itching badly at night",
+   "itching is worse at night",
+   "night itching"
+  ],
+  "ring-shaped rash": [
+   "circular patch",
+   "ring like patch",
+   "ring shaped",
+   "ringworm",
+   "round patch"
+  ],
+  "hives": [
+   "allergic rash",
+   "skin allergy",
+   "urticaria",
+   "welts"
+  ],
+  "rash": [
+   "rashes",
+   "red spots",
+   "skin rash",
+   "spots on skin"
+  ],
+  "visible worms in stool": [
+   "passing worms",
+   "seen worms",
+   "worm in stool",
+   "worms in motion",
+   "worms in stool"
+  ],
+  "visible wasting": [
+   "bones showing",
+   "child has become very thin",
+   "child is very thin",
+   "skinny child",
+   "very thin child",
+   "wasting"
+  ],
+  "heartburn": [
+   "acid in stomach",
+   "acid reflux",
+   "acidity",
+   "burning in chest",
+   "gas and acidity"
+  ],
+  "belching": [
+   "belch",
+   "burping",
+   "gas",
+   "gas trouble"
+  ],
+  "bloating": [
+   "gas in stomach",
+   "stomach bloating",
+   "stomach feels full",
+   "stomach is bloated"
+  ],
+  "burning upper abdominal pain": [
+   "burning in stomach",
+   "burning in the stomach",
+   "burning pain in upper stomach",
+   "stomach burning"
+  ],
+  "upper abdominal pain": [
+   "pain in the pit of stomach",
+   "pain in upper stomach",
+   "upper stomach pain"
+  ],
+  "severe abdominal pain": [
+   "severe pain in stomach",
+   "severe stomach pain",
+   "stomach pain is severe",
+   "terrible stomach pain",
+   "unbearable stomach pain"
+  ],
+  "not passing stool or gas": [
+   "cannot pass stool",
+   "constipated and bloated",
+   "no motion",
+   "not passed stool",
+   "not passing gas"
+  ],
+  "swollen abdomen": [
+   "belly is swollen",
+   "belly swollen",
+   "distended abdomen",
+   "stomach is swollen",
+   "stomach swollen",
+   "tummy swollen"
+  ],
+  "back pain": [
+   "back hurts",
+   "back is paining",
+   "backache",
+   "kamar dard",
+   "lower back pain",
+   "nadumu noppi",
+   "pain in my back",
+   "कमर दर्द",
+   "నడుము నొప్పి"
+  ],
+  "fatigue": [
+   "alasata",
+   "always tired",
+   "exhausted",
+   "feel tired",
+   "no energy",
+   "thakaan",
+   "thakan",
+   "tired all the time",
+   "tiredness",
+   "very tired",
+   "weak and tired",
+   "थकान",
+   "అలసట"
+  ],
+  "weakness": [
+   "body weakness",
+   "feeling weak",
+   "general weakness",
+   "kamjori",
+   "kamzori",
+   "neerasam",
+   "nissattu",
+   "too weak",
+   "very weak",
+   "कमजोरी",
+   "నీరసం"
+  ],
+  "pale skin": [
+   "face is pale",
+   "looks pale",
+   "looks white",
+   "pale face",
+   "paleness",
+   "pallor",
+   "turned pale"
+  ],
+  "shortness of breath on exertion": [
+   "breathless on effort",
+   "breathless on walking",
+   "breathless on work",
+   "breathless when climbing",
+   "gets breathless easily"
+  ],
+  "loss of appetite": [
+   "akali ledu",
+   "bhook nahi lagti",
+   "bhookh nahi",
+   "doesn't want to eat",
+   "doesnt want to eat",
+   "no appetite",
+   "not eating",
+   "not hungry",
+   "poor appetite",
+   "भूख नहीं",
+   "ఆకలి లేదు"
+  ],
+  "abdominal pain": [
+   "belly pain",
+   "kadupu lo noppi",
+   "kadupu noppi",
+   "pain in stomach",
+   "pet dard",
+   "pet me dard",
+   "pet mein dard",
+   "stomach ache",
+   "stomach pain",
+   "stomachache",
+   "tummy ache",
+   "tummy pain",
+   "पेट दर्द",
+   "पेट में दर्द",
+   "కడుపు నొప్పి"
+  ],
+  "sore throat": [
+   "gala kharab",
+   "gale mein dard",
+   "gontu noppi",
+   "pain in throat",
+   "throat hurts",
+   "throat is paining",
+   "throat pain",
+   "गले में दर्द",
+   "గొంతు నొప్పి"
+  ],
+  "runny nose": [
+   "jalubu",
+   "jukam",
+   "nasal discharge",
+   "nazla",
+   "nose is running",
+   "running nose",
+   "zukam",
+   "జలుబు"
+  ],
+  "congestion": [
+   "blocked nose",
+   "nasal congestion",
+   "nose blocked",
+   "nose is blocked",
+   "stuffy nose"
+  ],
+  "phlegm": [
+   "balgam",
+   "bringing up mucus",
+   "cough with phlegm",
+   "cough with sputum",
+   "coughing phlegm",
+   "mucus",
+   "sputum",
+   "बलगम"
+  ],
+  "cough": [
+   "cough is there",
+   "cough since",
+   "coughing",
+   "daggu",
+   "dry cough",
+   "khaansi",
+   "khansi",
+   "खाँसी",
+   "खांसी",
+   "దగ్గు"
+  ],
+  "wheezing": [
+   "chest whistling",
+   "noisy breathing",
+   "wheeze",
+   "whistling sound in chest"
+  ],
+  "tight chest": [
+   "chest discomfort",
+   "chest feels tight",
+   "chest is tight",
+   "chest tightness",
+   "tightness in chest"
+  ],
+  "known diabetes": [
+   "diabetes",
+   "diabetic",
+   "diabetic patient",
+   "has sugar",
+   "he has diabetes",
+   "i have diabetes",
+   "on diabetes tablets",
+   "on insulin",
+   "she has diabetes",
+   "sugar patient",
+   "sugar problem",
+   "taking insulin",
+   "type 1 diabetes",
+   "type 2 diabetes"
+  ],
+  "alcohol use": [
+   "alcohol",
+   "drank alcohol",
+   "drinking heavily",
+   "drinks alcohol",
+   "drunk a lot",
+   "heavy drinker"
+  ],
+  "chronic smoker": [
+   "beedi",
+   "bidi",
+   "biomass smoke",
+   "chulha smoke",
+   "cigarette",
+   "dust exposure",
+   "smoker",
+   "smokes",
+   "smoking",
+   "wood smoke"
+  ],
+  "stray animal": [
+   "rabid",
+   "stray",
+   "stray dog",
+   "street dog",
+   "unknown dog",
+   "unvaccinated dog",
+   "wild animal"
+  ],
+  "recent infection": [
+   "had an infection",
+   "infected wound",
+   "infection",
+   "recent illness",
+   "recent infection"
+  ],
+  "nosebleed": [
+   "bleeding from nose",
+   "bleeding from nostril",
+   "bleeding from one nostril",
+   "bleeding from the nostril",
+   "blood coming from nose",
+   "blood from nose",
+   "blood from one nostril",
+   "epistaxis",
+   "mukku nundi raktham",
+   "naak se khoon",
+   "nose bleed",
+   "nose bleeding",
+   "nose is bleeding",
+   "nose started bleeding",
+   "nostril bleeding",
+   "नाक से खून",
+   "ముక్కు నుండి రక్తం"
+  ],
+  "excessive salivation": [
+   "drooling",
+   "foaming at mouth",
+   "mouth watering a lot",
+   "saliva coming a lot",
+   "salivating"
+  ],
+  "small pupils": [
+   "pinpoint pupils",
+   "pupils are small",
+   "tiny pupils"
+  ],
+  "muscle twitching": [
+   "muscle tremors",
+   "muscles twitching",
+   "shaking muscles",
+   "tremors",
+   "twitching"
+  ],
+  "heavy sweating": [
+   "drenched in sweat",
+   "profuse sweating",
+   "sweating a lot",
+   "sweating heavily",
+   "sweating profusely"
+  ],
+  "restlessness": [
+   "cannot sit still",
+   "cannot stay still",
+   "restless"
+  ],
+  "severe local pain": [
+   "excruciating pain",
+   "pain is unbearable",
+   "severe pain at the site"
+  ],
+  "cold hands and feet": [
+   "cold extremities",
+   "cold feet",
+   "cold hands",
+   "hands and feet are cold"
+  ],
+  "vomiting green fluid": [
+   "bilious vomiting",
+   "green colour vomit",
+   "green vomit",
+   "yellow green vomit"
+  ],
+  "repeated vomiting": [
+   "continuous vomiting",
+   "keeps vomiting",
+   "vomited many times",
+   "vomiting again and again",
+   "vomiting continuously",
+   "vomiting many times",
+   "vomiting repeatedly"
+  ],
+  "sweating": [
+   "chemata",
+   "pasina",
+   "sweating a lot",
+   "sweats",
+   "sweaty",
+   "पसीना",
+   "చెమట"
+  ],
+  "drowsiness": [
+   "difficult to wake",
+   "hard to wake",
+   "sleeping too much",
+   "sleepy all the time",
+   "too sleepy",
+   "very drowsy"
+  ],
+  "confusion": [
+   "confused",
+   "disoriented",
+   "doesn't recognise people",
+   "doesnt recognise people",
+   "not making sense",
+   "not responding properly",
+   "talking irrelevant",
+   "talking nonsense"
+  ],
+  "sudden confusion": [
+   "sudden disorientation",
+   "suddenly confused",
+   "suddenly started talking nonsense"
+  ],
+  "prolonged fever": [
+   "continuous fever",
+   "fever for 5 days",
+   "fever for 6 days",
+   "fever for 7 days",
+   "fever for a week",
+   "fever for many days",
+   "fever for several days",
+   "fever for ten days",
+   "fever not going down",
+   "fever since days"
+  ],
+  "fever in cycles": [
+   "fever comes and goes",
+   "fever every other day",
+   "fever every third day",
+   "fever on alternate days",
+   "fever with chills every",
+   "intermittent fever"
+  ],
+  "evening fever": [
+   "evening rise of temperature",
+   "fever every evening",
+   "fever in the evening"
+  ],
+  "pain behind eyes": [
+   "eyes are paining from behind",
+   "pain behind my eyes",
+   "pain behind the eyes",
+   "retro orbital"
+  ],
+  "bleeding gums": [
+   "bleeding from gums",
+   "blood from gums",
+   "gums bleeding"
+  ],
+  "severe joint pain": [
+   "cannot walk due to joint pain",
+   "crippling joint pain",
+   "joints are severely paining",
+   "very severe joint pain"
+  ],
+  "swollen joints": [
+   "elbow swelling",
+   "hot swollen knee",
+   "joint is swollen",
+   "joint swelling",
+   "joints are swollen",
+   "knee is swollen",
+   "knee swelling",
+   "swelling in joints",
+   "swollen ankle joint",
+   "swollen elbow",
+   "swollen hip",
+   "swollen joint",
+   "swollen knee",
+   "swollen knees",
+   "swollen shoulder",
+   "swollen wrist",
+   "swollen wrists",
+   "wrist swelling"
+  ],
+  "rash starting on face": [
+   "rash from face to body",
+   "rash on face spreading",
+   "rash started on face",
+   "red rash behind ears"
+  ],
+  "white spots in mouth": [
+   "koplik",
+   "white spots inside the mouth",
+   "white spots on gums"
+  ],
+  "red swollen skin": [
+   "abscess",
+   "boil",
+   "red hot swelling",
+   "red swelling",
+   "red swollen area",
+   "swollen red area"
+  ],
+  "spreading redness": [
+   "red streaks",
+   "redness is increasing",
+   "redness is spreading",
+   "redness spreading"
+  ],
+  "pus": [
+   "discharging pus",
+   "pus coming",
+   "pus discharge",
+   "pus is coming out"
+  ],
+  "calf pain": [
+   "calf muscle pain",
+   "calf muscles hurt",
+   "legs paining badly",
+   "pain in calves",
+   "severe calf pain"
+  ],
+  "red eye": [
+   "aankh laal",
+   "eye is red",
+   "eyes are red",
+   "eyes red",
+   "kanulu erraga",
+   "red eyes",
+   "आंख लाल",
+   "కళ్ళు ఎర్రగా"
+  ],
+  "neck tightness": [
+   "neck is tight",
+   "neck muscles tight",
+   "neck stiffness and tension"
+  ],
+  "stress": [
+   "anxiety",
+   "anxious",
+   "lack of sleep",
+   "not sleeping",
+   "poor sleep",
+   "stressed",
+   "tension",
+   "worried a lot"
+  ],
+  "dull headache": [
+   "dull ache in head",
+   "pressing headache",
+   "pressure in head"
+  ],
+  "band-like head pressure": [
+   "band around the head",
+   "head feels tight",
+   "tight band around head"
+  ],
+  "loss of balance": [
+   "cannot balance",
+   "cannot walk straight",
+   "falling to one side",
+   "loss of coordination",
+   "stumbling",
+   "unsteady"
+  ],
+  "numbness on one side": [
+   "numb on one side",
+   "numbness in one side",
+   "one side numb",
+   "tingling on one side"
+  ],
+  "pain after lifting": [
+   "after carrying load",
+   "after lifting",
+   "after lifting a heavy",
+   "lifted something heavy",
+   "lifting heavy"
+  ],
+  "pain worse with movement": [
+   "hurts on bending",
+   "hurts when i move",
+   "pain on movement",
+   "worse when moving"
+  ],
+  "stiffness": [
+   "back is stiff",
+   "stiff",
+   "stiff back",
+   "stiff in the morning"
+  ],
+  "constipation": [
+   "constipated",
+   "difficulty passing stool",
+   "hard stools",
+   "no motion for days"
+  ],
+  "pain related to meals": [
+   "hunger pain",
+   "pain after eating",
+   "pain after meals",
+   "pain before meals",
+   "pain on empty stomach"
+  ],
+  "regurgitation": [
+   "acid coming into mouth",
+   "acid coming up",
+   "food comes up",
+   "food coming back",
+   "sour water coming up"
+  ],
+  "sour taste in mouth": [
+   "acid taste",
+   "bitter taste",
+   "bitter taste in mouth",
+   "sour taste",
+   "sour water in mouth"
+  ],
+  "burning chest after meals": [
+   "burning in chest after eating",
+   "burning sensation in chest after meals",
+   "chest burns after food"
+  ],
+  "worse lying down": [
+   "worse at night lying down",
+   "worse on lying",
+   "worse when lying down"
+  ],
+  "slow healing wounds": [
+   "cuts take long to heal",
+   "slow to heal",
+   "sores not healing",
+   "wound not healing",
+   "wounds not healing"
+  ],
+  "tingling in feet": [
+   "burning feet",
+   "burning sensation in feet",
+   "numb feet",
+   "pins and needles in feet",
+   "tingling in my feet"
+  ],
+  "brittle nails": [
+   "nails are brittle",
+   "nails are pale",
+   "nails breaking",
+   "spoon shaped nails",
+   "weak nails"
+  ],
+  "hair changes": [
+   "hair falling",
+   "hair is reddish",
+   "hair is thin",
+   "hair pale",
+   "hair turned brown"
+  ],
+  "abdominal discomfort": [
+   "stomach discomfort",
+   "stomach is uneasy",
+   "tummy discomfort",
+   "uneasy stomach"
+  ],
+  "itching around anus": [
+   "anal itching",
+   "itching at bottom",
+   "itching at night around anus",
+   "itching in anus",
+   "itching in bottom"
+  ],
+  "family members itching": [
+   "family also itching",
+   "others at home also itch",
+   "others in house also have itching",
+   "siblings also itching",
+   "whole family itching"
+  ],
+  "tiny skin burrows": [
+   "burrows on skin",
+   "small lines on skin",
+   "thin lines on skin",
+   "tiny lines on skin"
+  ],
+  "rash between fingers": [
+   "bumps between fingers",
+   "itchy bumps between fingers",
+   "rash in finger webs",
+   "rash in webs of fingers",
+   "rash on wrists and fingers"
+  ],
+  "itchy blister rash": [
+   "blisters all over body",
+   "blisters and fever",
+   "chicken pox",
+   "chickenpox",
+   "itchy blisters",
+   "pox",
+   "water filled blisters"
+  ],
+  "blisters in different stages": [
+   "blisters and scabs",
+   "blisters with scabs",
+   "new blisters appearing"
+  ],
+  "scaly skin": [
+   "dry scaly patch",
+   "flaky skin",
+   "peeling skin",
+   "skin is peeling",
+   "skin scaling"
+  ],
+  "spreading patch": [
+   "patch getting bigger",
+   "patch growing",
+   "patch increasing",
+   "patch is spreading",
+   "rash is spreading"
+  ],
+  "raised welts": [
+   "bumps all over the skin",
+   "raised patches",
+   "swellings on skin",
+   "swollen patches on skin",
+   "welts all over"
+  ],
+  "small blisters": [
+   "a few small blisters",
+   "few blisters",
+   "small blister",
+   "tiny blisters"
+  ],
+  "blisters": [
+   "blister",
+   "blisters formed",
+   "blisters on skin",
+   "water blisters"
+  ],
+  "red painful skin": [
+   "painful red skin",
+   "red burning skin",
+   "skin is red and painful",
+   "skin red and burning"
+  ],
+  "large burn area": [
+   "big area burnt",
+   "burn bigger than hand",
+   "burn covers big area",
+   "burn is large",
+   "burn larger than palm",
+   "large area burnt"
+  ],
+  "burn on face or hands": [
+   "burn on face",
+   "burn on genitals",
+   "burn on hands",
+   "burns on face",
+   "face burnt",
+   "genital burn",
+   "hand burnt badly"
+  ],
+  "smoke inhalation": [
+   "breathed smoke",
+   "inhaled smoke",
+   "smoke in lungs",
+   "smoke inhaled",
+   "trapped in smoke"
+  ],
+  "burn at contact point": [
+   "burn at the point of contact",
+   "burn mark from current",
+   "burn mark where touched wire",
+   "burn on hand from shock",
+   "electric burn"
+  ],
+  "clutching throat": [
+   "clutching neck",
+   "grabbing throat",
+   "hand on throat",
+   "holding her throat",
+   "holding his throat",
+   "holding throat"
+  ],
+  "dust or pollen trigger": [
+   "allergic to dust",
+   "dust allergy",
+   "dust triggers",
+   "pollen allergy",
+   "season change",
+   "seasonal allergy",
+   "weather change"
+  ],
+  "itchy nose": [
+   "itching in nose",
+   "nose is itchy",
+   "nose itching",
+   "nose itchy"
+  ],
+  "thick nasal discharge": [
+   "green mucus from nose",
+   "thick mucus from nose",
+   "thick snot",
+   "yellow green nasal discharge",
+   "yellow nasal discharge"
+  ],
+  "reduced smell": [
+   "cannot smell",
+   "loss of smell",
+   "lost smell",
+   "no sense of smell",
+   "not able to smell"
+  ],
+  "facial pain": [
+   "face pain",
+   "pain around eyes and nose",
+   "pain in cheeks",
+   "pain in face",
+   "pain in forehead",
+   "pressure in face",
+   "sinus pain"
+  ],
+  "reduced hearing": [
+   "cannot hear properly",
+   "difficulty hearing",
+   "hearing is low",
+   "hearing less",
+   "hearing loss",
+   "not hearing well"
+  ],
+  "tugging ear": [
+   "holding ear",
+   "pulling at ear",
+   "pulling ear",
+   "pulling her ear",
+   "pulling his ear",
+   "rubbing ear",
+   "touching ear again and again"
+  ],
+  "pain when chewing": [
+   "hurts to chew",
+   "hurts when chewing",
+   "pain on chewing",
+   "pain while chewing",
+   "pain while eating"
+  ],
+  "bad taste in mouth": [
+   "bad breath",
+   "bad smell from mouth",
+   "foul smell from mouth",
+   "foul taste",
+   "metallic taste",
+   "pus taste"
+  ],
+  "feels cold": [
+   "baby feels cold",
+   "baby is cold",
+   "body is cold",
+   "cold to touch",
+   "feels cold to touch",
+   "hypothermia"
+  ],
+  "not feeding well": [
+   "baby not breastfeeding well",
+   "baby not feeding",
+   "baby not sucking",
+   "baby not taking feeds",
+   "baby refuses milk",
+   "feeding poorly",
+   "poor feeding"
+  ],
+  "recent surgery or childbirth": [
+   "after c-section",
+   "after cesarean",
+   "after delivery and bedridden",
+   "after operation",
+   "after surgery",
+   "bedridden",
+   "immobile",
+   "long journey",
+   "long travel",
+   "not moving for days"
+  ],
+  "sudden shortness of breath": [
+   "abruptly breathless",
+   "sudden breathing trouble",
+   "suddenly breathless",
+   "suddenly cannot breathe",
+   "suddenly short of breath"
+  ],
+  "pain radiating to back": [
+   "pain goes through to the back",
+   "pain going to back",
+   "pain going to the back",
+   "pain radiating to the back",
+   "pain spreads to back"
+  ],
+  "severe upper abdominal pain": [
+   "severe pain in pit of stomach",
+   "severe pain in upper stomach",
+   "severe pain upper abdomen",
+   "severe upper stomach pain"
+  ],
+  "upper right abdominal pain": [
+   "pain below right ribs",
+   "pain in right upper abdomen",
+   "pain on right side under ribs",
+   "pain under right ribs",
+   "right upper stomach pain"
+  ],
+  "pain after fatty meals": [
+   "pain after eating oily",
+   "pain after fatty food",
+   "pain after fried food",
+   "pain after heavy meal",
+   "pain after oily food"
+  ],
+  "pain radiating to right shoulder": [
+   "pain going to right shoulder",
+   "pain spreads to right shoulder",
+   "pain to right shoulder",
+   "right shoulder pain with stomach pain"
+  ],
+  "rapid weight gain": [
+   "gained weight quickly",
+   "sudden weight gain",
+   "weight gain suddenly",
+   "weight increased suddenly",
+   "weight is increasing quickly"
+  ],
+  "breathless lying flat": [
+   "breathless at night lying down",
+   "breathless on lying down",
+   "cannot lie flat",
+   "cannot sleep flat",
+   "need pillows to breathe",
+   "sleeping upright"
+  ],
+  "cough at night": [
+   "cough worse at night",
+   "coughing at night",
+   "coughing during the night",
+   "night cough",
+   "wake up coughing"
+  ],
+  "flank pain": [
+   "loin pain",
+   "pain in side and back",
+   "pain in the flank",
+   "pain in the lower back and side",
+   "pain in the side"
+  ],
+  "severe lower abdominal pain": [
+   "severe lower stomach pain",
+   "severe pain below the navel",
+   "severe pain in lower abdomen",
+   "severe pain in lower belly",
+   "severe pain in lower stomach"
+  ],
+  "shoulder tip pain": [
+   "pain at tip of shoulder",
+   "pain in shoulder tip",
+   "shoulder pain with belly pain",
+   "shoulder tip"
+  ],
+  "large blood clots": [
+   "big blood clots",
+   "blood clots passing",
+   "clots of blood",
+   "large clots",
+   "passing clots",
+   "passing large clots"
+  ],
+  "hard tender lump": [
+   "hard lump",
+   "hard painful swelling",
+   "lump is hard",
+   "painful lump",
+   "tender lump"
+  ],
+  "bulge cannot be pushed back": [
+   "bulge not reducing",
+   "bulge will not go back",
+   "cannot push back",
+   "cannot push it in",
+   "lump not going in",
+   "stuck bulge"
+  ],
+  "painful groin bulge": [
+   "bulge in groin",
+   "groin swelling",
+   "hernia",
+   "lump in groin",
+   "swelling in groin",
+   "swelling in the groin"
+  ],
+  "redness over lump": [
+   "lump has turned red",
+   "lump is red",
+   "lump turned dark",
+   "red skin over lump",
+   "skin over lump is red"
+  ],
+  "sudden testicular pain": [
+   "sudden pain and swelling in one testicle",
+   "sudden pain in my testicle",
+   "sudden pain in one testicle",
+   "sudden pain in one testis",
+   "sudden pain in private part",
+   "sudden pain in scrotum",
+   "sudden pain in testicle",
+   "sudden pain in testis",
+   "sudden pain in the scrotum",
+   "sudden pain in the testicle",
+   "sudden severe pain and swelling in one testicle",
+   "sudden severe pain in one testicle",
+   "sudden severe testicle pain",
+   "sudden severe testicular pain",
+   "testicle pain"
+  ],
+  "testicular swelling": [
+   "one testicle is swollen",
+   "pain and swelling in one testicle",
+   "scrotal swelling",
+   "swelling in one testicle",
+   "swelling in scrotum",
+   "swelling in testicle",
+   "swelling in the testicle",
+   "swelling of one testis",
+   "swelling of the testicle",
+   "swollen scrotum",
+   "swollen testicle",
+   "testicle is swollen",
+   "testis is swollen",
+   "testis swelling"
+  ],
+  "fruity breath": [
+   "acetone smell",
+   "breath smells like acetone",
+   "breath smells sweet",
+   "fruity smell in breath",
+   "smell of nail polish",
+   "sweet smelling breath"
+  ],
+  "fast deep breathing": [
+   "breathing deep and fast",
+   "breathing heavily and fast",
+   "deep fast breathing",
+   "deep rapid breathing",
+   "heavy fast breathing",
+   "kussmaul"
+  ],
+  "unequal pupils": [
+   "one pupil bigger",
+   "one pupil larger",
+   "pupils different size",
+   "pupils not equal",
+   "pupils of different sizes",
+   "uneven pupils"
+  ],
+  "tongue biting": [
+   "bit her tongue",
+   "bit his tongue",
+   "bit tongue",
+   "bitten tongue",
+   "tongue bite",
+   "tongue bitten"
+  ],
+  "confusion after episode": [
+   "confused after seizure",
+   "confused after the fit",
+   "dazed after episode",
+   "drowsy after fit",
+   "sleepy after fit",
+   "sleepy after seizure"
+  ],
+  "loss of bladder control": [
+   "lost bladder control",
+   "lost control of urine",
+   "passed urine during fit",
+   "passed urine involuntarily",
+   "urinated on herself",
+   "urinated on himself",
+   "urine came out during fit",
+   "wet herself",
+   "wet himself"
+  ],
+  "drooping eyelids": [
+   "cannot open eyes fully",
+   "droopy eyelids",
+   "eyelid droop",
+   "eyelids drooping",
+   "eyelids falling",
+   "heavy eyelids",
+   "ptosis"
+  ],
+  "fang marks": [
+   "bite marks",
+   "puncture marks",
+   "teeth marks from snake",
+   "two bite marks",
+   "two holes",
+   "two puncture marks",
+   "two small holes"
+  ],
+  "bleeding from bite": [
+   "bite bleeding",
+   "bite is bleeding",
+   "bite wound bleeding",
+   "bleeding from the bite",
+   "blood from bite"
+  ],
+  "broken skin": [
+   "bite broke skin",
+   "broke the skin",
+   "skin broken",
+   "skin got punctured",
+   "skin is torn",
+   "skin torn",
+   "skin was broken"
+  ],
+  "scratch from animal": [
+   "cat scratch",
+   "dog scratch",
+   "scratched by a cat",
+   "scratched by a dog",
+   "scratched by animal",
+   "scratched by cat",
+   "scratched by dog",
+   "scratched by monkey"
+  ],
+  "swelling spreading": [
+   "swelling going up the arm",
+   "swelling going up the leg",
+   "swelling increasing",
+   "swelling is increasing",
+   "swelling is spreading",
+   "swelling moving up"
+  ],
+  "watery eyes": [
+   "eye watering",
+   "eyes are watering",
+   "eyes watering",
+   "tearing",
+   "tears coming",
+   "watering eyes"
+  ],
+  "difficulty opening mouth": [
+   "cannot open mouth",
+   "difficult to open mouth",
+   "mouth won't open",
+   "mouth wont open",
+   "trismus",
+   "unable to open mouth"
+  ],
+  "chest pain": [
+   "chaati mein dard",
+   "chest ache",
+   "chest hurts",
+   "chest is hurting",
+   "chest is paining",
+   "chhati mein dard",
+   "gunde noppi",
+   "gundelo noppi",
+   "pain in chest",
+   "pain in my chest",
+   "pain in the chest",
+   "seene me dard",
+   "seene mein dard",
+   "छाती में दर्द",
+   "सीने में दर्द",
+   "గుండె నొప్పి",
+   "ఛాతీ నొప్పి"
+  ],
+  "shortness of breath": [
+   "barely breathe",
+   "breathless",
+   "breathlessness",
+   "can barely breathe",
+   "can't breathe",
+   "cannot breathe",
+   "cant breathe",
+   "difficulty in breathing",
+   "gasping",
+   "hard to breathe",
+   "not able to breathe",
+   "oopiri aadakapovadam",
+   "oopiri ibbandi",
+   "out of breath",
+   "saans lene mein taklif",
+   "saans nahi aa rahi",
+   "saans phoolna",
+   "short of breath",
+   "trouble breathing",
+   "सांस फूलना",
+   "सांस लेने में तकलीफ",
+   "ఊపిరి ఆడకపోవడం"
+  ],
+  "difficulty breathing": [
+   "breathing difficulty",
+   "difficulty breathing",
+   "hard time breathing",
+   "labored breathing",
+   "laboured breathing",
+   "struggling to breathe",
+   "trouble breathing"
+  ],
+  "radiating pain": [
+   "pain going down my arm",
+   "pain going to jaw",
+   "pain going to my arm",
+   "pain moving to",
+   "pain radiating",
+   "pain spreading to",
+   "pain spreads to",
+   "pain to the jaw"
+  ],
+  "left arm": [
+   "left arm",
+   "left hand pain",
+   "left shoulder",
+   "pain going to left arm",
+   "pain in left arm"
+  ],
+  "chest pressure": [
+   "chest feels heavy",
+   "chest heaviness",
+   "chest pressure",
+   "heaviness in chest",
+   "heavy chest",
+   "heavy pressure in the middle of his chest",
+   "heavy pressure in the middle of my chest",
+   "pressure in my chest",
+   "weight on my chest"
+  ],
+  "swelling": [
+   "puffed up",
+   "soojan",
+   "sujan",
+   "swelled up",
+   "swelling",
+   "swollen",
+   "vaapu",
+   "सूजन",
+   "వాపు"
+  ],
+  "throat tightness": [
+   "throat closing",
+   "throat feels tight",
+   "throat is closing",
+   "throat is swelling",
+   "throat is swelling up",
+   "throat is tight",
+   "throat swelling",
+   "tight throat"
+  ],
+  "rash after eating": [
+   "hives after eating",
+   "itchy after eating",
+   "rash after eating",
+   "rash after food",
+   "reaction after eating"
+  ],
+  "allergic reaction": [
+   "allergic after",
+   "allergic reaction",
+   "allergic to",
+   "allergy attack",
+   "reaction to food",
+   "reaction to medicine"
+  ],
+  "lower right abdominal pain": [
+   "lower right abdomen",
+   "lower right belly",
+   "lower right side",
+   "lower right side of stomach",
+   "lower right stomach",
+   "pain in right lower stomach",
+   "right lower abdomen",
+   "right lower belly",
+   "right side of lower belly"
+  ],
+  "pain moving to right side": [
+   "moved from the navel",
+   "moved to the lower right",
+   "pain around belly button then right side",
+   "pain moved",
+   "pain moved to lower right",
+   "pain moved to the lower right",
+   "pain shifted",
+   "pain started near belly button",
+   "started near belly button",
+   "started near the navel"
+  ],
+  "cannot speak full sentences": [
+   "barely speak",
+   "can barely speak",
+   "can't speak full sentences",
+   "can't speak in sentences",
+   "cannot complete sentences",
+   "cannot finish a sentence",
+   "cannot speak a full sentence",
+   "cannot speak full sentences",
+   "cant speak in full sentences",
+   "unable to complete a sentence"
+  ],
+  "burning urination": [
+   "burning in urine",
+   "burning micturition",
+   "burning passing urine",
+   "burning sensation when i urinate",
+   "burning sensation when urinating",
+   "burning urine",
+   "burning when urinating",
+   "burning while passing urine",
+   "burning while urinating",
+   "burns when i pee",
+   "mutram lo mantha",
+   "pain while passing urine",
+   "peshab me jalan",
+   "peshab mein jalan",
+   "पेशाब में जलन",
+   "మూత్రంలో మంట"
+  ],
+  "pelvic pain": [
+   "lower stomach pain",
+   "pain in lower belly",
+   "pain in pelvis",
+   "pelvic pain"
+  ],
+  "cloudy urine": [
+   "cloudy urine",
+   "foul smelling urine",
+   "smelly urine",
+   "turbid urine",
+   "urine is cloudy",
+   "urine looks dirty"
+  ],
+  "urinary pain": [
+   "pain during urination",
+   "pain on urination",
+   "pain when urinating",
+   "pain while urinating",
+   "painful urination"
+  ],
+  "lower abdominal pain": [
+   "lower abdominal pain",
+   "lower belly pain",
+   "lower stomach ache",
+   "lower tummy pain",
+   "pain in lower abdomen",
+   "pain in the lower belly"
+  ],
+  "persistent cough": [
+   "continuous cough",
+   "cough for days",
+   "cough since days",
+   "cough that won't go",
+   "cough that wont go",
+   "coughing continuously",
+   "nonstop cough",
+   "persistent cough"
+  ],
+  "chest pain when breathing": [
+   "chest hurts when i breathe",
+   "chest pain on breathing",
+   "chest pain on deep breath",
+   "chest pain when breathing",
+   "pain on deep breathing",
+   "pain on inhaling",
+   "pain when breathing",
+   "pain when breathing in",
+   "pain when i breathe in"
+  ],
+  "chills": [
+   "chills",
+   "cold and shivering",
+   "feeling cold with fever",
+   "rigors",
+   "shivering"
+  ],
+  "throbbing headache": [
+   "head is throbbing",
+   "headache on one side",
+   "headache throbbing",
+   "one sided headache",
+   "pounding headache",
+   "pulsating headache",
+   "throbbing head",
+   "throbbing headache",
+   "throbbing pain in head"
+  ],
+  "visual aura": [
+   "aura before headache",
+   "blind spots",
+   "bright spots in vision",
+   "flashing lights",
+   "saw flashing lights",
+   "saw lights",
+   "saw zigzag lines",
+   "seeing lights",
+   "zig zag",
+   "zigzag",
+   "zigzag lines"
+  ],
+  "headache with vomiting": [
+   "headache and i vomited",
+   "headache and vomiting",
+   "headache with vomiting",
+   "vomited because of the headache",
+   "vomiting due to headache",
+   "vomiting with headache"
+  ],
+  "stomach cramps": [
+   "abdominal cramps",
+   "belly cramps",
+   "cramping in the stomach",
+   "cramping pain in stomach",
+   "cramps in stomach",
+   "stomach cramping",
+   "stomach cramps",
+   "stomach is cramping",
+   "stomach twisting",
+   "tummy cramps"
+  ],
+  "dehydration": [
+   "can't keep fluids down",
+   "can't keep water down",
+   "cannot keep fluids down",
+   "cannot keep water down",
+   "cant keep fluids down",
+   "dehydrated",
+   "dizzy when i stand up",
+   "dry lips and mouth",
+   "not able to drink water",
+   "very thirsty",
+   "vomiting after drinking water"
+  ],
+  "mild cough": [
+   "light cough",
+   "little cough",
+   "mild cough",
+   "occasional cough",
+   "slight cough",
+   "small cough"
+  ],
+  "sneezing": [
+   "keep sneezing",
+   "sneeze",
+   "sneezes",
+   "sneezing"
+  ],
+  "mild fever": [
+   "fever is mild",
+   "little fever",
+   "low grade fever",
+   "low-grade fever",
+   "mild fever",
+   "slight fever",
+   "temperature slightly high"
+  ],
+  "ankle pain": [
+   "ankle ache",
+   "ankle hurts",
+   "ankle is hurting",
+   "ankle is paining",
+   "ankle pain",
+   "my ankle is sore",
+   "pain in my ankle",
+   "pain in the ankle"
+  ],
+  "twisted ankle": [
+   "ankle got twisted",
+   "ankle sprain",
+   "ankle twisted",
+   "rolled ankle",
+   "rolled my ankle",
+   "sprained my ankle",
+   "turned my ankle",
+   "twisted ankle",
+   "twisted her ankle",
+   "twisted his ankle",
+   "twisted my ankle"
+  ],
+  "swelling in foot": [
+   "ankle is swollen",
+   "ankle swelling",
+   "foot is swollen",
+   "foot swelling",
+   "swelling around ankle",
+   "swelling in ankle",
+   "swelling in foot",
+   "swelling of the ankle",
+   "swollen ankle",
+   "swollen foot"
+  ],
+  "mild swelling": [
+   "a little swollen",
+   "bit of swelling",
+   "little swelling",
+   "mild swelling",
+   "minor swelling",
+   "slight swelling",
+   "small swelling",
+   "some swelling"
+  ],
+  "pain when walking": [
+   "able to walk",
+   "can still walk",
+   "hurts to walk",
+   "hurts when i walk",
+   "hurts when walking",
+   "limping",
+   "pain on walking",
+   "pain when walking",
+   "pain while walking",
+   "painful to walk"
+  ],
+  "sprain": [
+   "overstretched",
+   "pulled muscle",
+   "sprain",
+   "sprained",
+   "strain",
+   "twisted"
+  ],
+  "severe flank pain": [
+   "pain in lower back and side",
+   "pain in my lower back and side",
+   "pain in the lower back and side",
+   "severe back and side pain",
+   "severe flank pain",
+   "severe pain in loin",
+   "severe pain in my lower back and side",
+   "severe pain in my side",
+   "severe pain in side",
+   "severe pain in the side",
+   "severe side pain",
+   "terrible pain in my back and side",
+   "terrible pain in my side"
+  ],
+  "pain radiating to groin": [
+   "going to the groin",
+   "pain goes to groin",
+   "pain going to groin",
+   "pain moves down to groin",
+   "pain radiating to the groin",
+   "pain spreading to groin",
+   "pain travels to groin",
+   "radiating to groin",
+   "radiating to my groin",
+   "spreading to my groin"
+  ],
+  "blood in urine": [
+   "blood in my urine",
+   "blood in urine",
+   "blood while urinating",
+   "bloody urine",
+   "passing blood in urine",
+   "pink urine",
+   "red urine",
+   "urine has blood",
+   "urine is red"
+  ],
+  "unable to sit still": [
+   "can't get comfortable",
+   "can't sit still",
+   "cannot get comfortable",
+   "cannot sit still",
+   "cannot stay still",
+   "cant sit still",
+   "pacing",
+   "pacing from the pain",
+   "restless with pain",
+   "rolling in pain",
+   "unable to lie still",
+   "unable to sit still",
+   "writhing"
+  ],
+  "headache after injury": [
+   "headache after hitting",
+   "headache after i hit",
+   "headache after injury",
+   "headache after the accident",
+   "headache after the fall",
+   "headache since hitting",
+   "headache since the accident",
+   "headache since the fall"
+  ],
+  "memory loss": [
+   "blank about the fall",
+   "can't recall",
+   "can't remember",
+   "cannot recall",
+   "cannot remember",
+   "cant remember",
+   "does not remember",
+   "doesn't remember",
+   "doesnt remember",
+   "forgot what happened",
+   "lost memory",
+   "memory loss",
+   "no memory of"
+  ],
+  "recent unusual meal": [
+   "after a feast",
+   "after eating at",
+   "after eating at a hotel",
+   "after eating out",
+   "after eating outside",
+   "after the function",
+   "after the wedding",
+   "after we ate",
+   "ate at a function",
+   "ate at a party",
+   "ate at a restaurant",
+   "ate at a wedding",
+   "ate leftover",
+   "ate out",
+   "ate outside",
+   "ate something",
+   "ate stale",
+   "ate street food",
+   "eating at a hotel",
+   "eating at a restaurant",
+   "eating out",
+   "eating outside",
+   "hotel food",
+   "outside food",
+   "unusual meal"
+  ],
+  "itchy eyes": [
+   "eye itching",
+   "eyes are itchy",
+   "eyes itch",
+   "eyes itching",
+   "itching in both eyes",
+   "itching in eyes",
+   "itchy eye",
+   "itchy eyes",
+   "my eyes itch"
+  ],
+  "eye discharge": [
+   "crust on eyelids",
+   "crusting on eyes",
+   "discharge from eye",
+   "discharge from eyes",
+   "discharge in the morning",
+   "eye discharge",
+   "eye stuck shut",
+   "eyelids stuck",
+   "eyelids stuck together",
+   "eyes are sticky",
+   "eyes sticky",
+   "goop in eye",
+   "gunky eyes",
+   "pus from eye",
+   "pus in eyes",
+   "sticky discharge",
+   "sticky eyes"
+  ],
+  "gritty feeling in eye": [
+   "burning in eyes",
+   "eyes feel gritty",
+   "feels like sand",
+   "feels like something in my eye",
+   "grit in eye",
+   "gritty",
+   "gritty eyes",
+   "sand in my eye",
+   "scratchy eye",
+   "scratchy eyes"
+  ],
+  "severe sore throat": [
+   "extremely sore throat",
+   "hurts to swallow",
+   "painful throat",
+   "really sore throat",
+   "severe sore throat",
+   "severe throat",
+   "severe throat pain",
+   "terrible sore throat",
+   "throat is killing me",
+   "throat is on fire",
+   "throat is very painful",
+   "throat pain is severe",
+   "very painful throat",
+   "very sore throat",
+   "worst sore throat"
+  ],
+  "difficulty swallowing": [
+   "can't swallow",
+   "cannot swallow",
+   "cant swallow",
+   "difficulty swallowing",
+   "hard to swallow",
+   "hurts to swallow",
+   "pain on swallowing",
+   "pain when swallowing",
+   "pain while swallowing",
+   "painful swallowing",
+   "painful to swallow",
+   "swallowing is painful",
+   "trouble swallowing",
+   "unable to swallow"
+  ],
+  "swollen tonsils": [
+   "big tonsils",
+   "enlarged tonsils",
+   "pus on tonsils",
+   "red swollen tonsils",
+   "swollen tonsils",
+   "tonsil swelling",
+   "tonsillitis",
+   "tonsils are swollen",
+   "tonsils swollen",
+   "white patches on tonsils",
+   "white spots on throat"
+  ],
+  "swollen lymph nodes": [
+   "glands in neck are swollen",
+   "glands swollen",
+   "lumps in my neck",
+   "lumps in neck",
+   "lymph nodes swollen",
+   "neck glands are swollen",
+   "neck lumps",
+   "swollen glands",
+   "swollen glands in my neck",
+   "swollen glands in neck",
+   "swollen lymph nodes",
+   "swollen neck glands",
+   "swollen nodes",
+   "tender glands"
+  ],
+  "swollen lips": [
+   "lip swelling",
+   "lips are swollen",
+   "lips swelled up",
+   "my lips got swollen",
+   "puffy lips",
+   "swollen lip"
+  ],
+  "swollen face": [
+   "face is swollen",
+   "face swelled up",
+   "face swelling",
+   "puffy face",
+   "swelling of the face"
+  ],
+  "swollen tongue": [
+   "swollen tongue",
+   "tongue is swelling",
+   "tongue is swollen",
+   "tongue swelled",
+   "tongue swelling"
+  ],
+  "tingling in mouth": [
+   "burning in my mouth",
+   "itching in my mouth",
+   "itchy mouth",
+   "itchy throat after eating",
+   "mouth is itching",
+   "mouth tingling",
+   "tingling in my mouth",
+   "tingling lips"
+  ],
+  "rash after taking medicine": [
+   "allergic to the medicine",
+   "allergy to tablet",
+   "rash after antibiotic",
+   "rash after injection",
+   "rash after medicine",
+   "rash after tablet",
+   "rash after taking tablets",
+   "rash after taking the medicine",
+   "rash after the tablet",
+   "reaction to medicine"
+  ],
+  "new medicine started": [
+   "began a new medicine",
+   "new medicine",
+   "new tablet",
+   "started a new medicine",
+   "started a new tablet",
+   "started antibiotics",
+   "started new tablets",
+   "started taking a tablet"
+  ],
+  "mouth sores": [
+   "blisters in mouth",
+   "mouth blisters",
+   "mouth ulcers",
+   "sores in mouth",
+   "sores on lips",
+   "ulcers in mouth"
+  ],
+  "peeling skin": [
+   "skin coming off",
+   "skin is coming off",
+   "skin is peeling off",
+   "skin peeling in sheets",
+   "skin peeling off"
+  ],
+  "insect sting": [
+   "a bee stung",
+   "a wasp stung",
+   "ant bite",
+   "bee sting",
+   "bee stung",
+   "bitten by a bee",
+   "bitten by a wasp",
+   "bitten by an ant",
+   "bitten by an insect",
+   "bitten by ants",
+   "hornet sting",
+   "insect bite",
+   "sting from a bee",
+   "stung by a bee",
+   "stung by a hornet",
+   "stung by a wasp",
+   "stung by an insect",
+   "stung by ant",
+   "wasp sting",
+   "wasp stung"
+  ],
+  "pain at sting site": [
+   "bite is painful",
+   "pain at the bite",
+   "pain at the site",
+   "pain where it stung",
+   "pain where stung",
+   "painful at the site",
+   "painful at the sting",
+   "painful sting",
+   "paining at the bite site",
+   "paining at the place",
+   "sting is painful",
+   "sting site hurts"
+  ],
+  "swelling at sting site": [
+   "bite is swollen",
+   "sting site is swollen",
+   "swelling at the bite",
+   "swelling where it stung",
+   "swelling where stung",
+   "swollen and red at the site",
+   "swollen at the bite site",
+   "swollen at the site",
+   "swollen at the sting",
+   "swollen where it stung"
+  ],
+  "redness": [
+   "area is red",
+   "red and swollen",
+   "red area",
+   "red swollen",
+   "reddish",
+   "redness",
+   "skin is red",
+   "swollen and red"
+  ],
+  "red rash": [
+   "rashes on skin",
+   "red marks",
+   "red patch",
+   "red patches",
+   "red rash",
+   "red spots on skin"
+  ],
+  "itchy rash after contact": [
+   "contact rash",
+   "itchy after touching",
+   "itchy after touching a plant",
+   "rash after touching",
+   "rash after using a cream",
+   "rash after washing clothes",
+   "rash from a chemical",
+   "rash from a plant",
+   "rash from detergent",
+   "rash from jewellery",
+   "rash from jewelry",
+   "rash from soap"
+  ],
+  "dry cracked skin": [
+   "cracked hands",
+   "cracked skin",
+   "dry and cracked hands",
+   "dry skin",
+   "skin cracking",
+   "skin is dry and cracked"
+  ],
+  "dry itchy patches": [
+   "dry itchy skin",
+   "dry patches",
+   "dry scaly itchy patches",
+   "eczema",
+   "itchy dry patches",
+   "patches of dry skin"
+  ],
+  "rash in skin folds": [
+   "rash behind knees",
+   "rash behind the knees",
+   "rash in elbow folds",
+   "rash in skin creases",
+   "rash in the elbows",
+   "rash on the folds"
+  ],
+  "family history of allergy": [
+   "allergic family",
+   "allergy runs in the family",
+   "asthma runs in the family",
+   "eczema in the family",
+   "family has allergies",
+   "family has asthma",
+   "parents have allergies"
+  ],
+  "swollen eyelids": [
+   "eyelids are swollen",
+   "eyelids swollen",
+   "eyes are puffy",
+   "puffy eyelids",
+   "puffy eyes",
+   "swollen eyelid"
+  ],
+  "honey coloured crusts": [
+   "golden crusts",
+   "golden yellow crusts",
+   "honey coloured crust",
+   "honey crusts",
+   "yellow crusted sores",
+   "yellow crusts",
+   "yellow scabs"
+  ],
+  "sores around mouth and nose": [
+   "crusted sores on face",
+   "school sores",
+   "sores around nose",
+   "sores around the mouth",
+   "sores near my mouth",
+   "sores near the mouth",
+   "sores near the nose",
+   "sores on the face"
+  ],
+  "itchy scalp": [
+   "head is itching",
+   "itching in the head",
+   "itchy head",
+   "scalp is itchy",
+   "scalp itching",
+   "scratching head",
+   "scratching her head",
+   "scratching his head"
+  ],
+  "visible lice or nits": [
+   "head lice",
+   "jeev",
+   "lice",
+   "lice in hair",
+   "lice in the hair",
+   "nits",
+   "seen lice",
+   "tiny insects in hair",
+   "white eggs in hair"
+  ],
+  "dry nose": [
+   "crusts in the nose",
+   "dry nostrils",
+   "nose is crusted",
+   "nose is dry"
+  ],
+  "nose injury": [
+   "hit her nose",
+   "hit his nose",
+   "hit my nose",
+   "hurt my nose",
+   "knocked my nose",
+   "nose got hit",
+   "nose picking",
+   "nose was hit",
+   "picked my nose"
+  ],
+  "hunger": [
+   "extreme hunger",
+   "feel hungry",
+   "starving",
+   "suddenly hungry",
+   "very hungry"
+  ],
+  "missed meal": [
+   "delayed meal",
+   "did not eat",
+   "didn't eat",
+   "extra insulin",
+   "fasting",
+   "hasn't eaten",
+   "have not eaten",
+   "missed a meal",
+   "not eaten since",
+   "skipped a meal",
+   "skipped breakfast",
+   "skipped lunch",
+   "took extra insulin",
+   "took extra tablet",
+   "took too much insulin"
+  ],
+  "shaking": [
+   "body is shaking",
+   "feeling shaky",
+   "hands are shaking",
+   "hands trembling",
+   "shaky",
+   "shivering and sweating",
+   "trembling",
+   "tremors"
+  ],
+  "knee pain": [
+   "knee hurts",
+   "knee is paining",
+   "knee joint pain",
+   "knees are paining",
+   "knees hurt",
+   "pain in knees",
+   "pain in my knee",
+   "pain in the knee",
+   "painful knees"
+  ],
+  "pain on climbing stairs": [
+   "hurts on stairs",
+   "hurts to climb stairs",
+   "pain climbing stairs",
+   "pain going up stairs",
+   "pain on getting up",
+   "pain on stairs",
+   "pain when climbing stairs",
+   "pain while climbing stairs"
+  ],
+  "hard stools": [
+   "dry stools",
+   "hard dry stools",
+   "hard motion",
+   "hard motions",
+   "hard stool",
+   "stools are hard"
+  ],
+  "straining to pass stool": [
+   "cannot pass motion easily",
+   "difficult to pass motion",
+   "difficulty passing motion",
+   "difficulty passing stool",
+   "painful motion",
+   "pushing hard in the toilet",
+   "strain to pass stool",
+   "straining",
+   "straining in the toilet"
+  ],
+  "scratch marks on scalp": [
+   "scratch marks on the scalp",
+   "sores on the scalp",
+   "scratches on the head",
+   "scratch marks on the neck",
+   "small sores on the head",
+   "scabs on the scalp",
+   "sores on scalp"
+  ],
+  "ate wild plant or mushroom": [
+   "ate datura",
+   "ate mushrooms",
+   "ate poisonous plant",
+   "ate seeds",
+   "ate something from the forest",
+   "ate unknown fruit",
+   "ate wild berries",
+   "ate wild leaves",
+   "ate wild mushroom"
+  ],
+  "baby not kicking": [
+   "baby has stopped moving",
+   "baby is not moving",
+   "baby is quiet in the womb",
+   "baby not kicking",
+   "no movement of baby"
+  ],
+  "barking cough": [
+   "barking cough",
+   "cough like a seal",
+   "harsh cough",
+   "seal like cough"
+  ],
+  "black scab at bite site": [
+   "black scab",
+   "black spot at bite",
+   "black spot on skin",
+   "dark scab",
+   "eschar"
+  ],
+  "blisters on palms and soles": [
+   "blisters on hands and feet",
+   "blisters on palms",
+   "blisters on soles",
+   "sores on hands and feet",
+   "spots on hands and feet"
+  ],
+  "bloody stools": [
+   "blood in motion",
+   "blood in motions",
+   "blood in stool",
+   "bloody diarrhea",
+   "bloody diarrhoea",
+   "bloody motions",
+   "mucus and blood in stool",
+   "passing blood in stool"
+  ],
+  "breast pain": [
+   "breast hurts",
+   "breast is paining",
+   "breast is swollen and painful",
+   "pain in breast",
+   "painful breast"
+  ],
+  "bright red blood with stool": [
+   "blood after passing stool",
+   "blood drops after motion",
+   "blood on toilet paper",
+   "blood with stool",
+   "fresh blood in stool",
+   "piles bleeding"
+  ],
+  "burning pain on one side": [
+   "burning on one side of body",
+   "burning pain on one side",
+   "pain in a band on one side",
+   "stabbing pain on one side"
+  ],
+  "closed room burning fuel": [
+   "burning charcoal inside",
+   "charcoal in closed room",
+   "chulha in closed room",
+   "generator in closed room",
+   "room full of smoke",
+   "sigri in room",
+   "slept with charcoal burning",
+   "slept with stove burning",
+   "smoke in the room",
+   "stove in closed room"
+  ],
+  "drank illicit liquor": [
+   "drank adulterated liquor",
+   "drank arrack",
+   "drank bad liquor",
+   "drank country liquor",
+   "drank hooch",
+   "drank illicit liquor",
+   "drank local liquor",
+   "drank moonshine",
+   "drank spurious liquor",
+   "home made liquor"
+  ],
+  "drank kerosene": [
+   "drank diesel",
+   "drank kerosene",
+   "drank petrol",
+   "kerosene oil drank",
+   "swallowed kerosene",
+   "swallowed kerosene oil",
+   "swallowed petrol"
+  ],
+  "eyelid lump": [
+   "boil on eyelid",
+   "bump on eyelid",
+   "lump on eyelid",
+   "pimple on eyelid",
+   "stye",
+   "swelling on eyelid edge"
+  ],
+  "fear of dying": [
+   "afraid i will die",
+   "fear of dying",
+   "feel doomed",
+   "feel like going to die",
+   "feel like i am dying",
+   "panic attack",
+   "sudden fear"
+  ],
+  "fear of water": [
+   "afraid of water",
+   "cannot drink water",
+   "fear of water",
+   "hydrophobia",
+   "scared of water",
+   "spasms on seeing water",
+   "throat spasm on drinking"
+  ],
+  "feeling cold": [
+   "always feel cold",
+   "cannot tolerate cold",
+   "cold intolerance",
+   "feel cold all the time",
+   "feeling cold always"
+  ],
+  "fluid leaking from vagina": [
+   "fluid leaking",
+   "leaking fluid",
+   "water broke",
+   "water came out",
+   "water is leaking",
+   "water leaking from vagina",
+   "waters have broken",
+   "wet underwear fluid"
+  ],
+  "foul smelling vaginal discharge": [
+   "bad smelling discharge",
+   "discharge with bad smell",
+   "foul discharge",
+   "foul smelling discharge",
+   "smelly discharge",
+   "smelly vaginal discharge"
+  ],
+  "grey membrane in throat": [
+   "gray coating in throat",
+   "grey coating in throat",
+   "grey patch in throat",
+   "membrane in throat",
+   "white coating in throat",
+   "white patch in throat"
+  ],
+  "hair loss": [
+   "bald patches",
+   "hair fall",
+   "hair falling",
+   "hair is falling out",
+   "hair thinning",
+   "losing hair"
+  ],
+  "halos around lights": [
+   "coloured rings around light",
+   "halo around bulb",
+   "halos around lights",
+   "rainbow around lights",
+   "rings around lights"
+  ],
+  "heavy periods": [
+   "heavy bleeding during periods",
+   "heavy menstrual bleeding",
+   "heavy periods",
+   "passing clots in periods",
+   "periods are very heavy",
+   "too much bleeding in periods"
+  ],
+  "hoarse voice": [
+   "hoarse voice",
+   "lost voice",
+   "voice gone",
+   "voice has changed",
+   "voice is hoarse",
+   "voice is rough"
+  ],
+  "loss of interest": [
+   "do not enjoy anything",
+   "lost interest",
+   "no interest in anything",
+   "no interest in things",
+   "not enjoying anything",
+   "nothing makes me happy"
+  ],
+  "low mood": [
+   "crying all the time",
+   "depressed",
+   "feel empty",
+   "feel hopeless sad",
+   "feel sad",
+   "feeling down",
+   "feeling low",
+   "feeling sad",
+   "low mood",
+   "sad all the time"
+  ],
+  "lump near anus": [
+   "lump at the anus",
+   "lump near anus",
+   "mass at anus",
+   "piles mass",
+   "swelling around anus",
+   "swelling near anus"
+  ],
+  "morning stiffness": [
+   "joints stiff in the morning",
+   "morning stiffness",
+   "stiff for hours in the morning",
+   "stiff in the morning",
+   "stiffness in morning"
+  ],
+  "noisy breathing": [
+   "breathing makes noise",
+   "crowing sound",
+   "harsh breathing sound",
+   "noisy breathing",
+   "squeaky breathing",
+   "stridor",
+   "wheeze when breathing in"
+  ],
+  "numb skin patch": [
+   "cannot feel on patch",
+   "insensitive patch",
+   "numb patch",
+   "patch has lost feeling",
+   "patch with no feeling",
+   "skin patch no sensation"
+  ],
+  "numbness in arms or legs": [
+   "arms are numb",
+   "cannot feel legs",
+   "cannot feel my legs",
+   "legs are numb",
+   "no feeling in legs",
+   "no sensation in legs",
+   "numb arms",
+   "numb legs"
+  ],
+  "numbness in hands or feet": [
+   "feet are numb",
+   "hands are numb",
+   "no feeling in feet",
+   "no feeling in hands",
+   "numb feet",
+   "numb hands",
+   "tingling and numbness in hands"
+  ],
+  "one-sided nasal discharge": [
+   "discharge from one nostril",
+   "foul smell from one nostril",
+   "one nostril discharge",
+   "pus from one nostril",
+   "smelly discharge from one side of nose"
+  ],
+  "pain radiating down leg": [
+   "back pain going to leg",
+   "pain down one leg",
+   "pain from back to leg",
+   "pain going down the leg",
+   "pain shooting down leg",
+   "pain travels down leg",
+   "sciatica"
+  ],
+  "painful blistering rash on one side": [
+   "band of blisters",
+   "blisters in a line",
+   "blisters on one side of body",
+   "painful rash on one side",
+   "rash on one side of face",
+   "rash with burning on one side",
+   "shingles"
+  ],
+  "painful periods": [
+   "cramps during periods",
+   "menstrual cramps",
+   "pain during periods",
+   "painful periods",
+   "period pain",
+   "stomach pain during periods"
+  ],
+  "poor sleep": [
+   "cannot sleep",
+   "insomnia",
+   "neend nahi aati",
+   "nidra ledu",
+   "not sleeping well",
+   "poor sleep",
+   "sleepless",
+   "trouble sleeping",
+   "wake up early",
+   "नींद नहीं आती",
+   "నిద్ర లేదు"
+  ],
+  "recurrent fever with painful glands": [
+   "fever and painful lump in groin",
+   "recurring fever with gland pain",
+   "repeated fever with swollen glands",
+   "swollen glands in groin with fever"
+  ],
+  "red hot breast": [
+   "breast feels hot",
+   "breast is red",
+   "breast is red and hot",
+   "hot breast",
+   "hot red lump in breast",
+   "red patch on breast"
+  ],
+  "red rash in nappy area": [
+   "diaper rash",
+   "nappy rash",
+   "rash in diaper area",
+   "rash in nappy area",
+   "rash on baby bottom",
+   "rash under nappy",
+   "red bottom"
+  ],
+  "red swollen gums": [
+   "gums are red",
+   "gums are swollen",
+   "inflamed gums",
+   "puffy gums",
+   "red gums",
+   "swollen gums"
+  ],
+  "reduced baby movements": [
+   "baby is moving less",
+   "baby movements reduced",
+   "baby moving less",
+   "baby not moving much",
+   "decreased baby movement",
+   "less movement of baby"
+  ],
+  "regular tightening of abdomen": [
+   "belly tightening",
+   "contractions",
+   "labor pains",
+   "labour pains",
+   "pains coming regularly",
+   "pains every few minutes",
+   "regular pains",
+   "tightening of the belly"
+  ],
+  "rescued from water": [
+   "came out of the water",
+   "drowned",
+   "drowning",
+   "fell in river",
+   "fell in the pond",
+   "fell in the well",
+   "fell into water",
+   "pulled from the river",
+   "pulled from the well",
+   "pulled out of water",
+   "rescued from water"
+  ],
+  "seeing things": [
+   "hallucinations",
+   "hearing things",
+   "hearing voices",
+   "seeing things",
+   "seeing things that are not there",
+   "sees insects that are not there"
+  ],
+  "something in ear": [
+   "ant in ear",
+   "bead in ear",
+   "insect in ear",
+   "object in ear",
+   "pushed something in ear",
+   "seed in ear",
+   "something in ear",
+   "something went in the ear"
+  ],
+  "something in nose": [
+   "bead in nose",
+   "button in nose",
+   "object in nose",
+   "pushed something in nose",
+   "seed in nose",
+   "something in nose",
+   "something stuck in nose"
+  ],
+  "spinning sensation": [
+   "everything spinning",
+   "giddiness on turning",
+   "head spinning",
+   "room spinning",
+   "spinning sensation",
+   "spinning when i turn",
+   "the world is spinning",
+   "vertigo"
+  ],
+  "stiffening of body": [
+   "body became stiff",
+   "body stiffened",
+   "body stiffening",
+   "stiff body",
+   "went stiff"
+  ],
+  "swallowed object": [
+   "swallowed a battery",
+   "swallowed a bead",
+   "swallowed a coin",
+   "swallowed a magnet",
+   "swallowed a pin",
+   "swallowed a seed",
+   "swallowed a toy",
+   "swallowed battery",
+   "swallowed button",
+   "swallowed coin",
+   "swallowed magnet",
+   "swallowed something"
+  ],
+  "swallowed poison": [
+   "ate poison",
+   "drank acid",
+   "drank bleach",
+   "drank harmful chemical",
+   "drank harpic",
+   "drank phenyl",
+   "drank poison",
+   "drank toilet cleaner",
+   "swallowed many tablets",
+   "swallowed pesticide tablets",
+   "swallowed poison",
+   "swallowed rat killer",
+   "swallowed rat poison",
+   "took an overdose",
+   "took poison",
+   "took too many tablets"
+  ],
+  "swelling in neck": [
+   "goiter",
+   "goitre",
+   "lump in the front of neck",
+   "neck swelling in front",
+   "swelling in neck",
+   "swollen thyroid",
+   "thyroid swelling"
+  ],
+  "swollen cheeks": [
+   "cheeks are swollen",
+   "chipmunk cheeks",
+   "puffy cheeks",
+   "swelling in front of ear",
+   "swelling near the ear",
+   "swelling under the ear",
+   "swollen cheek",
+   "swollen cheeks",
+   "swollen jaw"
+  ],
+  "testicular pain": [
+   "balls are paining",
+   "one testicle is paining",
+   "pain in my testicle",
+   "pain in one testicle",
+   "pain in scrotum",
+   "pain in testicle",
+   "pain in testis",
+   "pain in the scrotum",
+   "pain in the testicle",
+   "pain in the testis",
+   "painful testicle",
+   "testicle is paining",
+   "testicle pain",
+   "testis pain"
+  ],
+  "thickened skin": [
+   "elephant skin",
+   "hard thick skin",
+   "leg skin thickened",
+   "skin has become hard",
+   "skin is thick",
+   "thick skin on leg"
+  ],
+  "unable to pass urine": [
+   "cannot pass urine",
+   "not able to pass urine",
+   "not passing urine but need to",
+   "peshab band ho gaya",
+   "peshab nahi aa raha",
+   "retention of urine",
+   "unable to pass urine",
+   "urine is blocked",
+   "urine is not coming",
+   "urine stopped coming",
+   "पेशाब नहीं आ रहा"
+  ],
+  "vaginal discharge": [
+   "abnormal discharge",
+   "discharge from vagina",
+   "thick white discharge",
+   "vaginal discharge",
+   "white discharge",
+   "white discharge from vagina"
+  ],
+  "vaginal itching": [
+   "itching down there",
+   "itching in genital area",
+   "itching in private parts",
+   "itching in vagina",
+   "vaginal itching",
+   "vulva itching"
+  ],
+  "vomiting after coughing": [
+   "coughing fits then vomits",
+   "coughs until vomiting",
+   "gags after cough",
+   "vomit after cough fit",
+   "vomiting after cough",
+   "vomits after coughing"
+  ],
+  "weight gain": [
+   "gaining weight",
+   "getting fat",
+   "put on weight",
+   "weight gain",
+   "weight increased",
+   "weight is increasing"
+  ],
+  "white patches in mouth": [
+   "milk coating on tongue",
+   "thrush",
+   "white coating on tongue",
+   "white patches in mouth",
+   "white patches inside cheek",
+   "white patches on tongue",
+   "white spots on tongue"
+  ],
+  "whooping sound": [
+   "crowing sound after cough",
+   "high pitched sound after coughing",
+   "whoop",
+   "whoop sound",
+   "whooping cough",
+   "whooping sound"
+  ],
+  "work in bushes or fields": [
+   "cleared bushes",
+   "cutting grass",
+   "farm work",
+   "grazing cattle",
+   "slept in the field",
+   "walked in tall grass",
+   "went to forest",
+   "worked in bushes",
+   "worked in grass",
+   "worked in the field"
+  ],
+  "worse at night": [
+   "gets worse at night",
+   "more at night",
+   "worse at night",
+   "worse during the night",
+   "worse in the evening and night",
+   "worse in the night"
+  ],
+  "joint looks out of place": [
+   "bone is out of joint",
+   "dislocated",
+   "elbow popped out",
+   "finger is out of place",
+   "joint is out of place",
+   "joint looks out of place",
+   "joint popped out",
+   "shoulder came out",
+   "shoulder dislocated",
+   "shoulder popped out"
+  ],
+  "warm skin": [
+   "area is hot",
+   "feels hot to touch",
+   "feels warm",
+   "hot and red",
+   "hot and swollen",
+   "hot red",
+   "hot swollen",
+   "hot to touch",
+   "red and hot",
+   "skin feels hot",
+   "warm to touch"
+  ]
+ }
+}

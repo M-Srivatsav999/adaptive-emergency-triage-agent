@@ -1,0 +1,8 @@
+# HTTPS for a clinic hub on a local network (no internet needed).
+# `tls internal` uses Caddy's own local certificate authority; install its root certificate on each tablet/phone once
+# (see docs/SECURITY.md), after which the browser shows a normal padlock.
+{$SITE_ADDRESS:localhost} {
+	tls internal
+	encode gzip
+	reverse_proxy backend:8001
+}

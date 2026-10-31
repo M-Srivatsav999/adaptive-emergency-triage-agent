@@ -1,0 +1,105 @@
+# Full offline stack:  PostgreSQL+pgvector  +  Ollama (local LLM + embeddings)  +  API/frontend.
+#
+#   docker compose up --build            # first run needs internet ONCE to pull images + models
+#   open http://localhost:8001/
+#
+# After the first run everything is cached in Docker volumes and works with NO internet.
+# Air-gapped installs: see docs/OFFLINE_DEPLOYMENT.md
+
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: triage
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-triage}
+      POSTGRES_DB: triage
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U triage -d triage"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+    # Not published to the host by default (patient data). Uncomment for local debugging:
+    # ports: ["127.0.0.1:5432:5432"]
+
+  ollama:
+    image: ollama/ollama:latest
+    volumes:
+      - ollama_data:/root/.ollama
+    # GPU (optional, NVIDIA): uncomment
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices: [{driver: nvidia, count: all, capabilities: [gpu]}]
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+    restart: unless-stopped
+
+  # One-shot: downloads the chat model + the embedding model into the ollama volume.
+  ollama-pull:
+    image: ollama/ollama:latest
+    depends_on:
+      ollama:
+        condition: service_healthy
+    environment:
+      OLLAMA_HOST: http://ollama:11434
+    entrypoint: ["/bin/sh", "-c", "ollama pull ${OLLAMA_MODEL:-llama3.2:3b} && ollama pull ${EMBED_MODEL:-nomic-embed-text}"]
+    restart: "no"
+
+  backend:
+    build: .
+    depends_on:
+      db:
+        condition: service_healthy
+      ollama:
+        condition: service_started   # not 'healthy': the app must still start (offline fallback) if models are missing
+    ports:
+      - "8001:8001"     # API + frontend -> http://localhost:8001/
+    environment:
+      DATABASE_URL: postgresql://triage:${POSTGRES_PASSWORD:-triage}@db:5432/triage
+      OLLAMA_URL: http://ollama:11434
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-llama3.2:3b}
+      EMBED_MODEL: ${EMBED_MODEL:-nomic-embed-text}
+      ENV: ${ENV:-development}
+      AUTH_MODE: ${AUTH_MODE:-open}
+      SECRET_KEY: ${SECRET_KEY:-}
+      RETENTION_DAYS: ${RETENTION_DAYS:-90}
+      STORE_SESSIONS: ${STORE_SESSIONS:-true}
+      TRUST_PROXY: ${TRUST_PROXY:-false}
+      CORS_ORIGINS: ${CORS_ORIGINS:-*}
+      EMERGENCY_CONTACTS: "${EMERGENCY_CONTACTS:-Emergency: 112 (India) / ambulance 108 in many states; mental-health helpline Tele-MANAS 14416}"
+    volumes:
+      - triage_data:/app/data
+      - triage_backups:/app/backups
+    restart: unless-stopped
+
+  # Optional HTTPS in front of the app:  docker compose --profile https up -d
+  # (then set TRUST_PROXY=true, ENV=production and stop publishing port 8001 - see docs/SECURITY.md)
+  caddy:
+    image: caddy:2
+    profiles: ["https"]
+    depends_on:
+      - backend
+    environment:
+      SITE_ADDRESS: ${SITE_ADDRESS:-localhost}
+    ports:
+      - "443:443"
+      - "80:80"
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    restart: unless-stopped
+
+volumes:
+  pg_data:
+  ollama_data:
+  triage_data:
+  triage_backups:
+  caddy_data:
+  caddy_config:

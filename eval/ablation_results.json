@@ -1,0 +1,202 @@
+{
+ "retrieval": [
+  {
+   "variant": "TF-IDF only",
+   "dev": {
+    "n": 81,
+    "top1": 68,
+    "top3": 80,
+    "rec6": 81,
+    "mrr": 0.907
+   },
+   "holdout": {
+    "n": 40,
+    "top1": 36,
+    "top3": 37,
+    "rec6": 37,
+    "mrr": 0.912
+   }
+  },
+  {
+   "variant": "Symptom-overlap only",
+   "dev": {
+    "n": 81,
+    "top1": 74,
+    "top3": 77,
+    "rec6": 78,
+    "mrr": 0.931
+   },
+   "holdout": {
+    "n": 40,
+    "top1": 32,
+    "top3": 36,
+    "rec6": 38,
+    "mrr": 0.858
+   }
+  },
+  {
+   "variant": "Hybrid (overlap+TF-IDF)",
+   "dev": {
+    "n": 81,
+    "top1": 76,
+    "top3": 81,
+    "rec6": 81,
+    "mrr": 0.963
+   },
+   "holdout": {
+    "n": 40,
+    "top1": 36,
+    "top3": 38,
+    "rec6": 39,
+    "mrr": 0.927
+   }
+  }
+ ],
+ "e2e": [
+  {
+   "label": "Full system",
+   "dev": {
+    "n": 81,
+    "top1": 76,
+    "top3": 81,
+    "short": 81,
+    "cond": 81,
+    "acu": 76,
+    "under": 0,
+    "over": 5,
+    "qs": 201,
+    "fb_n": 0,
+    "low": 0
+   },
+   "holdout": {
+    "n": 40,
+    "top1": 36,
+    "top3": 38,
+    "short": 39,
+    "cond": 38,
+    "acu": 35,
+    "under": 0,
+    "over": 5,
+    "qs": 124,
+    "fb_n": 0,
+    "low": 0
+   }
+  },
+  {
+   "label": "- retrieval prior (uniform prior)",
+   "dev": {
+    "n": 81,
+    "top1": 76,
+    "top3": 81,
+    "short": 81,
+    "cond": 81,
+    "acu": 76,
+    "under": 0,
+    "over": 5,
+    "qs": 243,
+    "fb_n": 0,
+    "low": 0
+   },
+   "holdout": {
+    "n": 40,
+    "top1": 36,
+    "top3": 38,
+    "short": 39,
+    "cond": 38,
+    "acu": 36,
+    "under": 0,
+    "over": 4,
+    "qs": 154,
+    "fb_n": 0,
+    "low": 2
+   }
+  },
+  {
+   "label": "- worst-case escalation",
+   "dev": {
+    "n": 81,
+    "top1": 76,
+    "top3": 81,
+    "short": 81,
+    "cond": 81,
+    "acu": 81,
+    "under": 0,
+    "over": 0,
+    "qs": 201,
+    "fb_n": 0,
+    "low": 0
+   },
+   "holdout": {
+    "n": 40,
+    "top1": 36,
+    "top3": 38,
+    "short": 39,
+    "cond": 38,
+    "acu": 38,
+    "under": 0,
+    "over": 2,
+    "qs": 124,
+    "fb_n": 0,
+    "low": 0
+   }
+  },
+  {
+   "label": "- red-flag safety layer",
+   "dev": {
+    "n": 81,
+    "top1": 76,
+    "top3": 81,
+    "short": 81,
+    "cond": 81,
+    "acu": 76,
+    "under": 0,
+    "over": 5,
+    "qs": 201,
+    "fb_n": 0,
+    "low": 0
+   },
+   "holdout": {
+    "n": 40,
+    "top1": 36,
+    "top3": 38,
+    "short": 39,
+    "cond": 38,
+    "acu": 35,
+    "under": 0,
+    "over": 5,
+    "qs": 124,
+    "fb_n": 0,
+    "low": 0
+   }
+  },
+  {
+   "label": "- Bayesian questioning (tree-only)",
+   "dev": {
+    "n": 81,
+    "top1": 76,
+    "top3": 81,
+    "short": 81,
+    "cond": 69,
+    "acu": 74,
+    "under": 1,
+    "over": 6,
+    "qs": 229,
+    "fb_n": 0,
+    "low": 2
+   },
+   "holdout": {
+    "n": 40,
+    "top1": 36,
+    "top3": 38,
+    "short": 39,
+    "cond": 31,
+    "acu": 34,
+    "under": 2,
+    "over": 4,
+    "qs": 109,
+    "fb_n": 0,
+    "low": 0
+   }
+  }
+ ]
+}

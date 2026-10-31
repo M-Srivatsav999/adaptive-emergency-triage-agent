@@ -1,0 +1,4715 @@
+[
+  {
+    "id": "kb1",
+    "condition": "Suspected Myocardial Infarction (Heart Attack)",
+    "description": "Chest pain or pressure, often radiating to the left arm, jaw, or back, accompanied by shortness of breath, sweating, nausea, and dizziness. Onset is often sudden.",
+    "keywords": [
+      "chest pain",
+      "shortness of breath",
+      "dizzy",
+      "radiating pain",
+      "left arm",
+      "sweating",
+      "chest pressure",
+      "nausea"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Emergency Cardiology Reference Set",
+    "recommendation": "Call emergency services immediately and do not drive yourself. Help the person sit or lie in a comfortable position. If the emergency dispatcher advises it, they may chew one aspirin slowly - only if they are not allergic to it and are 16 or older.",
+    "caution": "Do not give aspirin to anyone who is allergic to it, is under 16, or has been told by a doctor not to take it (for example because they take blood thinners). If unsure, follow the emergency dispatcher's advice. If the person becomes unresponsive and is not breathing normally, start chest compressions if you know how.",
+    "red_flags": [
+      "chest pain lasting over 10 minutes",
+      "sweating",
+      "breathlessness",
+      "fainting"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": "",
+    "references": [
+      {
+        "title": "St John Ambulance - Heart attack first aid (clinically reviewed)",
+        "publisher": "St John Ambulance",
+        "url": "https://www.sja.org.uk/first-aid-advice/heart-attack/"
+      }
+    ],
+    "source_check": {
+      "status": "SOURCE-CHECKED (by development team, not a clinician)",
+      "checked_on": "2026-10-15",
+      "points_confirmed": [
+        "call emergency services first",
+        "one aspirin chewed slowly if not allergic",
+        "not for under-16s",
+        "ask for the person's own angina medicine"
+      ]
+    }
+  },
+  {
+    "id": "kb2",
+    "condition": "Anaphylaxis (Severe Allergic Reaction)",
+    "description": "Rapid-onset allergic reaction with swelling of the face or throat, difficulty breathing, hives, and a drop in blood pressure, often after exposure to food, medication, or insect stings.",
+    "keywords": [
+      "swelling",
+      "throat tightness",
+      "difficulty breathing",
+      "hives",
+      "rash after eating",
+      "allergic reaction",
+      "wheezing"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Emergency Allergy Reference Set",
+    "recommendation": "Emergency services required immediately. Use an epinephrine auto-injector if available.",
+    "caution": "Antihistamines alone are not sufficient treatment for anaphylaxis.",
+    "red_flags": [
+      "swelling of lips/tongue/throat",
+      "trouble breathing",
+      "dizziness"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb3",
+    "condition": "Acute Appendicitis",
+    "description": "Pain that often begins near the navel and moves to the lower right abdomen, worsening over hours, accompanied by fever, nausea, and vomiting.",
+    "keywords": [
+      "lower right abdominal pain",
+      "abdominal pain",
+      "fever",
+      "nausea",
+      "vomiting",
+      "pain moving to right side"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Emergency Surgical Reference Set",
+    "recommendation": "Seek emergency care promptly. Avoid food and water until evaluated in case surgery is needed.",
+    "caution": "Avoid pain medication before evaluation, as it can mask worsening symptoms.",
+    "red_flags": [
+      "pain that becomes severe or spreads",
+      "rigid belly",
+      "vomiting",
+      "fever"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb4",
+    "condition": "Asthma Exacerbation",
+    "description": "Acute worsening of asthma with wheezing, chest tightness, and difficulty breathing, sometimes to the point of being unable to speak full sentences.",
+    "keywords": [
+      "wheezing",
+      "shortness of breath",
+      "tight chest",
+      "difficulty breathing",
+      "cough",
+      "cannot speak full sentences"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Emergency Respiratory Reference Set",
+    "recommendation": "Use a rescue inhaler immediately. If there is no improvement within minutes, seek emergency care.",
+    "caution": "Repeated inhaler overuse without relief is itself an emergency warning sign.",
+    "red_flags": [
+      "unable to speak full sentences",
+      "blue lips",
+      "no relief from inhaler"
+    ],
+    "self_care": "Sit upright, stay calm, use prescribed reliever inhaler as directed.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb5",
+    "condition": "Urinary Tract Infection",
+    "description": "Burning sensation during urination, frequent urge to urinate, cloudy urine, and mild pelvic or lower abdominal discomfort.",
+    "keywords": [
+      "burning urination",
+      "frequent urination",
+      "pelvic pain",
+      "cloudy urine",
+      "urinary pain",
+      "lower abdominal pain"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Urgent Care Reference Set",
+    "recommendation": "See a doctor within 24 hours. Antibiotics are typically required — self-treatment is not advised.",
+    "caution": "Delaying treatment can lead to a kidney infection.",
+    "red_flags": [
+      "fever with back pain",
+      "blood in urine",
+      "pregnancy",
+      "vomiting"
+    ],
+    "self_care": "Drink plenty of water.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb6",
+    "condition": "Bacterial Pneumonia",
+    "description": "Persistent cough, often with phlegm, fever, chills, fatigue, and chest pain that worsens with breathing or coughing.",
+    "keywords": [
+      "persistent cough",
+      "fever",
+      "chest pain when breathing",
+      "fatigue",
+      "shortness of breath",
+      "phlegm",
+      "chills"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Urgent Respiratory Reference Set",
+    "recommendation": "See a doctor within 24 hours for evaluation, possible chest imaging, and antibiotics.",
+    "caution": "Untreated pneumonia can progress to respiratory failure, especially in elderly patients.",
+    "red_flags": [
+      "fast or difficult breathing",
+      "blue lips",
+      "confusion",
+      "chest pain"
+    ],
+    "self_care": "Rest and fluids.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb7",
+    "condition": "Migraine (Severe)",
+    "description": "Intense throbbing headache, often one-sided, with sensitivity to light and sound, and sometimes nausea or visual disturbances.",
+    "keywords": [
+      "severe headache",
+      "light sensitivity",
+      "nausea",
+      "throbbing headache",
+      "visual aura",
+      "headache with vomiting"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Urgent Neurology Reference Set",
+    "recommendation": "See a doctor within 24 hours if this is a new or unusually severe pattern. Rest in a dark, quiet room in the meantime.",
+    "caution": "A sudden 'worst headache of life' should instead be treated as an emergency to rule out hemorrhage.",
+    "red_flags": [
+      "sudden worst headache of life",
+      "weakness or speech trouble",
+      "fever with stiff neck"
+    ],
+    "self_care": "Rest in a dark quiet room.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb8",
+    "condition": "Gastroenteritis with Dehydration Risk",
+    "description": "Diarrhea, vomiting, and stomach cramps, with risk of dehydration if fluids cannot be kept down.",
+    "keywords": [
+      "diarrhea",
+      "vomiting",
+      "stomach cramps",
+      "dehydration",
+      "nausea",
+      "fever"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Urgent Care Reference Set",
+    "recommendation": "See a doctor within 24 hours if symptoms persist beyond a day or fluids cannot be kept down. Oral rehydration is recommended now.",
+    "caution": "High risk of dehydration in young children and elderly patients.",
+    "red_flags": [
+      "blood in stool",
+      "unable to keep fluids down",
+      "very little urine",
+      "severe pain"
+    ],
+    "self_care": "Oral rehydration solution (ORS), small frequent sips. For children: zinc supplements for 10-14 days as advised by a health worker (often free through public programmes); keep feeding and keep breastfeeding.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": "",
+    "references": [
+      {
+        "title": "Clinical management of acute diarrhoea: WHO/UNICEF joint statement",
+        "publisher": "WHO / UNICEF",
+        "url": "https://www.who.int/publications/i/item/WHO_FCH_CAH_04.7"
+      }
+    ],
+    "source_check": {
+      "status": "SOURCE-CHECKED (by development team, not a clinician)",
+      "checked_on": "2026-10-15",
+      "points_confirmed": [
+        "ORS plus zinc for 10-14 days in children",
+        "continue feeding and breastfeeding",
+        "avoid anti-diarrhoeal drugs in children",
+        "seek care if dehydration signs"
+      ]
+    }
+  },
+  {
+    "id": "kb9",
+    "condition": "Common Cold",
+    "description": "Mild upper respiratory symptoms including runny nose, sneezing, sore throat, and low-grade fever, typically resolving within a week.",
+    "keywords": [
+      "runny nose",
+      "sore throat",
+      "mild cough",
+      "sneezing",
+      "congestion",
+      "mild fever"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Routine Care Reference Set",
+    "recommendation": "Home care is appropriate. Rest, fluids, and over-the-counter symptom relief. See a doctor if symptoms worsen after 7-10 days.",
+    "caution": "Antibiotics do not treat colds. Seek care if breathing becomes difficult, fever is high, or symptoms last more than 10 days.",
+    "red_flags": [
+      "difficulty breathing",
+      "high fever",
+      "symptoms over 10 days"
+    ],
+    "self_care": "Rest, fluids, steam inhalation.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb10",
+    "condition": "Mild Ankle Sprain",
+    "description": "Pain and mild swelling around the ankle following a twist or fall, with the ability to bear some weight.",
+    "keywords": [
+      "ankle pain",
+      "twisted ankle",
+      "swelling in foot",
+      "mild swelling",
+      "pain when walking",
+      "sprain"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Routine Musculoskeletal Reference Set",
+    "recommendation": "Home care with rest, ice, compression, and elevation (RICE). See a doctor if unable to bear weight after 48 hours.",
+    "caution": "Do not walk on it if you cannot bear weight - this may be a fracture and needs an X-ray.",
+    "red_flags": [
+      "unable to bear weight",
+      "numb or pale foot",
+      "visible deformity"
+    ],
+    "self_care": "Rest, ice wrapped in cloth, compression and elevation.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb11",
+    "condition": "Kidney Stone (Renal Colic)",
+    "description": "Sudden, severe cramping pain in the flank or lower back that may radiate to the groin, often accompanied by blood in the urine and an inability to find a comfortable position.",
+    "keywords": [
+      "severe flank pain",
+      "pain radiating to groin",
+      "blood in urine",
+      "nausea",
+      "vomiting",
+      "unable to sit still"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Urgent Urology Reference Set",
+    "recommendation": "See a doctor within 24 hours. Pain management and imaging are typically needed to confirm and locate the stone.",
+    "caution": "Fever combined with these symptoms can indicate a kidney infection and needs urgent evaluation.",
+    "red_flags": [
+      "fever with flank pain",
+      "unable to pass urine",
+      "severe uncontrolled pain"
+    ],
+    "self_care": "Drink water; seek care for severe pain.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb12",
+    "condition": "Concussion (Mild Head Injury)",
+    "description": "Confusion, headache, and dizziness following a blow to the head, sometimes with brief memory loss or sensitivity to light.",
+    "keywords": [
+      "head injury",
+      "headache after injury",
+      "confusion",
+      "dizzy",
+      "memory loss",
+      "light sensitivity"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Urgent Neurology Reference Set",
+    "recommendation": "See a doctor within 24 hours for evaluation. Avoid strenuous activity and monitor closely for worsening symptoms.",
+    "caution": "Repeated vomiting, worsening confusion, or loss of consciousness after a head injury is an emergency — seek immediate care.",
+    "red_flags": [
+      "repeated vomiting",
+      "worsening headache",
+      "drowsiness",
+      "fits"
+    ],
+    "self_care": "Rest; do not drive; avoid alcohol.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb13",
+    "condition": "Food Poisoning",
+    "description": "Nausea, vomiting, and diarrhea developing within hours of eating something disagreeable, usually resolving within a day or two.",
+    "keywords": [
+      "nausea",
+      "vomiting",
+      "diarrhea",
+      "stomach cramps",
+      "recent unusual meal",
+      "fever"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Urgent Care Reference Set",
+    "recommendation": "Stay hydrated with small sips of fluids. See a doctor within 24 hours if symptoms are severe, bloody, or you can't keep fluids down.",
+    "caution": "High risk of dehydration, especially in young children and elderly patients.",
+    "red_flags": [
+      "blood in stool",
+      "unable to keep fluids down",
+      "high fever",
+      "very little urine"
+    ],
+    "self_care": "ORS and rest; eat bland food when able.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb14",
+    "condition": "Conjunctivitis (Pink Eye)",
+    "description": "Redness, itching, and watery or sticky discharge from one or both eyes, often with a gritty sensation.",
+    "keywords": [
+      "red eye",
+      "itchy eyes",
+      "watery eyes",
+      "eye discharge",
+      "gritty feeling in eye"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Routine Care Reference Set",
+    "recommendation": "Home care with warm compresses and good hygiene is usually appropriate. See a doctor if symptoms worsen, vision changes, or it doesn't improve after a few days.",
+    "caution": "Do not share towels or pillows, and see a doctor urgently for eye pain, light sensitivity or reduced vision.",
+    "red_flags": [
+      "eye pain",
+      "vision change",
+      "light sensitivity",
+      "newborn with eye discharge"
+    ],
+    "self_care": "Wash hands, avoid touching or sharing towels.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb15",
+    "condition": "Strep Throat",
+    "description": "Sudden, severe sore throat with pain on swallowing, swollen tonsils, fever, and tender, swollen lymph nodes in the neck.",
+    "keywords": [
+      "severe sore throat",
+      "difficulty swallowing",
+      "swollen tonsils",
+      "fever",
+      "swollen lymph nodes"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Urgent Care Reference Set",
+    "recommendation": "See a doctor within 24 hours. A throat swab test and antibiotics are typically needed.",
+    "caution": "Untreated strep throat can occasionally lead to complications affecting the heart or kidneys.",
+    "red_flags": [
+      "difficulty swallowing saliva",
+      "drooling",
+      "trouble breathing",
+      "swollen neck"
+    ],
+    "self_care": "Warm fluids and rest.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb16",
+    "condition": "Stroke (Brain Attack)",
+    "description": "Sudden weakness or numbness of the face, arm or leg (often one side), slurred or confused speech, sudden loss of vision, loss of balance or a sudden severe headache.",
+    "keywords": [
+      "face drooping",
+      "arm weakness",
+      "slurred speech",
+      "sudden confusion",
+      "sudden vision loss",
+      "loss of balance",
+      "severe headache",
+      "numbness on one side"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Emergency Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "Call emergency services immediately - every minute counts. Note the exact time symptoms began and tell the responders. Keep the person calm, lying down with head slightly raised, and give nothing to eat or drink.",
+    "caution": "Do not wait to see whether it passes. Do not give aspirin or other medicines unless a doctor tells you to - some strokes are caused by bleeding.",
+    "red_flags": [
+      "any sudden one-sided weakness",
+      "speech or vision change",
+      "drowsiness"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb17",
+    "condition": "Hypertensive Crisis (Dangerously High Blood Pressure)",
+    "description": "Very high blood pressure reading together with severe headache, blurred vision, chest pain, shortness of breath, confusion or nosebleed.",
+    "keywords": [
+      "high blood pressure reading",
+      "severe headache",
+      "blurred vision",
+      "chest pain",
+      "shortness of breath",
+      "confusion",
+      "nosebleed"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Emergency Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "Sit the person down and keep them calm, then get emergency medical care now. If you have a blood pressure machine, record the reading to tell the clinicians.",
+    "caution": "Do not take extra doses of blood pressure tablets on your own to bring the pressure down quickly.",
+    "red_flags": [
+      "chest pain",
+      "confusion",
+      "weakness or speech trouble",
+      "seizure"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb18",
+    "condition": "Sepsis (Severe Body-Wide Infection)",
+    "description": "A known or suspected infection with fever or very low temperature, fast heartbeat, fast breathing, confusion or extreme drowsiness, cold clammy or mottled skin and passing very little urine.",
+    "keywords": [
+      "fever",
+      "fast heartbeat",
+      "fast breathing",
+      "confusion",
+      "cold clammy skin",
+      "very little urine",
+      "weakness",
+      "recent infection"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Emergency Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "Go to the nearest hospital or call emergency services immediately - sepsis can become life-threatening within hours and needs urgent treatment.",
+    "caution": "Do not wait at home for the fever to settle. Do not give anything by mouth if the person is drowsy or confused.",
+    "red_flags": [
+      "confusion",
+      "mottled skin",
+      "not passing urine",
+      "very fast breathing"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb19",
+    "condition": "Meningitis (Infection Around Brain and Spinal Cord)",
+    "description": "Fever with severe headache, stiff neck, sensitivity to light, vomiting, confusion or drowsiness; sometimes a rash that does not fade when pressed.",
+    "keywords": [
+      "fever",
+      "stiff neck",
+      "severe headache",
+      "light sensitivity",
+      "vomiting",
+      "drowsiness",
+      "confusion",
+      "rash that does not fade"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Emergency Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "Go to a hospital immediately or call emergency services - suspected meningitis needs urgent assessment and treatment.",
+    "caution": "Do not wait for a rash to appear. Do not delay travel to hospital to try home remedies.",
+    "red_flags": [
+      "drowsiness",
+      "seizure",
+      "non-fading rash",
+      "stiff neck"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb20",
+    "condition": "Seizure (Convulsion / Epileptic Fit)",
+    "description": "Sudden uncontrolled jerking movements with loss of awareness, sometimes with tongue biting, loss of bladder control and confusion or sleepiness afterwards.",
+    "keywords": [
+      "convulsions",
+      "loss of consciousness",
+      "tongue biting",
+      "confusion after episode",
+      "loss of bladder control"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Emergency Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "Protect the person from injury: clear the area, cushion the head, loosen tight clothing. Time the seizure. When jerking stops, turn them onto their side. Call emergency services if it lasts more than 5 minutes, repeats, it is their first seizure, they are pregnant, injured, or do not wake up normally.",
+    "caution": "Never put anything in the mouth and never hold the person down. Do not give food or drink until fully awake.",
+    "red_flags": [
+      "seizure longer than 5 minutes",
+      "repeated seizures",
+      "first ever seizure",
+      "not waking up"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb21",
+    "condition": "Snakebite",
+    "description": "Bite wound or fang marks after contact with a snake, with pain, spreading swelling, bleeding, drooping eyelids, blurred vision, difficulty speaking or breathing, nausea or vomiting.",
+    "keywords": [
+      "snake bite",
+      "fang marks",
+      "swelling spreading",
+      "drooping eyelids",
+      "blurred vision",
+      "difficulty breathing",
+      "bleeding from bite",
+      "nausea"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Toxicology & Environmental Emergencies Reference Set (draft, pending clinician review)",
+    "recommendation": "Keep the person calm and still. Immobilise the bitten limb like a fracture, remove rings and tight items, and take them to a hospital that has antivenom immediately. Note what the snake looked like if safe, but do not try to catch it.",
+    "caution": "Do not cut the wound, suck out venom, apply a tight tourniquet, ice, herbs or oils, and do not delay for traditional healers. Antivenom is only given in hospital.",
+    "red_flags": [
+      "any breathing or swallowing trouble",
+      "drooping eyelids",
+      "spreading swelling",
+      "bleeding"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": "",
+    "references": [
+      {
+        "title": "WHO - Snakebite envenoming: treatment and first aid",
+        "publisher": "World Health Organization",
+        "url": "https://www.who.int/teams/control-of-neglected-tropical-diseases/snakebite-envenoming/treatment"
+      },
+      {
+        "title": "WHO - Snakebite (health topic)",
+        "publisher": "World Health Organization",
+        "url": "https://www.who.int/health-topics/snakebite"
+      }
+    ],
+    "source_check": {
+      "status": "SOURCE-CHECKED (by development team, not a clinician)",
+      "checked_on": "2026-10-15",
+      "points_confirmed": [
+        "immobilise the limb completely",
+        "never use a tight arterial tourniquet",
+        "avoid traditional/herbal methods",
+        "remove tight items (rings)",
+        "get to a facility with antivenom quickly"
+      ]
+    }
+  },
+  {
+    "id": "kb22",
+    "condition": "Pesticide / Organophosphate Poisoning",
+    "description": "Exposure to or swallowing of farm pesticide followed by heavy salivation, sweating, tiny pupils, vomiting, diarrhoea, muscle twitching, difficulty breathing or confusion.",
+    "keywords": [
+      "pesticide exposure",
+      "excessive salivation",
+      "heavy sweating",
+      "small pupils",
+      "vomiting",
+      "diarrhea",
+      "muscle twitching",
+      "difficulty breathing",
+      "confusion"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Toxicology & Environmental Emergencies Reference Set (draft, pending clinician review)",
+    "recommendation": "Get emergency medical help immediately. Move the person away from the source, remove contaminated clothing and wash skin thoroughly with soap and water (helpers should wear gloves). Take the pesticide container to the hospital.",
+    "caution": "Do not induce vomiting. Protect yourself from contamination while helping. Do not give milk or home remedies.",
+    "red_flags": [
+      "breathing difficulty",
+      "unconsciousness",
+      "seizures"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb23",
+    "condition": "Heat Stroke",
+    "description": "Very high body temperature after heat exposure or hard work in the sun, with hot flushed skin (dry or sweaty), headache, dizziness, nausea, confusion or fainting.",
+    "keywords": [
+      "high body temperature",
+      "heat exposure",
+      "confusion",
+      "headache",
+      "dizzy",
+      "nausea",
+      "fainting",
+      "hot dry skin"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Emergency Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "Call emergency services. Move the person to shade or a cool place, remove extra clothing and cool the body quickly with cool water, wet cloths and fanning, especially neck, armpits and groin.",
+    "caution": "Give sips of water only if fully awake and able to swallow. Paracetamol does not treat heat stroke. Do not leave the person alone.",
+    "red_flags": [
+      "confusion",
+      "fainting",
+      "fits",
+      "not sweating"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb24",
+    "condition": "Severe Burn",
+    "description": "Burn that is large, deep (white, leathery or charred), blistering over a big area, on the face, hands, feet or genitals, or associated with smoke inhalation or electrical or chemical injury.",
+    "keywords": [
+      "severe burn",
+      "large burn area",
+      "blisters",
+      "charred or white skin",
+      "burn on face or hands",
+      "smoke inhalation",
+      "difficulty breathing"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Trauma & First Aid Reference Set (draft, pending clinician review)",
+    "recommendation": "Call emergency services. Cool the burn under clean running water for about 20 minutes, remove rings and loose clothing near it, then cover loosely with a clean non-fluffy cloth or cling film and keep the person warm.",
+    "caution": "Do not apply ice, butter, oil, toothpaste or ointments. Do not burst blisters or pull off stuck clothing.",
+    "red_flags": [
+      "face or airway burn",
+      "burn bigger than the person's palm",
+      "child with burn",
+      "electrical or chemical burn"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": "",
+    "references": [
+      {
+        "title": "NHS - Burns and scalds: treatment",
+        "publisher": "NHS (UK)",
+        "url": "https://www.nhs.uk/conditions/burns-and-scalds/treatment/"
+      },
+      {
+        "title": "NHS - Burns and scalds",
+        "publisher": "NHS (UK)",
+        "url": "https://www.nhs.uk/conditions/burns-and-scalds/"
+      }
+    ],
+    "source_check": {
+      "status": "SOURCE-CHECKED (by development team, not a clinician)",
+      "checked_on": "2026-10-15",
+      "points_confirmed": [
+        "cool running water 20 minutes",
+        "cover loosely",
+        "chemical/electrical/large/deep burns need hospital care",
+        "no ice or greasy substances"
+      ]
+    }
+  },
+  {
+    "id": "kb25",
+    "condition": "Diabetic Emergency - Very High Blood Sugar (Ketoacidosis)",
+    "description": "In someone with or without known diabetes: extreme thirst, frequent urination, nausea and vomiting, abdominal pain, fruity-smelling breath, fast deep breathing and drowsiness.",
+    "keywords": [
+      "extreme thirst",
+      "frequent urination",
+      "nausea",
+      "vomiting",
+      "abdominal pain",
+      "fruity breath",
+      "fast deep breathing",
+      "drowsiness",
+      "known diabetes"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Emergency Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "Go to a hospital immediately or call emergency services - this needs urgent treatment with fluids and insulin under medical supervision.",
+    "caution": "Do not give extra insulin or sugary drinks on your own while drowsy. Do not wait for it to pass.",
+    "red_flags": [
+      "drowsiness",
+      "vomiting that will not stop",
+      "breathing fast and deep"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb26",
+    "condition": "Eclampsia / Severe Pre-eclampsia (Pregnancy)",
+    "description": "In pregnancy (or just after delivery): severe headache, blurred vision, swelling of face and hands, pain in the upper abdomen, high blood pressure or fits.",
+    "keywords": [
+      "pregnant",
+      "severe headache",
+      "blurred vision",
+      "swelling of face and hands",
+      "upper abdominal pain",
+      "convulsions",
+      "high blood pressure reading"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Maternal Health Reference Set (draft, pending clinician review)",
+    "recommendation": "Go to a hospital with maternity care immediately; call emergency services or a health worker for transport. If she has a fit, protect her from injury and turn her on her left side.",
+    "caution": "Do not wait for labour or the next check-up. Do not put anything in her mouth during a fit.",
+    "red_flags": [
+      "any fit",
+      "severe headache with vision change",
+      "reduced baby movements"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb27",
+    "condition": "Bleeding in Pregnancy (Possible Ectopic Pregnancy / Miscarriage / Placental Problem)",
+    "description": "Vaginal bleeding during pregnancy, sometimes with severe lower abdominal or shoulder-tip pain, dizziness or fainting.",
+    "keywords": [
+      "pregnant",
+      "vaginal bleeding",
+      "severe lower abdominal pain",
+      "dizzy",
+      "fainting",
+      "shoulder tip pain",
+      "pale skin"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Maternal Health Reference Set (draft, pending clinician review)",
+    "recommendation": "Go to a hospital immediately - heavy or painful bleeding in pregnancy can be life-threatening. Lie down with legs slightly raised while arranging transport.",
+    "caution": "Do not insert anything into the vagina. Do not eat or drink if you may need an urgent operation.",
+    "red_flags": [
+      "soaking pads",
+      "fainting",
+      "severe pain"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb28",
+    "condition": "Postpartum Hemorrhage (Heavy Bleeding After Childbirth)",
+    "description": "Heavy vaginal bleeding after childbirth (soaking a pad within an hour or passing large clots) with dizziness, fast heartbeat, paleness and weakness.",
+    "keywords": [
+      "recent childbirth",
+      "heavy vaginal bleeding",
+      "large blood clots",
+      "dizzy",
+      "fast heartbeat",
+      "pale skin",
+      "weakness"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Maternal Health Reference Set (draft, pending clinician review)",
+    "recommendation": "Emergency - get to a hospital immediately. While arranging transport, lie down, gently massage the lower abdomen (the womb) if a trained helper can show how, and keep her warm.",
+    "caution": "Do not wait to see if bleeding slows. Do not give her anything to drink if she is faint or drowsy.",
+    "red_flags": [
+      "soaking a pad in an hour",
+      "fainting",
+      "cold sweaty skin"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb29",
+    "condition": "Severe Pneumonia in a Child (Fast or Difficult Breathing)",
+    "description": "In a young child: fast breathing, chest pulling in with each breath, cough, fever, being unable to drink or feed, unusual sleepiness or blue lips.",
+    "keywords": [
+      "child under five",
+      "fast breathing",
+      "chest indrawing",
+      "cough",
+      "fever",
+      "unable to drink or feed",
+      "lethargy",
+      "blue lips"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Child Health (IMCI-style) Reference Set (draft, pending clinician review)",
+    "recommendation": "Take the child to a hospital or health facility immediately. Keep the child upright and warm, continue breastfeeding if possible.",
+    "caution": "Do not give cough syrups to young children. Do not wait overnight if breathing is fast or the chest pulls in.",
+    "red_flags": [
+      "unable to feed",
+      "blue lips",
+      "very sleepy",
+      "convulsions"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb30",
+    "condition": "Severe Dehydration from Watery Diarrhoea (Cholera-like Illness)",
+    "description": "Profuse watery or rice-water diarrhoea, sunken eyes, very dry mouth, extreme thirst or too weak to drink, very little or no urine, skin that stays pinched.",
+    "keywords": [
+      "watery diarrhea",
+      "rice water stools",
+      "sunken eyes",
+      "dry mouth",
+      "extreme thirst",
+      "very little urine",
+      "lethargy",
+      "skin pinch goes back slowly"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Child Health (IMCI-style) Reference Set (draft, pending clinician review)",
+    "recommendation": "Start oral rehydration solution (ORS) in small frequent sips straight away and go to a health facility urgently - severe dehydration may need drips. Continue breastfeeding infants.",
+    "caution": "Do not stop fluids if there is vomiting - give small sips. Do not give anti-diarrhoea medicines to children. Wash hands carefully and use safe water.",
+    "red_flags": [
+      "unable to drink",
+      "unconscious",
+      "no urine for 8 hours"
+    ],
+    "self_care": "For children: zinc supplements for 10-14 days as advised by a health worker (often free through public programmes); keep feeding and keep breastfeeding.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": "",
+    "references": [
+      {
+        "title": "Clinical management of acute diarrhoea: WHO/UNICEF joint statement",
+        "publisher": "WHO / UNICEF",
+        "url": "https://www.who.int/publications/i/item/WHO_FCH_CAH_04.7"
+      }
+    ],
+    "source_check": {
+      "status": "SOURCE-CHECKED (by development team, not a clinician)",
+      "checked_on": "2026-10-15",
+      "points_confirmed": [
+        "ORS plus zinc for 10-14 days in children",
+        "continue feeding and breastfeeding",
+        "avoid anti-diarrhoeal drugs in children",
+        "seek care if dehydration signs"
+      ]
+    }
+  },
+  {
+    "id": "kb31",
+    "condition": "Bowel Obstruction / Acute Surgical Abdomen",
+    "description": "Severe colicky or constant abdominal pain with repeated vomiting, a swollen hard belly, and not passing stool or gas.",
+    "keywords": [
+      "severe abdominal pain",
+      "repeated vomiting",
+      "swollen abdomen",
+      "not passing stool or gas",
+      "rigid abdomen",
+      "vomiting green fluid"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Emergency Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "Go to a hospital immediately - this may need urgent surgery. Do not eat or drink while travelling.",
+    "caution": "Do not take laxatives, enemas or painkillers to 'clear' the blockage.",
+    "red_flags": [
+      "rigid belly",
+      "green vomit",
+      "fever",
+      "fainting"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb32",
+    "condition": "Strangulated Hernia",
+    "description": "A bulge in the groin or abdomen that becomes hard, very painful and red and cannot be pushed back, often with vomiting.",
+    "keywords": [
+      "painful groin bulge",
+      "hard tender lump",
+      "bulge cannot be pushed back",
+      "vomiting",
+      "redness over lump",
+      "abdominal pain"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Emergency Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "Go to a hospital immediately - a trapped bowel loop can lose its blood supply and needs urgent surgery.",
+    "caution": "Do not press hard on the lump or try to force it back in. Do not eat or drink before being assessed.",
+    "red_flags": [
+      "vomiting",
+      "fever",
+      "skin over lump turning dark"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb33",
+    "condition": "Testicular Torsion",
+    "description": "Sudden severe pain and swelling in one testicle, often with nausea or vomiting; the testicle may sit higher than normal.",
+    "keywords": [
+      "sudden testicular pain",
+      "testicular swelling",
+      "nausea",
+      "vomiting",
+      "abdominal pain"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Emergency Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "Go to a hospital immediately - the testicle may be saved only if treated within a few hours.",
+    "caution": "Do not wait for the pain to settle or to see a doctor tomorrow.",
+    "red_flags": [
+      "pain lasting more than a few minutes",
+      "vomiting"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb34",
+    "condition": "Upper Gastrointestinal Bleeding",
+    "description": "Vomiting blood or material that looks like coffee grounds, or black tarry stools, with dizziness, weakness and abdominal pain.",
+    "keywords": [
+      "vomiting blood",
+      "black tarry stools",
+      "dizzy",
+      "weakness",
+      "abdominal pain",
+      "pale skin"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Emergency Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "Go to a hospital immediately or call emergency services. Lie down and do not eat or drink.",
+    "caution": "Do not take pain medicines such as aspirin or ibuprofen. Do not wait to see if it settles.",
+    "red_flags": [
+      "fainting",
+      "large amount of blood",
+      "fast heartbeat"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb35",
+    "condition": "Choking (Blocked Airway)",
+    "description": "Sudden inability to speak, cough or breathe, clutching the throat, or a bluish colour after food or an object goes down the wrong way.",
+    "keywords": [
+      "cannot speak",
+      "shortness of breath",
+      "clutching throat",
+      "choking on food",
+      "blue lips"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Trauma & First Aid Reference Set (draft, pending clinician review)",
+    "recommendation": "Call emergency services. If the person cannot cough, speak or breathe, give 5 firm back blows between the shoulder blades then abdominal thrusts (infants: back blows and chest thrusts) until the object comes out.",
+    "caution": "Do not poke fingers blindly into the mouth. Do not give water. Get medical review afterwards even if the object comes out.",
+    "red_flags": [
+      "unconscious",
+      "blue lips",
+      "unable to breathe"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb36",
+    "condition": "Severe Head Injury",
+    "description": "Head injury followed by loss of consciousness, repeated vomiting, seizure, clear fluid or blood from nose or ear, increasing drowsiness or unequal pupils.",
+    "keywords": [
+      "head injury",
+      "loss of consciousness",
+      "repeated vomiting",
+      "convulsions",
+      "fluid from ear or nose",
+      "drowsiness",
+      "unequal pupils",
+      "severe headache"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Trauma & First Aid Reference Set (draft, pending clinician review)",
+    "recommendation": "Call emergency services. Keep the person still, support head and neck, and do not move them unless in danger.",
+    "caution": "Do not give food or drink. Do not remove a helmet unless essential for breathing.",
+    "red_flags": [
+      "worsening drowsiness",
+      "fits",
+      "bleeding from ear"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb37",
+    "condition": "Severe Bleeding from a Wound",
+    "description": "Heavy bleeding that does not stop with pressure, deep or gaping wound, or blood spurting from a cut.",
+    "keywords": [
+      "heavy bleeding",
+      "deep wound",
+      "blood spurting",
+      "pale skin",
+      "dizzy"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Trauma & First Aid Reference Set (draft, pending clinician review)",
+    "recommendation": "Call for help. Press firmly on the wound with a clean cloth and keep pressing. Raise the injured limb if possible and lie the person down. Add more cloth on top if it soaks through. Go to a hospital immediately.",
+    "caution": "Do not remove cloths that are soaked through (add more on top). Do not use a tourniquet unless you are trained and bleeding is life-threatening.",
+    "red_flags": [
+      "spurting blood",
+      "fainting",
+      "bleeding that soaks through repeatedly"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb38",
+    "condition": "Acute Mental Health Crisis (Thoughts of Self-Harm)",
+    "description": "A person expressing thoughts of ending their life, feeling hopeless or unsafe, or in severe distress.",
+    "keywords": [
+      "thoughts of self harm",
+      "hopelessness",
+      "feeling unsafe"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Emergency Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "Stay with the person and listen without judgement. Remove access to anything harmful, and call emergency services (112 in India) or a crisis helpline such as Tele-MANAS 14416 (India) - or go to the nearest hospital together. You are not alone and help is available.",
+    "caution": "Do not leave the person alone or promise to keep it secret. Helpline numbers can change - verify the local number.",
+    "red_flags": [
+      "a plan or means available",
+      "has already harmed themselves"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb39",
+    "condition": "Tetanus",
+    "description": "After a wound (especially dirty, deep or from rusty objects): jaw stiffness or lockjaw, painful muscle spasms, stiff neck or back and fever.",
+    "keywords": [
+      "wound",
+      "jaw stiffness",
+      "muscle spasms",
+      "difficulty opening mouth",
+      "fever",
+      "stiff neck"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Emergency Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "Go to a hospital immediately - tetanus is life-threatening and needs urgent treatment. Prevention is by tetanus vaccination.",
+    "caution": "Do not apply soil, cow dung, oil or herbs to wounds.",
+    "red_flags": [
+      "difficulty swallowing",
+      "breathing difficulty",
+      "spasms"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb40",
+    "condition": "Newborn Danger Signs (Possible Serious Infection)",
+    "description": "A baby under 1 month who is feeding poorly, very sleepy or floppy, has fever or feels cold, breathes fast, has fits, or has yellow skin in the first day.",
+    "keywords": [
+      "newborn baby",
+      "not feeding well",
+      "lethargy",
+      "fever",
+      "fast breathing",
+      "convulsions",
+      "jaundice",
+      "feels cold"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Child Health (IMCI-style) Reference Set (draft, pending clinician review)",
+    "recommendation": "Take the baby to a hospital or newborn care unit immediately. Keep the baby warm (skin-to-skin) and keep breastfeeding if the baby can suck.",
+    "caution": "Do not wait or give water, honey or home remedies to a newborn.",
+    "red_flags": [
+      "not feeding",
+      "fits",
+      "blue colour",
+      "very sleepy"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb41",
+    "condition": "Suspected Blood Clot in Leg or Lung (DVT / Pulmonary Embolism)",
+    "description": "Sudden shortness of breath or sharp chest pain on breathing, sometimes with a swollen, painful, warm leg or coughing blood, often after surgery, childbirth or long immobility.",
+    "keywords": [
+      "sudden shortness of breath",
+      "chest pain when breathing",
+      "swollen painful leg",
+      "coughing blood",
+      "fast heartbeat",
+      "recent surgery or childbirth"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Emergency Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "Call emergency services immediately.",
+    "caution": "Do not massage the painful leg. Do not wait to see if the breathlessness passes.",
+    "red_flags": [
+      "fainting",
+      "coughing blood",
+      "severe breathlessness"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb42",
+    "condition": "Electric Shock Injury",
+    "description": "Contact with electric current (including lightning), with burns at entry or exit points, muscle pain, irregular heartbeat, confusion or loss of consciousness.",
+    "keywords": [
+      "electric shock",
+      "burn at contact point",
+      "loss of consciousness",
+      "irregular heartbeat",
+      "muscle pain",
+      "confusion"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Trauma & First Aid Reference Set (draft, pending clinician review)",
+    "recommendation": "Switch off the power source or push the person away using dry wood before touching them. Call emergency services - even if they seem fine, the heart rhythm needs checking.",
+    "caution": "Do not touch the person while they are still in contact with the current. Do not go near fallen wires.",
+    "red_flags": [
+      "unconscious",
+      "chest pain",
+      "irregular heartbeat"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb43",
+    "condition": "Acute Pancreatitis",
+    "description": "Severe constant upper abdominal pain spreading to the back with repeated vomiting, often after heavy alcohol use or gallstones.",
+    "keywords": [
+      "severe upper abdominal pain",
+      "pain radiating to back",
+      "repeated vomiting",
+      "nausea",
+      "swollen abdomen",
+      "alcohol use"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Emergency Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "Go to a hospital - this needs urgent care. Do not eat or drink meanwhile.",
+    "caution": "Do not take pain medicines like ibuprofen, and do not drink alcohol.",
+    "red_flags": [
+      "fainting",
+      "fever",
+      "yellow skin",
+      "breathlessness"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb44",
+    "condition": "Malaria",
+    "description": "Fever with chills and shivering followed by sweating, headache, body aches and vomiting, often in cycles, after mosquito exposure in or near a malaria area.",
+    "keywords": [
+      "fever",
+      "chills and shivering",
+      "sweating",
+      "headache",
+      "muscle pain",
+      "vomiting",
+      "fever in cycles",
+      "mosquito exposure"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Infectious & Tropical Disease Reference Set (draft, pending clinician review)",
+    "recommendation": "See a doctor or health centre the same day for a blood test (rapid test or microscopy); malaria is treatable when found early. Rest and drink plenty of fluids.",
+    "caution": "Do not take leftover antimalarial tablets without a test and advice. Go to emergency care at once for confusion, fits, breathing difficulty, yellow eyes or inability to drink.",
+    "red_flags": [
+      "confusion or drowsiness",
+      "fits",
+      "yellow eyes",
+      "unable to drink",
+      "very little urine"
+    ],
+    "self_care": "Rest, fluids, sleep under a mosquito net.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb45",
+    "condition": "Dengue Fever",
+    "description": "High fever with severe headache, pain behind the eyes, muscle and joint pains, rash, nausea and sometimes bleeding gums, after mosquito bites in a dengue area.",
+    "keywords": [
+      "high fever",
+      "severe headache",
+      "pain behind eyes",
+      "joint pain",
+      "muscle pain",
+      "rash",
+      "nausea",
+      "bleeding gums",
+      "mosquito exposure"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Infectious & Tropical Disease Reference Set (draft, pending clinician review)",
+    "recommendation": "See a doctor within a day for assessment and a blood count. Rest and drink plenty of fluids; paracetamol may be used for fever as advised.",
+    "caution": "Avoid aspirin, ibuprofen and other anti-inflammatory painkillers - they can increase bleeding risk. Go to emergency care immediately for severe belly pain, repeated vomiting, bleeding, drowsiness or cold clammy skin, especially when the fever settles (days 3-7).",
+    "red_flags": [
+      "severe abdominal pain",
+      "persistent vomiting",
+      "bleeding",
+      "drowsiness",
+      "cold clammy skin",
+      "rapid breathing",
+      "restlessness"
+    ],
+    "self_care": "Rest, plenty of oral fluids, ORS, mosquito protection.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": "",
+    "references": [
+      {
+        "title": "WHO Western Pacific - Dengue and severe dengue",
+        "publisher": "World Health Organization",
+        "url": "https://www.who.int/westernpacific/health-topics/dengue-and-severe-dengue"
+      },
+      {
+        "title": "CDC - Dengue virus: what you need to know",
+        "publisher": "US CDC",
+        "url": "https://stacks.cdc.gov/view/cdc/37487/cdc_37487_DS1.pdf"
+      }
+    ],
+    "source_check": {
+      "status": "SOURCE-CHECKED (by development team, not a clinician)",
+      "checked_on": "2026-10-15",
+      "points_confirmed": [
+        "no specific treatment; paracetamol for fever and pain",
+        "avoid aspirin, ibuprofen and other NSAIDs",
+        "warning signs appear around days 3-7 as fever falls",
+        "severe abdominal pain, persistent vomiting, bleeding, restlessness, cold clammy skin need urgent care"
+      ]
+    }
+  },
+  {
+    "id": "kb46",
+    "condition": "Chikungunya",
+    "description": "Sudden fever with severe joint pain and swelling (hands, wrists, ankles), rash and headache after mosquito bites.",
+    "keywords": [
+      "high fever",
+      "severe joint pain",
+      "swollen joints",
+      "rash",
+      "headache",
+      "muscle pain",
+      "mosquito exposure"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Infectious & Tropical Disease Reference Set (draft, pending clinician review)",
+    "recommendation": "See a doctor within a day or two for assessment (symptoms overlap with dengue). Rest and drink fluids; paracetamol as advised for pain and fever.",
+    "caution": "Avoid aspirin and anti-inflammatory painkillers until dengue has been excluded.",
+    "red_flags": [
+      "bleeding",
+      "drowsiness",
+      "persistent vomiting",
+      "very severe weakness"
+    ],
+    "self_care": "Rest, fluids, mosquito protection.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb47",
+    "condition": "Typhoid (Enteric Fever)",
+    "description": "Fever that climbs over several days, headache, weakness, loss of appetite, abdominal pain and constipation or diarrhoea, after contaminated food or water.",
+    "keywords": [
+      "prolonged fever",
+      "headache",
+      "weakness",
+      "loss of appetite",
+      "abdominal pain",
+      "constipation",
+      "diarrhea",
+      "contaminated water or food"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Infectious & Tropical Disease Reference Set (draft, pending clinician review)",
+    "recommendation": "See a doctor within a day for blood tests and treatment. Drink safe boiled water, eat light food and rest.",
+    "caution": "Do not self-treat with leftover antibiotics. Seek emergency care for confusion, severe belly pain, black stools or persistent vomiting.",
+    "red_flags": [
+      "confusion",
+      "severe abdominal pain",
+      "black stools",
+      "persistent vomiting"
+    ],
+    "self_care": "Safe water, hand washing, rest.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb48",
+    "condition": "Tuberculosis (Suspected)",
+    "description": "Cough lasting more than two weeks, sometimes with blood in the sputum, evening fever, night sweats, weight loss and loss of appetite.",
+    "keywords": [
+      "cough for more than two weeks",
+      "blood in sputum",
+      "night sweats",
+      "weight loss",
+      "evening fever",
+      "loss of appetite",
+      "chest pain"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Infectious & Tropical Disease Reference Set (draft, pending clinician review)",
+    "recommendation": "Visit the nearest health facility within days for a sputum test and chest X-ray; TB testing and treatment are often free through national programmes. Cover your mouth when coughing and keep rooms ventilated.",
+    "caution": "Do not stop or skip treatment once started - the full course is essential. Seek urgent care for coughing large amounts of blood or severe breathlessness.",
+    "red_flags": [
+      "coughing large amounts of blood",
+      "severe breathlessness",
+      "confusion"
+    ],
+    "self_care": "Cover cough, ventilation, nutritious food.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb49",
+    "condition": "Leptospirosis",
+    "description": "Fever, headache, severe calf and muscle pain, red eyes and sometimes yellow skin, after wading in flood water or working in wet fields with contaminated water.",
+    "keywords": [
+      "high fever",
+      "muscle pain",
+      "calf pain",
+      "red eye",
+      "headache",
+      "jaundice",
+      "contaminated flood water exposure",
+      "vomiting"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Infectious & Tropical Disease Reference Set (draft, pending clinician review)",
+    "recommendation": "See a doctor the same day and mention the water exposure - early antibiotics help. Drink fluids and rest.",
+    "caution": "Seek emergency care for breathlessness, very little urine, bleeding or confusion.",
+    "red_flags": [
+      "breathlessness",
+      "little urine",
+      "bleeding",
+      "confusion"
+    ],
+    "self_care": "Fluids, rest; avoid wading in flood water.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb50",
+    "condition": "Hepatitis / Jaundice",
+    "description": "Yellow eyes and skin, dark urine, pale stools, tiredness, nausea, loss of appetite and pain in the upper right abdomen.",
+    "keywords": [
+      "jaundice",
+      "dark urine",
+      "pale stools",
+      "fatigue",
+      "nausea",
+      "loss of appetite",
+      "upper right abdominal pain",
+      "itchy skin"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Infectious & Tropical Disease Reference Set (draft, pending clinician review)",
+    "recommendation": "See a doctor within a day or two for liver tests. Rest, eat light food, drink safe water and avoid alcohol.",
+    "caution": "Avoid alcohol, herbal remedies and unnecessary medicines, including repeated paracetamol. Seek emergency care for confusion, drowsiness or vomiting blood.",
+    "red_flags": [
+      "confusion",
+      "drowsiness",
+      "vomiting blood",
+      "bleeding"
+    ],
+    "self_care": "Rest, safe water, hygiene, no alcohol.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb51",
+    "condition": "Measles",
+    "description": "Fever with red rash that starts on the face and spreads, red watery eyes, runny nose, cough and tiny white spots inside the mouth, mostly in unvaccinated children.",
+    "keywords": [
+      "fever",
+      "rash starting on face",
+      "red eye",
+      "runny nose",
+      "cough",
+      "white spots in mouth",
+      "child under five"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Child Health (IMCI-style) Reference Set (draft, pending clinician review)",
+    "recommendation": "See a health worker within a day - measles can cause serious complications in young or undernourished children. Give fluids, keep feeding, and keep the child away from others.",
+    "caution": "Seek emergency care for fast or difficult breathing, convulsions, unusual sleepiness or inability to drink. Vitamin A may be advised by a health worker.",
+    "red_flags": [
+      "fast breathing",
+      "convulsions",
+      "unable to drink",
+      "very sleepy"
+    ],
+    "self_care": "Fluids, rest, isolation, vaccination of contacts.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb52",
+    "condition": "Skin Abscess / Cellulitis",
+    "description": "A red, hot, swollen and painful area of skin, possibly with pus, that is spreading, sometimes with fever.",
+    "keywords": [
+      "red swollen skin",
+      "painful skin",
+      "pus",
+      "warm skin",
+      "spreading redness",
+      "fever"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Skin & Eye & Dental Reference Set (draft, pending clinician review)",
+    "recommendation": "See a doctor within a day - it may need antibiotics or drainage. Keep the area clean and raised.",
+    "caution": "Do not squeeze or cut it at home. Seek emergency care if redness spreads fast, fever is high or you feel very unwell.",
+    "red_flags": [
+      "spreading redness",
+      "high fever",
+      "confusion",
+      "red streaks"
+    ],
+    "self_care": "Keep clean, elevate, do not squeeze.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb53",
+    "condition": "Animal Bite (Rabies Risk)",
+    "description": "A bite or scratch from a dog, cat, monkey, bat or other mammal, especially if the animal is unvaccinated, stray or behaving strangely.",
+    "keywords": [
+      "animal bite",
+      "dog bite",
+      "scratch from animal",
+      "broken skin",
+      "bleeding from bite",
+      "stray animal"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Toxicology & Environmental Emergencies Reference Set (draft, pending clinician review)",
+    "recommendation": "Immediately wash the wound with soap and running water for at least 15 minutes, apply antiseptic, and go to a health facility the same day for rabies vaccination (and immunoglobulin for severe bites) and tetanus prevention.",
+    "caution": "Do not apply chilli, turmeric, oil or tightly bandage the wound. Rabies is almost always fatal after symptoms start, but preventable if treated early - do not delay even if the animal looks healthy. Do not have the wound stitched tightly before rabies treatment has been arranged.",
+    "red_flags": [
+      "bite to the head, face or hands",
+      "deep bite",
+      "bat exposure",
+      "animal died or behaved strangely"
+    ],
+    "self_care": "Wash wound for 15 minutes with soap and water.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": "",
+    "references": [
+      {
+        "title": "WHO announces new rabies recommendations (2018)",
+        "publisher": "World Health Organization",
+        "url": "https://www.who.int/news/item/15-01-2018-who-announces-new-rabies-recommendations"
+      },
+      {
+        "title": "Rabies post-exposure prophylaxis: wound management guidelines (India, National Rabies Control Programme)",
+        "publisher": "Vikaspedia / NRCP",
+        "url": "https://en.vikaspedia.in/viewcontent/health/first-aid/wound-management-guidelines-for-rabies-post-exposure-prophylaxis?lgn=en"
+      }
+    ],
+    "source_check": {
+      "status": "SOURCE-CHECKED (by development team, not a clinician)",
+      "checked_on": "2026-10-15",
+      "points_confirmed": [
+        "wash the wound about 15 minutes with soap/detergent and water",
+        "apply a virus-killing antiseptic where available",
+        "vaccine promptly (immunoglobulin for severe exposure)",
+        "do not suture tightly before immunoglobulin",
+        "tetanus prevention"
+      ]
+    }
+  },
+  {
+    "id": "kb54",
+    "condition": "Scorpion Sting",
+    "description": "Severe burning pain at the sting site, possibly with sweating, restlessness, vomiting, cold hands and feet or breathing difficulty, especially dangerous in children.",
+    "keywords": [
+      "scorpion sting",
+      "severe local pain",
+      "sweating",
+      "restlessness",
+      "vomiting",
+      "cold hands and feet",
+      "difficulty breathing"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Toxicology & Environmental Emergencies Reference Set (draft, pending clinician review)",
+    "recommendation": "Take the person to a health facility urgently - children and anyone with sweating, vomiting or breathing trouble need hospital care. Keep them calm and still, and cool the area with a cold cloth.",
+    "caution": "Do not cut the wound, apply tourniquets or herbal remedies. Do not delay transport to give home treatments.",
+    "red_flags": [
+      "breathing difficulty",
+      "heavy sweating",
+      "vomiting",
+      "child under 10"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb55",
+    "condition": "Kidney Infection (Pyelonephritis)",
+    "description": "Fever with chills, pain in the side or lower back, burning urination, nausea and vomiting.",
+    "keywords": [
+      "fever",
+      "chills",
+      "flank pain",
+      "burning urination",
+      "vomiting",
+      "frequent urination"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "General Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "See a doctor the same day - kidney infections need antibiotics. Drink fluids.",
+    "caution": "Seek emergency care if you cannot keep fluids down, are confused or pregnant.",
+    "red_flags": [
+      "unable to keep fluids down",
+      "confusion",
+      "pregnancy"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb56",
+    "condition": "Gallstone Pain (Biliary Colic)",
+    "description": "Pain in the upper right abdomen after fatty meals, sometimes spreading to the right shoulder, with nausea.",
+    "keywords": [
+      "upper right abdominal pain",
+      "pain after fatty meals",
+      "nausea",
+      "pain radiating to right shoulder",
+      "vomiting"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "General Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "See a doctor within a day. Eat small low-fat meals meanwhile.",
+    "caution": "Seek emergency care for fever, yellow eyes or pain lasting more than a few hours.",
+    "red_flags": [
+      "fever",
+      "yellow eyes",
+      "pain lasting hours"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb57",
+    "condition": "Heart Failure Flare",
+    "description": "Shortness of breath (worse lying flat), swollen legs, tiredness and rapid weight gain, often in people with known heart disease.",
+    "keywords": [
+      "shortness of breath",
+      "swollen legs",
+      "breathless lying flat",
+      "fatigue",
+      "rapid weight gain",
+      "cough at night"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Chronic Disease Reference Set (draft, pending clinician review)",
+    "recommendation": "See a doctor within a day, or sooner if breathing is worsening. Sit upright and rest.",
+    "caution": "Seek emergency care for severe breathlessness, chest pain or fainting.",
+    "red_flags": [
+      "severe breathlessness",
+      "chest pain",
+      "fainting"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb58",
+    "condition": "COPD / Chronic Lung Disease Flare",
+    "description": "In a smoker or long-term smoke or dust exposure: worsening cough with more phlegm, wheeze and breathlessness.",
+    "keywords": [
+      "chronic smoker",
+      "cough",
+      "phlegm",
+      "wheezing",
+      "shortness of breath",
+      "tight chest"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Chronic Disease Reference Set (draft, pending clinician review)",
+    "recommendation": "See a doctor within a day. Sit upright, stay away from smoke, and use any prescribed inhaler as directed.",
+    "caution": "Seek emergency care for severe breathlessness, blue lips or confusion.",
+    "red_flags": [
+      "blue lips",
+      "confusion",
+      "severe breathlessness"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb59",
+    "condition": "Fainting (Syncope)",
+    "description": "Brief loss of consciousness with quick recovery, often preceded by dizziness, sweating and paleness.",
+    "keywords": [
+      "fainting",
+      "dizzy",
+      "sweating",
+      "pale skin",
+      "blurred vision",
+      "palpitations"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "General Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "Lie the person down with legs raised and see a doctor within a day for the cause. Give water when fully awake.",
+    "caution": "Seek emergency care if fainting with chest pain, palpitations, injury or during exercise.",
+    "red_flags": [
+      "chest pain",
+      "palpitations",
+      "head injury",
+      "fainting during exercise"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb60",
+    "condition": "Ear Infection (Otitis Media)",
+    "description": "Ear pain, sometimes with fever, ear discharge or reduced hearing; young children may tug the ear or be irritable.",
+    "keywords": [
+      "ear pain",
+      "ear discharge",
+      "fever",
+      "reduced hearing",
+      "tugging ear"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Skin & Eye & Dental Reference Set (draft, pending clinician review)",
+    "recommendation": "See a doctor within a day or two. Paracetamol may relieve pain as advised.",
+    "caution": "Do not put oil, drops or objects into a discharging ear. Seek urgent care for swelling behind the ear or stiff neck.",
+    "red_flags": [
+      "swelling behind ear",
+      "stiff neck",
+      "high fever"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb61",
+    "condition": "Dental Abscess",
+    "description": "Severe toothache with swollen gum or cheek, pain on chewing, bad taste and sometimes fever.",
+    "keywords": [
+      "tooth pain",
+      "swollen gum or cheek",
+      "pain when chewing",
+      "bad taste in mouth",
+      "fever"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Skin & Eye & Dental Reference Set (draft, pending clinician review)",
+    "recommendation": "See a dentist or doctor within a day - an abscess needs treatment. Rinse gently with warm salty water.",
+    "caution": "Seek emergency care if swelling spreads to the face or neck, or you have trouble swallowing or breathing.",
+    "red_flags": [
+      "spreading facial swelling",
+      "difficulty swallowing",
+      "difficulty breathing"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb62",
+    "condition": "Eye Injury / Foreign Body in Eye",
+    "description": "Eye pain, redness, tearing or blurred vision after something enters or strikes the eye.",
+    "keywords": [
+      "eye pain",
+      "something in eye",
+      "watery eyes",
+      "red eye",
+      "blurred vision",
+      "eye injury"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Skin & Eye & Dental Reference Set (draft, pending clinician review)",
+    "recommendation": "Do not rub. Rinse gently with clean water and see a doctor the same day.",
+    "caution": "Do not remove an embedded object. Seek emergency care for chemical splashes (rinse for 15 minutes), vision loss or a penetrating injury.",
+    "red_flags": [
+      "vision loss",
+      "chemical splash",
+      "embedded object"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb63",
+    "condition": "Suspected Fracture",
+    "description": "After a fall or injury: severe pain, swelling, deformity or inability to use the limb.",
+    "keywords": [
+      "severe pain after injury",
+      "swelling",
+      "deformity",
+      "cannot move limb",
+      "bruising",
+      "fall"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Trauma & First Aid Reference Set (draft, pending clinician review)",
+    "recommendation": "Keep the limb still and supported with a splint or sling, apply a cold pack wrapped in cloth, and go to a hospital for an X-ray.",
+    "caution": "Do not try to straighten the limb. Seek emergency care for bone through the skin, numb or pale limb, or heavy bleeding.",
+    "red_flags": [
+      "bone through skin",
+      "pale or numb limb",
+      "heavy bleeding"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb64",
+    "condition": "Severe Malnutrition in a Child",
+    "description": "Very thin child with visible wasting, swelling of both feet, poor appetite, tiredness and hair changes.",
+    "keywords": [
+      "child under five",
+      "visible wasting",
+      "swelling of both feet",
+      "loss of appetite",
+      "lethargy",
+      "hair changes"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Child Health (IMCI-style) Reference Set (draft, pending clinician review)",
+    "recommendation": "Take the child to a health facility or nutrition rehabilitation centre promptly. Continue breastfeeding and offer small frequent feeds.",
+    "caution": "Do not give large amounts of water or food at once. Seek emergency care if the child is very sleepy, has diarrhoea or cannot feed.",
+    "red_flags": [
+      "very sleepy",
+      "diarrhea",
+      "cannot eat or drink",
+      "fever"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb65",
+    "condition": "Worm Infestation",
+    "description": "Abdominal discomfort, poor appetite, itching around the anus, visible worms in stool and weight loss, mostly in children.",
+    "keywords": [
+      "abdominal discomfort",
+      "itching around anus",
+      "visible worms in stool",
+      "loss of appetite",
+      "weight loss"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "General Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "See a health worker; deworming tablets are often provided through public programmes. Wash hands and trim nails.",
+    "caution": "Seek care if severe abdominal pain, vomiting or yellow skin appear.",
+    "red_flags": [
+      "severe abdominal pain",
+      "vomiting",
+      "yellow skin"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb66",
+    "condition": "Influenza (Flu)",
+    "description": "Sudden fever with body aches, headache, cough, sore throat, runny nose and tiredness.",
+    "keywords": [
+      "fever",
+      "muscle pain",
+      "cough",
+      "sore throat",
+      "runny nose",
+      "fatigue",
+      "chills",
+      "headache"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "General Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "Rest, drink fluids and take paracetamol for fever if needed. Stay home to avoid spreading it.",
+    "caution": "See a doctor if breathing becomes difficult, symptoms last more than a week, or you are pregnant, elderly or have chronic illness.",
+    "red_flags": [
+      "difficulty breathing",
+      "chest pain",
+      "confusion"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb67",
+    "condition": "Acute Bronchitis",
+    "description": "Cough with phlegm for several days after a cold, with mild chest discomfort and low fever.",
+    "keywords": [
+      "cough",
+      "phlegm",
+      "mild fever",
+      "tight chest",
+      "fatigue",
+      "wheezing"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "General Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "Rest, fluids and warm drinks. Avoid smoke and dust.",
+    "caution": "See a doctor if cough lasts more than 3 weeks, there is breathlessness or blood in phlegm.",
+    "red_flags": [
+      "breathlessness",
+      "blood in phlegm",
+      "high fever"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb68",
+    "condition": "Sinusitis",
+    "description": "Facial pain or pressure, blocked nose, thick nasal discharge and headache after a cold.",
+    "keywords": [
+      "facial pain",
+      "congestion",
+      "thick nasal discharge",
+      "headache",
+      "reduced smell"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "General Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "Steam inhalation, fluids and rest. Saline nasal rinses may help.",
+    "caution": "See a doctor if symptoms last over 10 days, or for severe headache, swelling around the eyes or high fever.",
+    "red_flags": [
+      "swelling around eyes",
+      "high fever",
+      "vision changes"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb69",
+    "condition": "Allergic Rhinitis",
+    "description": "Repeated sneezing, itchy nose and eyes and clear runny nose, triggered by dust, pollen or seasons.",
+    "keywords": [
+      "sneezing",
+      "itchy eyes",
+      "itchy nose",
+      "runny nose",
+      "dust or pollen trigger"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "General Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "Avoid triggers, wash bedding, and ask a pharmacist about antihistamines.",
+    "caution": "See a doctor if wheeze, chest tightness or breathlessness occur.",
+    "red_flags": [
+      "wheezing",
+      "breathlessness"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb70",
+    "condition": "Chickenpox",
+    "description": "Itchy blistering rash in different stages with mild fever and tiredness.",
+    "keywords": [
+      "itchy blister rash",
+      "fever",
+      "fatigue",
+      "headache",
+      "blisters in different stages"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Skin & Eye & Dental Reference Set (draft, pending clinician review)",
+    "recommendation": "Rest, fluids, keep nails short and calamine lotion for itch. Stay away from others until blisters crust.",
+    "caution": "See a doctor promptly if pregnant, newborn, immune-weak, or if the rash becomes red and painful or you have breathing trouble.",
+    "red_flags": [
+      "pregnancy",
+      "newborn",
+      "breathing trouble",
+      "very high fever"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb71",
+    "condition": "Scabies",
+    "description": "Intense itching that is worse at night with tiny bumps or burrows between fingers and on the wrists; others in the home often itch too.",
+    "keywords": [
+      "intense itching worse at night",
+      "rash between fingers",
+      "family members itching",
+      "tiny skin burrows"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Skin & Eye & Dental Reference Set (draft, pending clinician review)",
+    "recommendation": "See a health worker for scabies cream; treat all household members and wash clothes and bedding in hot water.",
+    "caution": "Do not share clothes or bedding. Seek care if sores become red, hot or pus-filled.",
+    "red_flags": [
+      "pus-filled sores",
+      "spreading redness"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb72",
+    "condition": "Ringworm (Fungal Skin Infection)",
+    "description": "Ring-shaped, red, scaly and itchy skin patch with clearer centre that slowly spreads.",
+    "keywords": [
+      "ring-shaped rash",
+      "scaly skin",
+      "itchy skin",
+      "spreading patch"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Skin & Eye & Dental Reference Set (draft, pending clinician review)",
+    "recommendation": "Keep skin clean and dry; antifungal cream from a pharmacy or health worker. Avoid sharing towels.",
+    "caution": "See a doctor if it spreads widely, involves the scalp or does not clear in 2 weeks.",
+    "red_flags": [
+      "scalp involvement",
+      "widespread rash"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb73",
+    "condition": "Hives / Skin Allergy",
+    "description": "Itchy raised welts on the skin that come and go, without breathing or throat problems.",
+    "keywords": [
+      "hives",
+      "itchy skin",
+      "raised welts"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Skin & Eye & Dental Reference Set (draft, pending clinician review)",
+    "recommendation": "Avoid the suspected trigger, cool compresses, and ask a pharmacist about antihistamines.",
+    "caution": "Seek emergency care immediately if lips, tongue or throat swell or breathing becomes difficult.",
+    "red_flags": [
+      "swollen lips or tongue",
+      "difficulty breathing",
+      "dizziness"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb74",
+    "condition": "Minor Burn or Scald",
+    "description": "Small red painful burn or a few small blisters from hot water or flame, smaller than the palm.",
+    "keywords": [
+      "minor burn",
+      "red painful skin",
+      "small blisters"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Trauma & First Aid Reference Set (draft, pending clinician review)",
+    "recommendation": "Cool under clean running water for 20 minutes, then cover with a clean non-stick dressing.",
+    "caution": "Do not use ice, butter, oil, creams or toothpaste. Get medical care if the burn is larger than the person's hand, on the face, hands, feet or genitals, has white or charred skin, or is a chemical or electrical burn - and for any burn in a child under 5 or a pregnant woman.",
+    "red_flags": [
+      "larger than palm",
+      "burn on face or hands",
+      "child with burn",
+      "chemical or electrical burn",
+      "white or charred skin",
+      "child under five or pregnant woman"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": "",
+    "references": [
+      {
+        "title": "NHS - Burns and scalds: treatment",
+        "publisher": "NHS (UK)",
+        "url": "https://www.nhs.uk/conditions/burns-and-scalds/treatment/"
+      },
+      {
+        "title": "NHS - Burns and scalds",
+        "publisher": "NHS (UK)",
+        "url": "https://www.nhs.uk/conditions/burns-and-scalds/"
+      }
+    ],
+    "source_check": {
+      "status": "SOURCE-CHECKED (by development team, not a clinician)",
+      "checked_on": "2026-10-15",
+      "points_confirmed": [
+        "cool with cool or lukewarm running water for 20 minutes",
+        "no ice, creams, butter or greasy substances",
+        "cover loosely with cling film or a clean non-fluffy cover",
+        "do not burst blisters",
+        "who needs medical attention"
+      ]
+    }
+  },
+  {
+    "id": "kb75",
+    "condition": "Gastritis / Peptic Ulcer",
+    "description": "Burning pain in the upper abdomen, bloating, nausea and belching, often related to meals or spicy food.",
+    "keywords": [
+      "burning upper abdominal pain",
+      "bloating",
+      "nausea",
+      "belching",
+      "pain related to meals",
+      "heartburn"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "General Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "Eat small regular meals and avoid spicy food, alcohol, tobacco and painkillers such as ibuprofen. See a health worker if it persists beyond a week or two.",
+    "caution": "Seek emergency care for vomiting blood, black stools or severe sudden abdominal pain.",
+    "red_flags": [
+      "vomiting blood",
+      "black stools",
+      "severe sudden pain"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb76",
+    "condition": "Acid Reflux (GERD)",
+    "description": "Burning in the chest after meals or lying down with sour taste or regurgitation.",
+    "keywords": [
+      "heartburn",
+      "sour taste in mouth",
+      "regurgitation",
+      "burning chest after meals",
+      "worse lying down"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "General Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "Eat smaller, earlier meals, avoid trigger foods, raise the head of the bed.",
+    "caution": "Chest burning can sometimes be heart-related - seek emergency care if with sweating, breathlessness or spreading arm pain.",
+    "red_flags": [
+      "chest pain with sweating",
+      "difficulty swallowing",
+      "weight loss"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb77",
+    "condition": "High Blood Pressure (Hypertension)",
+    "description": "High readings found on checking, sometimes with headache or dizziness, but often no symptoms.",
+    "keywords": [
+      "high blood pressure reading",
+      "headache",
+      "dizzy",
+      "fatigue"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Chronic Disease Reference Set (draft, pending clinician review)",
+    "recommendation": "See a health worker within days to confirm readings and begin treatment. Reduce salt, stay active and avoid tobacco.",
+    "caution": "Seek emergency care for very high readings with chest pain, severe headache, weakness or vision change.",
+    "red_flags": [
+      "chest pain",
+      "severe headache",
+      "weakness or speech trouble",
+      "vision change"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb78",
+    "condition": "Diabetes (Suspected High Blood Sugar)",
+    "description": "Increased thirst and urination, tiredness, blurred vision, slow-healing wounds and weight loss.",
+    "keywords": [
+      "increased thirst",
+      "frequent urination",
+      "fatigue",
+      "blurred vision",
+      "slow healing wounds",
+      "weight loss",
+      "tingling in feet"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Chronic Disease Reference Set (draft, pending clinician review)",
+    "recommendation": "See a health worker within days for a blood sugar test. Limit sugary drinks and stay active.",
+    "caution": "Seek emergency care for vomiting, abdominal pain, fast breathing or drowsiness.",
+    "red_flags": [
+      "vomiting",
+      "fast breathing",
+      "drowsiness"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb79",
+    "condition": "Anaemia (Low Blood Count)",
+    "description": "Tiredness, pale skin, dizziness, breathlessness on effort and palpitations, often from poor diet, worms or heavy periods.",
+    "keywords": [
+      "fatigue",
+      "pale skin",
+      "dizzy",
+      "shortness of breath on exertion",
+      "palpitations",
+      "brittle nails"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "General Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "See a health worker for a haemoglobin test; iron-rich foods and iron-folic acid tablets are often available free in public programmes.",
+    "caution": "Anaemia in pregnancy needs prompt review. Seek emergency care for chest pain, fainting or severe breathlessness.",
+    "red_flags": [
+      "fainting",
+      "chest pain",
+      "pregnancy",
+      "severe breathlessness"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb80",
+    "condition": "Low Back Pain (Muscular)",
+    "description": "Aching back after lifting or strain, stiff and worse with movement, without leg weakness.",
+    "keywords": [
+      "back pain",
+      "stiffness",
+      "muscle spasms",
+      "pain after lifting",
+      "pain worse with movement"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "General Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "Stay gently active, apply heat, and avoid heavy lifting. Paracetamol may help.",
+    "caution": "Seek emergency care for leg weakness, numbness around the groin, or loss of bladder or bowel control.",
+    "red_flags": [
+      "leg weakness",
+      "groin numbness",
+      "loss of bladder control"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb81",
+    "condition": "Tension Headache",
+    "description": "Dull band-like pressure around the head with neck tightness, linked to stress or poor sleep, without vomiting or aura.",
+    "keywords": [
+      "dull headache",
+      "band-like head pressure",
+      "neck tightness",
+      "stress"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "General Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "Rest, drink water, gentle neck stretches and paracetamol if needed.",
+    "caution": "Seek care for sudden severe headache, fever with stiff neck, weakness or vision changes.",
+    "red_flags": [
+      "sudden severe headache",
+      "stiff neck with fever",
+      "weakness",
+      "vision change"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb82",
+    "condition": "Food Allergy Reaction (Mild to Moderate)",
+    "description": "Hives, itching, swollen lips or a tingling mouth, sometimes with vomiting or stomach cramps, soon after eating a food the person may be allergic to, without breathing difficulty.",
+    "keywords": [
+      "hives",
+      "itchy skin",
+      "swollen lips",
+      "tingling in mouth",
+      "rash after eating",
+      "vomiting",
+      "stomach cramps",
+      "allergic reaction"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Allergy & Immunology Reference Set (draft, pending clinician review)",
+    "recommendation": "Stop eating the suspected food and keep the packaging or a note of what was eaten. See a doctor the same day to confirm the trigger and learn how to avoid it. Stay with the person and watch them closely for the next few hours.",
+    "caution": "Any trouble breathing, a tight or closing throat, a swollen tongue, dizziness or fainting is an emergency - call emergency services at once. Do not give the person the suspected food again to 'test' it.",
+    "red_flags": [
+      "trouble breathing",
+      "throat tightness",
+      "swollen tongue",
+      "dizziness or fainting",
+      "repeated vomiting"
+    ],
+    "self_care": "Avoid the trigger food; read labels.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb83",
+    "condition": "Medicine (Drug) Allergy with Rash",
+    "description": "A new itchy rash, hives or facial swelling that appears hours to days after starting a medicine, sometimes with fever.",
+    "keywords": [
+      "rash after taking medicine",
+      "new medicine started",
+      "hives",
+      "itchy skin",
+      "fever",
+      "swelling of face and hands"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Allergy & Immunology Reference Set (draft, pending clinician review)",
+    "recommendation": "Stop taking the suspected medicine and see a doctor or pharmacist the same day, taking the medicine strip or box with you. Do not restart it without medical advice.",
+    "caution": "If the person has trouble breathing, swelling of the throat or tongue, or fainting, call emergency services. If the medicine was prescribed for a serious illness, ask the prescriber what to take instead rather than going without.",
+    "red_flags": [
+      "trouble breathing",
+      "swollen tongue or throat",
+      "blistering skin or mouth sores",
+      "high fever"
+    ],
+    "self_care": "Note the medicine name for future reference.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb84",
+    "condition": "Severe Drug Reaction with Skin Blistering (Stevens-Johnson type)",
+    "description": "Painful red or purple rash that blisters and peels, with sores in the mouth or on the lips, red painful eyes and fever, usually soon after starting a new medicine.",
+    "keywords": [
+      "rash after taking medicine",
+      "blisters",
+      "mouth sores",
+      "peeling skin",
+      "red eye",
+      "fever",
+      "painful skin",
+      "sore throat"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Allergy & Immunology Reference Set (draft, pending clinician review)",
+    "recommendation": "This is a medical emergency. Go to a hospital immediately and stop the suspected medicine; take the medicine box or strips with you.",
+    "caution": "Do not wait to see if it improves. Do not apply creams, home remedies or burst the blisters. Tell staff which medicines were started in the last weeks.",
+    "red_flags": [
+      "rapidly spreading rash",
+      "blisters in the mouth or eyes",
+      "peeling skin",
+      "difficulty swallowing"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb85",
+    "condition": "Insect Sting or Bite Reaction (Local)",
+    "description": "Pain, redness, swelling and itching at the site of a bee, wasp, ant or other insect sting or bite, without symptoms elsewhere in the body.",
+    "keywords": [
+      "insect sting",
+      "pain at sting site",
+      "swelling at sting site",
+      "redness",
+      "itchy skin"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Allergy & Immunology Reference Set (draft, pending clinician review)",
+    "recommendation": "Remove a visible sting by scraping it off sideways. Wash with clean water and soap, apply a cold cloth for pain and swelling, and keep the area clean. Avoid scratching.",
+    "caution": "Hives all over the body, swelling of the face or lips, wheezing, dizziness or trouble breathing after a sting is an emergency. See a doctor if the swelling spreads widely, lasts more than a few days or becomes hot, pus-filled or very painful.",
+    "red_flags": [
+      "hives all over",
+      "swelling of face or lips",
+      "wheezing",
+      "dizziness",
+      "spreading redness"
+    ],
+    "self_care": "Cold compress, keep clean.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb86",
+    "condition": "Allergic Contact Dermatitis",
+    "description": "Itchy red rash, sometimes with small blisters or dry cracked skin, appearing on skin that touched a plant, soap, detergent, jewellery, cosmetic or chemical.",
+    "keywords": [
+      "itchy rash after contact",
+      "red rash",
+      "blisters",
+      "dry cracked skin",
+      "itchy skin"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Skin Reference Set (draft, pending clinician review)",
+    "recommendation": "Wash the area with plain water and gentle soap and avoid the suspected trigger. Keep the skin moisturised. See a health worker if it does not improve in a week or keeps coming back.",
+    "caution": "See a doctor promptly if the rash covers a large area, affects the face or genitals, becomes painful or oozing, or you have fever.",
+    "red_flags": [
+      "rash on face or genitals",
+      "oozing or pus",
+      "fever",
+      "rapid spread"
+    ],
+    "self_care": "Avoid the trigger; moisturise.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb87",
+    "condition": "Eczema (Atopic Dermatitis)",
+    "description": "Long-lasting dry, very itchy patches of skin, often in skin folds such as elbows, behind the knees or on the face, that flare and settle, and often run in families with allergy or asthma.",
+    "keywords": [
+      "dry itchy patches",
+      "rash in skin folds",
+      "itchy skin",
+      "dry cracked skin",
+      "family history of allergy"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Skin Reference Set (draft, pending clinician review)",
+    "recommendation": "Moisturise regularly, use mild soap, keep nails short and avoid known triggers such as harsh soaps and wool. A health worker can advise on treatment for flares.",
+    "caution": "See a doctor if the skin becomes red, painful, weeping or crusted (possible infection), or if sleep is badly affected. Do not apply strong steroid creams without medical advice.",
+    "red_flags": [
+      "weeping or crusted skin",
+      "fever",
+      "widespread painful rash"
+    ],
+    "self_care": "Moisturise, short nails, mild soap.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb88",
+    "condition": "Allergic Conjunctivitis (Allergic Red Eyes)",
+    "description": "Both eyes itchy, red, watery and slightly swollen, often with sneezing, triggered by dust or pollen, without thick sticky discharge.",
+    "keywords": [
+      "itchy eyes",
+      "watery eyes",
+      "red eye",
+      "sneezing",
+      "swollen eyelids",
+      "dust or pollen trigger"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Allergy & Immunology Reference Set (draft, pending clinician review)",
+    "recommendation": "Avoid rubbing the eyes, rinse with clean cool water, use a cold cloth and reduce exposure to dust or pollen. A pharmacist or health worker can advise on allergy eye drops.",
+    "caution": "See a doctor urgently for eye pain, reduced vision, light sensitivity, or a red eye after an injury or in a contact-lens wearer.",
+    "red_flags": [
+      "eye pain",
+      "vision changes",
+      "light sensitivity"
+    ],
+    "self_care": "Cool rinse; avoid rubbing.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb89",
+    "condition": "Angioedema (Swelling of Lips, Face or Tongue)",
+    "description": "Sudden swelling of the lips, face or tongue, often without itching, which may follow a food, medicine or insect sting, or happen without a clear cause.",
+    "keywords": [
+      "swollen lips",
+      "swollen face",
+      "swollen tongue",
+      "allergic reaction",
+      "rash after taking medicine"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Allergy & Immunology Reference Set (draft, pending clinician review)",
+    "recommendation": "Seek medical care immediately, because swelling of the tongue or throat can block breathing. Stop the suspected food or medicine. Keep the person sitting upright and calm.",
+    "caution": "Call emergency services at once if there is any difficulty breathing or swallowing, a muffled voice, drooling, or the swelling is spreading quickly.",
+    "red_flags": [
+      "difficulty breathing",
+      "difficulty swallowing",
+      "muffled voice",
+      "rapid swelling"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb90",
+    "condition": "Impetigo (Skin Infection with Crusted Sores)",
+    "description": "Red sores that break and form honey-coloured crusts, often around the nose and mouth, common in children and spreading easily.",
+    "keywords": [
+      "honey coloured crusts",
+      "sores around mouth and nose",
+      "itchy skin",
+      "child under five"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Skin Reference Set (draft, pending clinician review)",
+    "recommendation": "Gently wash the sores with soap and clean water, keep them covered, wash hands often and do not share towels. See a health worker, because antibiotic treatment is usually needed.",
+    "caution": "See a doctor promptly if the sores spread quickly, there is fever, or the skin becomes very red and painful.",
+    "red_flags": [
+      "fever",
+      "spreading redness",
+      "very painful skin"
+    ],
+    "self_care": "Hygiene, separate towels.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb91",
+    "condition": "Head Lice",
+    "description": "Itchy scalp with visible tiny lice or white egg cases (nits) stuck to the hair near the scalp, common in children.",
+    "keywords": [
+      "itchy scalp",
+      "visible lice or nits",
+      "scratch marks on scalp"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Skin Reference Set (draft, pending clinician review)",
+    "recommendation": "Treat with a lice product recommended by a pharmacist or health worker and comb the hair with a fine-toothed comb. Wash bedding and combs in hot water and check close contacts.",
+    "caution": "Do not use kerosene or other harsh household chemicals on the scalp. See a health worker if sores on the scalp become infected.",
+    "red_flags": [
+      "infected sores on scalp",
+      "fever"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb92",
+    "condition": "Nosebleed (Epistaxis)",
+    "description": "Bleeding from one or both nostrils, often from dry air, nose picking, a minor knock or a cold.",
+    "keywords": [
+      "nosebleed",
+      "dry nose",
+      "nose injury"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "General Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "Sit up and lean forward, pinch the soft part of the nose firmly for 10 minutes without releasing, and breathe through the mouth. Do not tilt the head back.",
+    "caution": "Seek urgent care if bleeding continues beyond 20 minutes despite pressure, follows a head injury, or the person feels faint, takes blood-thinning medicine, or has frequent nosebleeds.",
+    "red_flags": [
+      "bleeding longer than 20 minutes",
+      "after head injury",
+      "faintness"
+    ],
+    "self_care": "Pinch nose, lean forward.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb93",
+    "condition": "Low Blood Sugar (Hypoglycaemia)",
+    "description": "In a person with diabetes (or sometimes otherwise): shakiness, sweating, hunger, headache, a pounding heart, confusion or irritability, often after a missed meal, extra medicine or heavy exertion.",
+    "keywords": [
+      "known diabetes",
+      "shaking",
+      "sweating",
+      "hunger",
+      "confusion",
+      "palpitations",
+      "missed meal",
+      "dizzy"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "General Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "If the person is awake and able to swallow, give a sugary drink or a few spoons of sugar, then a snack, and recheck how they feel after 15 minutes. Arrange a medical check the same day.",
+    "caution": "If the person is drowsy, cannot swallow safely, has a fit or is unconscious, do not put food or drink in the mouth - call emergency services. Seek urgent care if symptoms return or do not improve.",
+    "red_flags": [
+      "unconscious or fitting",
+      "unable to swallow",
+      "not improving after sugar",
+      "repeated episodes"
+    ],
+    "self_care": "Carry fast sugar; do not skip meals.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb94",
+    "condition": "Newborn Jaundice (Yellow Baby)",
+    "description": "Yellow colour of the skin and eyes in a baby in the first weeks of life, sometimes with poor feeding or sleepiness.",
+    "keywords": [
+      "newborn baby",
+      "jaundice",
+      "not feeding well",
+      "lethargy"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Child Health (IMCI-style) Reference Set (draft, pending clinician review)",
+    "recommendation": "Take the baby to a health facility the same day, because some newborn jaundice needs treatment. Keep breastfeeding often.",
+    "caution": "Yellow colour in the first 24 hours of life, a very sleepy or floppy baby, poor feeding, fever or pale stools needs emergency care. Do not rely on sunlight or home remedies alone.",
+    "red_flags": [
+      "yellow in first 24 hours",
+      "very sleepy",
+      "not feeding",
+      "fever",
+      "pale stools"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb95",
+    "condition": "Osteoarthritis (Wear-and-Tear Joint Pain)",
+    "description": "Knee, hip or hand joint pain and stiffness that gets worse with activity and climbing stairs and eases with rest, mostly in older adults, without fever or redness.",
+    "keywords": [
+      "knee pain",
+      "joint pain",
+      "stiffness",
+      "pain on climbing stairs",
+      "pain worse with movement"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "General Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "Keep gently active, maintain a healthy weight and use heat for stiffness. A health worker can advise on pain relief and exercises.",
+    "caution": "See a doctor promptly if a joint is suddenly hot, red and swollen, you have fever, or you cannot bear weight.",
+    "red_flags": [
+      "hot red swollen joint",
+      "fever",
+      "unable to bear weight"
+    ],
+    "self_care": "Gentle exercise, weight control.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb96",
+    "condition": "Constipation",
+    "description": "Infrequent hard stools, straining and a bloated or uncomfortable abdomen, often related to low fibre or water intake.",
+    "keywords": [
+      "constipation",
+      "hard stools",
+      "straining to pass stool",
+      "bloating",
+      "abdominal discomfort"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "General Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "Increase fibre, fruit, vegetables and water and stay active. See a health worker if it persists for more than two weeks.",
+    "caution": "Seek urgent care for severe abdominal pain, repeated vomiting, a swollen belly, blood in the stool, or if you cannot pass stool or gas.",
+    "red_flags": [
+      "severe abdominal pain",
+      "vomiting",
+      "blood in stool",
+      "swollen belly"
+    ],
+    "self_care": "Fibre, fluids, activity.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb97",
+    "condition": "Whooping Cough (Pertussis)",
+    "description": "Long bouts of coughing, often ending with a high-pitched 'whoop' or vomiting, in a child who may be unvaccinated; young babies may stop breathing briefly or turn blue instead of whooping.",
+    "keywords": [
+      "cough",
+      "persistent cough",
+      "vomiting after coughing",
+      "whooping sound",
+      "child under five",
+      "cough for more than two weeks",
+      "blue lips"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Child Health (IMCI-style) Reference Set (draft, pending clinician review)",
+    "recommendation": "See a health worker the same day. Keep the child away from young babies and offer small, frequent feeds and fluids. Vaccination protects other children.",
+    "caution": "Babies under six months, pauses in breathing, blue colour or inability to feed need hospital care immediately. Do not give cough syrups to young children.",
+    "red_flags": [
+      "pauses in breathing",
+      "blue lips",
+      "unable to feed",
+      "very young baby"
+    ],
+    "self_care": "Small frequent feeds, fluids, rest.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb98",
+    "condition": "Croup (Barking Cough in a Child)",
+    "description": "A young child with a barking cough, hoarse voice and noisy breathing, often worse at night after a cold.",
+    "keywords": [
+      "child under five",
+      "barking cough",
+      "hoarse voice",
+      "noisy breathing",
+      "runny nose",
+      "fever",
+      "worse at night"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Child Health (IMCI-style) Reference Set (draft, pending clinician review)",
+    "recommendation": "Keep the child calm and upright, because crying makes the breathing worse. See a health worker the same day.",
+    "caution": "Noisy breathing while resting, the chest pulling in, blue lips, drooling or being unable to drink is an emergency - go to hospital immediately.",
+    "red_flags": [
+      "noisy breathing at rest",
+      "chest indrawing",
+      "blue lips",
+      "drooling"
+    ],
+    "self_care": "Stay calm, keep upright.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb99",
+    "condition": "Bronchiolitis (Chest Infection in Infants)",
+    "description": "A baby or toddler with a runny nose followed by fast breathing, wheeze, cough and poor feeding.",
+    "keywords": [
+      "child under five",
+      "fast breathing",
+      "wheezing",
+      "cough",
+      "runny nose",
+      "not feeding well",
+      "chest indrawing"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Child Health (IMCI-style) Reference Set (draft, pending clinician review)",
+    "recommendation": "Take the baby to a health facility the same day. Keep feeding small amounts often and keep the baby upright.",
+    "caution": "Chest pulling in, not able to feed, pauses in breathing, blue lips or unusual sleepiness needs emergency care.",
+    "red_flags": [
+      "chest indrawing",
+      "unable to feed",
+      "blue lips",
+      "pauses in breathing"
+    ],
+    "self_care": "Small frequent feeds.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb100",
+    "condition": "Fit with Fever in a Child (Febrile Seizure)",
+    "description": "A child with fever who has a sudden fit: stiffening and jerking with loss of awareness, usually lasting a few minutes, then drowsiness.",
+    "keywords": [
+      "convulsions",
+      "fever",
+      "child under five",
+      "loss of consciousness",
+      "confusion after episode",
+      "stiffening of body"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Child Health (IMCI-style) Reference Set (draft, pending clinician review)",
+    "recommendation": "Lay the child on their side on a safe surface, loosen clothing, note the time, and stay with them. Take the child to a hospital, especially after a first fit.",
+    "caution": "Do not put anything in the mouth, do not hold the child down and do not give food or drink until fully awake. A fit lasting more than 5 minutes, repeated fits, or a stiff neck is an emergency.",
+    "red_flags": [
+      "fit longer than 5 minutes",
+      "repeated fits",
+      "stiff neck",
+      "not waking up"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb101",
+    "condition": "Diphtheria",
+    "description": "Sore throat with a grey-white coating in the throat, swollen neck glands, fever and noisy breathing, mostly in unvaccinated children.",
+    "keywords": [
+      "severe sore throat",
+      "grey membrane in throat",
+      "swollen lymph nodes",
+      "difficulty swallowing",
+      "noisy breathing",
+      "fever",
+      "child under five"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Child Health (IMCI-style) Reference Set (draft, pending clinician review)",
+    "recommendation": "Go to a hospital immediately; diphtheria needs urgent treatment and isolation. Tell staff about vaccination status.",
+    "caution": "Do not scrape or remove the coating. Breathing difficulty or a swollen 'bull neck' is life-threatening.",
+    "red_flags": [
+      "noisy breathing",
+      "swollen neck",
+      "blue lips",
+      "weakness"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb102",
+    "condition": "Nappy (Diaper) Rash",
+    "description": "Red, sore skin in the nappy area of a baby, sometimes with small spots.",
+    "keywords": [
+      "red rash in nappy area",
+      "child under five",
+      "itchy skin",
+      "redness"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Child Health (IMCI-style) Reference Set (draft, pending clinician review)",
+    "recommendation": "Change wet or soiled nappies often, clean gently with water, let the skin air-dry and avoid tight plastic covers.",
+    "caution": "See a health worker if there are pus-filled spots, bleeding, fever or the rash spreads beyond the nappy area or lasts more than a week.",
+    "red_flags": [
+      "pus-filled spots",
+      "bleeding",
+      "fever",
+      "spreading rash"
+    ],
+    "self_care": "Frequent changes, air exposure.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb103",
+    "condition": "Oral Thrush in Infants",
+    "description": "White patches on the tongue and inside the mouth of a baby that do not wipe off easily, sometimes making feeding uncomfortable.",
+    "keywords": [
+      "white patches in mouth",
+      "not feeding well",
+      "child under five",
+      "newborn baby"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Child Health (IMCI-style) Reference Set (draft, pending clinician review)",
+    "recommendation": "See a health worker for the correct treatment. Wash bottle teats and the mother's nipples carefully if breastfeeding.",
+    "caution": "Seek care promptly if the baby cannot feed, has fever, or the patches spread.",
+    "red_flags": [
+      "unable to feed",
+      "fever",
+      "spreading patches"
+    ],
+    "self_care": "Clean feeding items.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb104",
+    "condition": "Mumps",
+    "description": "Painful swelling of the cheeks in front of the ears with fever, headache and pain on chewing.",
+    "keywords": [
+      "swollen cheeks",
+      "fever",
+      "pain when chewing",
+      "headache",
+      "loss of appetite"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Child Health (IMCI-style) Reference Set (draft, pending clinician review)",
+    "recommendation": "Rest, drink fluids, eat soft food and keep away from others for about five days after the swelling starts. See a health worker to confirm.",
+    "caution": "Seek urgent care for severe headache with stiff neck, testicular pain or swelling, severe abdominal pain or vomiting.",
+    "red_flags": [
+      "stiff neck",
+      "testicular pain",
+      "severe abdominal pain",
+      "persistent vomiting"
+    ],
+    "self_care": "Rest, soft food, fluids.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb105",
+    "condition": "Hand, Foot and Mouth Disease",
+    "description": "Fever with painful sores in the mouth and small blisters on the palms and soles, mostly in young children.",
+    "keywords": [
+      "mouth sores",
+      "blisters on palms and soles",
+      "fever",
+      "child under five",
+      "loss of appetite"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Child Health (IMCI-style) Reference Set (draft, pending clinician review)",
+    "recommendation": "Offer cool fluids and soft foods, keep the child home and wash hands often. See a health worker if the child is not drinking.",
+    "caution": "Seek urgent care for refusing all fluids, signs of dehydration, high fever beyond three days, unusual sleepiness, stiff neck or fits.",
+    "red_flags": [
+      "not drinking",
+      "dehydration",
+      "stiff neck",
+      "unusual sleepiness"
+    ],
+    "self_care": "Cool fluids, soft foods.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb106",
+    "condition": "Foreign Object in Nose or Ear (Child)",
+    "description": "A young child who has pushed a bead, seed or similar object into the nose or ear, with one-sided nasal discharge, ear pain or a bad smell.",
+    "keywords": [
+      "something in ear",
+      "something in nose",
+      "one-sided nasal discharge",
+      "ear pain",
+      "child under five"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Child Health (IMCI-style) Reference Set (draft, pending clinician review)",
+    "recommendation": "Do not try to dig it out. Take the child to a health facility the same day to have it removed safely.",
+    "caution": "A button battery or magnet in the nose or ear is an emergency and needs immediate hospital care. Never use sharp tools.",
+    "red_flags": [
+      "button battery",
+      "magnet",
+      "bleeding",
+      "severe pain"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb107",
+    "condition": "Swallowed Foreign Object (Child)",
+    "description": "A child who has swallowed a coin, battery, magnet or other object, possibly with drooling, pain on swallowing or vomiting.",
+    "keywords": [
+      "swallowed object",
+      "difficulty swallowing",
+      "excessive salivation",
+      "vomiting",
+      "child under five"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Child Health (IMCI-style) Reference Set (draft, pending clinician review)",
+    "recommendation": "Take the child to a hospital promptly. Do not make the child vomit and do not give food while waiting.",
+    "caution": "A swallowed button battery, magnet or sharp object, or any breathing difficulty, is an emergency - go immediately.",
+    "red_flags": [
+      "button battery",
+      "magnet",
+      "sharp object",
+      "breathing difficulty",
+      "blood in vomit"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb108",
+    "condition": "Dysentery (Bloody Diarrhoea)",
+    "description": "Frequent loose stools with blood or mucus, belly cramps and fever.",
+    "keywords": [
+      "bloody stools",
+      "diarrhea",
+      "abdominal pain",
+      "fever",
+      "stomach cramps",
+      "contaminated water or food"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Infectious & Tropical Disease Reference Set (draft, pending clinician review)",
+    "recommendation": "Start oral rehydration solution (ORS) in small, frequent sips and see a doctor the same day; this needs testing and often antibiotics.",
+    "caution": "Do not give anti-diarrhoea medicines. Young children, severe dehydration, high fever or confusion need hospital care. Wash hands and use safe water.",
+    "red_flags": [
+      "severe dehydration",
+      "very sleepy",
+      "high fever",
+      "heavy blood in stool"
+    ],
+    "self_care": "ORS, safe water, hand washing. For children: zinc supplements for 10-14 days as advised by a health worker (often free through public programmes); keep feeding and keep breastfeeding.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": "",
+    "references": [
+      {
+        "title": "Clinical management of acute diarrhoea: WHO/UNICEF joint statement",
+        "publisher": "WHO / UNICEF",
+        "url": "https://www.who.int/publications/i/item/WHO_FCH_CAH_04.7"
+      }
+    ],
+    "source_check": {
+      "status": "SOURCE-CHECKED (by development team, not a clinician)",
+      "checked_on": "2026-10-15",
+      "points_confirmed": [
+        "ORS plus zinc for 10-14 days in children",
+        "continue feeding and breastfeeding",
+        "avoid anti-diarrhoeal drugs in children",
+        "seek care if dehydration signs"
+      ]
+    }
+  },
+  {
+    "id": "kb109",
+    "condition": "Scrub Typhus / Rickettsial Fever",
+    "description": "Fever with headache, body aches and rash, sometimes with a dark scab at a bite site, after work in bushes, grass or fields.",
+    "keywords": [
+      "fever",
+      "headache",
+      "muscle pain",
+      "black scab at bite site",
+      "rash",
+      "work in bushes or fields",
+      "swollen lymph nodes"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Infectious & Tropical Disease Reference Set (draft, pending clinician review)",
+    "recommendation": "See a doctor the same day; this illness is treatable but needs early antibiotics. Rest and drink fluids.",
+    "caution": "Breathlessness, confusion, bleeding or very low urine output is an emergency. Do not delay waiting for the rash.",
+    "red_flags": [
+      "breathlessness",
+      "confusion",
+      "bleeding",
+      "very little urine"
+    ],
+    "self_care": "Rest, fluids.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb110",
+    "condition": "Lymphatic Filariasis",
+    "description": "Long-standing swelling of a leg, arm or scrotum with thickened skin, often with repeated episodes of fever and painful glands.",
+    "keywords": [
+      "swollen legs",
+      "thickened skin",
+      "recurrent fever with painful glands",
+      "testicular swelling"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Infectious & Tropical Disease Reference Set (draft, pending clinician review)",
+    "recommendation": "See a health worker; treatment is available through public programmes. Wash the swollen limb daily with soap and water and keep it raised.",
+    "caution": "Seek care promptly for fever with a hot, red, painful limb, which may be an acute attack or infection.",
+    "red_flags": [
+      "hot red painful limb",
+      "high fever",
+      "open sores"
+    ],
+    "self_care": "Limb hygiene, elevation.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb111",
+    "condition": "Kala-azar (Visceral Leishmaniasis)",
+    "description": "Fever lasting weeks with weight loss, tiredness, paleness and a swollen belly, in an area where the sandfly-borne disease occurs.",
+    "keywords": [
+      "prolonged fever",
+      "weight loss",
+      "swollen abdomen",
+      "pale skin",
+      "fatigue",
+      "loss of appetite"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Infectious & Tropical Disease Reference Set (draft, pending clinician review)",
+    "recommendation": "See a doctor soon for a blood test; effective treatment is available free through national programmes in many areas.",
+    "caution": "Bleeding, severe breathlessness, or being too weak to eat or drink needs urgent hospital care.",
+    "red_flags": [
+      "bleeding",
+      "severe weakness",
+      "breathlessness"
+    ],
+    "self_care": "Nutrition, rest.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb112",
+    "condition": "Leprosy (Hansen's Disease)",
+    "description": "Pale or reddish skin patches that have lost feeling, with numb hands or feet and sometimes weakness, developing slowly.",
+    "keywords": [
+      "numb skin patch",
+      "numbness in hands or feet",
+      "scaly skin",
+      "spreading patch"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Infectious & Tropical Disease Reference Set (draft, pending clinician review)",
+    "recommendation": "Visit a health centre for examination; free multi-drug treatment is available and leprosy is curable. It is not spread by casual touch.",
+    "caution": "Seek urgent care for sudden pain, redness or swelling of patches or nerves, new weakness of the hand or foot, or eye redness or pain.",
+    "red_flags": [
+      "sudden nerve pain",
+      "new weakness of hand or foot",
+      "red painful eye",
+      "painful swollen patches"
+    ],
+    "self_care": "Protect numb hands and feet from injury.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb113",
+    "condition": "COVID-19-like or Viral Respiratory Illness",
+    "description": "Fever, cough, sore throat, tiredness and body aches, sometimes with loss of smell, in a person who may have been exposed to others who are ill.",
+    "keywords": [
+      "fever",
+      "cough",
+      "sore throat",
+      "reduced smell",
+      "fatigue",
+      "muscle pain"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Infectious & Tropical Disease Reference Set (draft, pending clinician review)",
+    "recommendation": "Rest, drink fluids, wear a mask around others and stay home. See a health worker if you are older, pregnant or have a long-term illness.",
+    "caution": "Difficulty breathing, chest pain, blue lips or confusion is an emergency.",
+    "red_flags": [
+      "difficulty breathing",
+      "chest pain",
+      "blue lips",
+      "confusion"
+    ],
+    "self_care": "Rest, fluids, isolation.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb114",
+    "condition": "Shingles (Herpes Zoster)",
+    "description": "A painful or burning blistering rash in a band on one side of the body or face, sometimes with fever and tingling before the rash.",
+    "keywords": [
+      "painful blistering rash on one side",
+      "burning pain on one side",
+      "blisters",
+      "rash",
+      "tingling in feet",
+      "fever"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Infectious & Tropical Disease Reference Set (draft, pending clinician review)",
+    "recommendation": "See a doctor within a day or two - early treatment helps. Keep the rash clean and dry and avoid contact with pregnant women, newborns and people with weak immunity.",
+    "caution": "A rash near the eye or on the face, severe pain, or a spreading rash needs urgent care. Do not burst the blisters.",
+    "red_flags": [
+      "rash near the eye",
+      "spreading rash",
+      "severe pain",
+      "weak immunity"
+    ],
+    "self_care": "Keep rash clean and dry.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb115",
+    "condition": "Suspected Brain Infection (Acute Encephalitis / Japanese Encephalitis)",
+    "description": "Fever with headache, vomiting, confusion or unusual behaviour and often fits in a child or adult, especially in monsoon season near paddy fields or pigs.",
+    "keywords": [
+      "fever",
+      "headache",
+      "vomiting",
+      "confusion",
+      "convulsions",
+      "drowsiness",
+      "mosquito exposure"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Infectious & Tropical Disease Reference Set (draft, pending clinician review)",
+    "recommendation": "Go to a hospital immediately - this needs urgent care. Keep the person on their side if drowsy or fitting.",
+    "caution": "Do not wait for a diagnosis or give home remedies. Any new fit, drowsiness or confusion with fever is an emergency.",
+    "red_flags": [
+      "fits",
+      "drowsiness",
+      "confusion",
+      "stiff neck"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb116",
+    "condition": "Suspected Rabies (Symptoms After an Animal Bite)",
+    "description": "Weeks or months after an animal bite or scratch: fever, tingling at the bite site, fear of water or drinking, throat spasms, drooling, agitation or confusion.",
+    "keywords": [
+      "animal bite",
+      "fear of water",
+      "excessive salivation",
+      "muscle spasms",
+      "confusion",
+      "difficulty swallowing",
+      "fever"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Infectious & Tropical Disease Reference Set (draft, pending clinician review)",
+    "recommendation": "Go to a hospital immediately. Rabies is almost always fatal once symptoms start, so urgent medical care and isolation are essential. Caregivers should avoid contact with saliva and seek vaccination advice.",
+    "caution": "Do not rely on home or traditional remedies. Wash any saliva contact with soap and water. Prevention (vaccination after any bite) is the only protection.",
+    "red_flags": [
+      "fear of water",
+      "throat spasms",
+      "agitation",
+      "confusion"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb117",
+    "condition": "Severe Vomiting in Pregnancy (Hyperemesis)",
+    "description": "A pregnant woman who vomits many times a day, cannot keep food or fluids down, and is losing weight or feeling dizzy.",
+    "keywords": [
+      "pregnant",
+      "repeated vomiting",
+      "nausea",
+      "dehydration",
+      "dizzy",
+      "dry mouth",
+      "weight loss"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Maternal Health Reference Set (draft, pending clinician review)",
+    "recommendation": "See a doctor the same day. Sip ORS or fluids in small amounts often and eat small dry snacks while arranging care.",
+    "caution": "Passing very little urine, fainting, confusion, vomiting blood or severe abdominal pain needs emergency care.",
+    "red_flags": [
+      "very little urine",
+      "fainting",
+      "vomiting blood",
+      "severe abdominal pain"
+    ],
+    "self_care": "Small frequent sips and snacks.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb118",
+    "condition": "Reduced Baby Movement in Late Pregnancy",
+    "description": "A woman in late pregnancy who feels the baby moving much less than usual, or not at all, for several hours.",
+    "keywords": [
+      "pregnant",
+      "reduced baby movements",
+      "baby not kicking"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Maternal Health Reference Set (draft, pending clinician review)",
+    "recommendation": "Go to a hospital or maternity facility the same day without waiting; the baby's wellbeing needs checking urgently.",
+    "caution": "Do not wait until the next day or rely on home tricks to make the baby move. Bleeding, fluid leaking, pain or headache together with reduced movement is even more urgent.",
+    "red_flags": [
+      "no movement for hours",
+      "bleeding",
+      "fluid leaking",
+      "severe pain",
+      "severe headache"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb119",
+    "condition": "Possible Premature Labour or Waters Breaking",
+    "description": "A woman before full term with regular tightening of the belly, back or lower abdominal pain, fluid leaking from the vagina or bleeding.",
+    "keywords": [
+      "pregnant",
+      "regular tightening of abdomen",
+      "fluid leaking from vagina",
+      "lower abdominal pain",
+      "vaginal bleeding",
+      "pelvic pain"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Maternal Health Reference Set (draft, pending clinician review)",
+    "recommendation": "Go to a hospital with maternity care immediately and arrange safe transport; lie on your left side while waiting.",
+    "caution": "Do not wait to see if it settles. Do not insert anything into the vagina or take medicines on your own.",
+    "red_flags": [
+      "fluid leaking",
+      "bleeding",
+      "regular pains",
+      "baby's cord or limb visible"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb120",
+    "condition": "Breast Infection (Mastitis)",
+    "description": "A breastfeeding woman with a painful, red, hot area in the breast, fever, chills and body aches.",
+    "keywords": [
+      "recent childbirth",
+      "breast pain",
+      "red hot breast",
+      "fever",
+      "chills",
+      "muscle pain"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Maternal Health Reference Set (draft, pending clinician review)",
+    "recommendation": "See a doctor the same day. Keep feeding or gently expressing milk from the affected breast, rest and drink fluids.",
+    "caution": "Seek urgent care for a lump with pus, spreading redness, high fever, or if you feel very unwell.",
+    "red_flags": [
+      "pus",
+      "spreading redness",
+      "high fever",
+      "feeling very unwell"
+    ],
+    "self_care": "Keep milk flowing, rest.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb121",
+    "condition": "Infection After Childbirth or Abortion (Puerperal Sepsis)",
+    "description": "Fever, chills, lower abdominal pain and foul-smelling vaginal discharge after childbirth or miscarriage or abortion.",
+    "keywords": [
+      "recent childbirth",
+      "fever",
+      "foul smelling vaginal discharge",
+      "lower abdominal pain",
+      "chills",
+      "fast heartbeat"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Maternal Health Reference Set (draft, pending clinician review)",
+    "recommendation": "Go to a hospital immediately - this infection can become life-threatening quickly.",
+    "caution": "Do not wait at home or use home remedies. Heavy bleeding, fainting or confusion makes it even more urgent.",
+    "red_flags": [
+      "heavy bleeding",
+      "fainting",
+      "confusion",
+      "very fast heartbeat"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb122",
+    "condition": "Vaginal Yeast Infection (Thrush)",
+    "description": "Itching and soreness around the vagina with a thick white discharge, sometimes with burning on passing urine.",
+    "keywords": [
+      "vaginal itching",
+      "vaginal discharge",
+      "burning urination",
+      "redness"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Maternal Health Reference Set (draft, pending clinician review)",
+    "recommendation": "See a health worker or pharmacist for the right treatment; keep the area clean and dry and avoid douching or scented soaps.",
+    "caution": "See a doctor promptly if you are pregnant, have fever, lower abdominal pain, a foul-smelling discharge or the problem keeps returning.",
+    "red_flags": [
+      "pregnancy",
+      "fever",
+      "lower abdominal pain",
+      "foul discharge"
+    ],
+    "self_care": "Keep clean and dry.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb123",
+    "condition": "Pelvic Infection (Pelvic Inflammatory Disease)",
+    "description": "Lower abdominal pain with fever and a foul-smelling or unusual vaginal discharge, sometimes with pain during sex or irregular bleeding.",
+    "keywords": [
+      "lower abdominal pain",
+      "fever",
+      "vaginal discharge",
+      "pelvic pain",
+      "foul smelling vaginal discharge"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Maternal Health Reference Set (draft, pending clinician review)",
+    "recommendation": "See a doctor the same day; early treatment prevents lasting harm. Partners may also need treatment.",
+    "caution": "If you could be pregnant or have missed a period, or if the pain is severe, you have fainting or heavy bleeding, go to hospital immediately.",
+    "red_flags": [
+      "severe pain",
+      "fainting",
+      "heavy bleeding",
+      "possible pregnancy"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb124",
+    "condition": "Painful or Heavy Periods",
+    "description": "Cramping lower abdominal pain around the time of periods, or periods that are heavier than usual, sometimes with tiredness.",
+    "keywords": [
+      "painful periods",
+      "heavy periods",
+      "lower abdominal pain",
+      "pelvic pain",
+      "fatigue"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Maternal Health Reference Set (draft, pending clinician review)",
+    "recommendation": "Rest, use a warm cloth on the belly and eat iron-rich food. See a health worker if periods are heavy or very painful, or you feel tired and pale.",
+    "caution": "Soaking a pad every hour, fainting, severe pain, or bleeding if you may be pregnant needs urgent care.",
+    "red_flags": [
+      "soaking a pad every hour",
+      "fainting",
+      "severe pain",
+      "possible pregnancy"
+    ],
+    "self_care": "Warmth, rest, iron-rich food.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb125",
+    "condition": "Underactive Thyroid (Hypothyroidism)",
+    "description": "Tiredness, weight gain, feeling cold, constipation, dry skin, hair loss and sometimes a swelling in the front of the neck, developing slowly.",
+    "keywords": [
+      "fatigue",
+      "weight gain",
+      "feeling cold",
+      "constipation",
+      "dry cracked skin",
+      "hair loss",
+      "swelling in neck"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Chronic Disease Reference Set (draft, pending clinician review)",
+    "recommendation": "See a health worker for a simple blood test; treatment is safe, effective and low cost.",
+    "caution": "Seek urgent care for extreme drowsiness, confusion, a very slow heartbeat or breathing difficulty.",
+    "red_flags": [
+      "extreme drowsiness",
+      "confusion",
+      "slow heartbeat",
+      "breathing difficulty"
+    ],
+    "self_care": "Regular follow-up.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb126",
+    "condition": "Gout (Sudden Painful Joint)",
+    "description": "A sudden, very painful, red, hot and swollen joint, often the big toe, often starting at night.",
+    "keywords": [
+      "joint pain",
+      "swollen joints",
+      "redness",
+      "warm skin",
+      "severe pain after injury"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Chronic Disease Reference Set (draft, pending clinician review)",
+    "recommendation": "See a doctor within a day. Rest and raise the joint and drink plenty of water.",
+    "caution": "A hot swollen joint with fever, or one that cannot be moved at all, may be a joint infection and is an emergency.",
+    "red_flags": [
+      "fever",
+      "cannot move the joint",
+      "several joints affected",
+      "feeling very unwell"
+    ],
+    "self_care": "Rest, fluids.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb127",
+    "condition": "Rheumatoid Arthritis (Suspected)",
+    "description": "Pain, swelling and morning stiffness lasting more than an hour in several small joints of both hands or feet, with tiredness.",
+    "keywords": [
+      "joint pain",
+      "swollen joints",
+      "morning stiffness",
+      "stiffness",
+      "fatigue"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Chronic Disease Reference Set (draft, pending clinician review)",
+    "recommendation": "See a health worker; early treatment protects the joints. Gentle movement helps stiffness.",
+    "caution": "A single very hot swollen joint with fever needs urgent assessment for infection.",
+    "red_flags": [
+      "single hot swollen joint",
+      "fever",
+      "new weakness",
+      "eye redness"
+    ],
+    "self_care": "Gentle movement.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb128",
+    "condition": "Joint Infection (Septic Arthritis)",
+    "description": "One joint that is suddenly very painful, hot, red and swollen with fever, and the person cannot move it.",
+    "keywords": [
+      "joint pain",
+      "swollen joints",
+      "fever",
+      "warm skin",
+      "redness",
+      "cannot move limb"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Chronic Disease Reference Set (draft, pending clinician review)",
+    "recommendation": "Go to a hospital immediately - a joint infection can destroy the joint within days and needs urgent treatment.",
+    "caution": "Do not wait for it to improve or use hot compresses and home remedies. Children with a limp and fever need the same urgency.",
+    "red_flags": [
+      "fever",
+      "cannot bear weight",
+      "child with limp and fever",
+      "feeling very unwell"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb129",
+    "condition": "Vertigo (Spinning Dizziness, BPPV type)",
+    "description": "Brief episodes of a spinning feeling triggered by turning in bed or tilting the head, with nausea but no weakness or speech problems.",
+    "keywords": [
+      "spinning sensation",
+      "dizzy",
+      "nausea",
+      "loss of balance",
+      "vomiting"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Chronic Disease Reference Set (draft, pending clinician review)",
+    "recommendation": "Move slowly, sit down when dizzy and avoid sudden head movements. See a health worker to confirm the cause and learn simple exercises.",
+    "caution": "Dizziness with weakness, slurred speech, double vision, severe headache or hearing loss may be a stroke and is an emergency.",
+    "red_flags": [
+      "slurred speech",
+      "weakness",
+      "double vision",
+      "severe headache",
+      "hearing loss"
+    ],
+    "self_care": "Move slowly; avoid falls.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb130",
+    "condition": "Facial Weakness from Facial Nerve Palsy (Bell's Palsy)",
+    "description": "Sudden weakness or drooping of one side of the face with difficulty closing the eye, sometimes with ear pain, but with normal strength in the arms and legs.",
+    "keywords": [
+      "face drooping",
+      "watery eyes",
+      "ear pain",
+      "drooping eyelids",
+      "difficulty opening mouth"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Chronic Disease Reference Set (draft, pending clinician review)",
+    "recommendation": "See a doctor the same day to exclude a stroke and begin treatment within the first days. Protect the eye by keeping it moist and closing it at night.",
+    "caution": "Face drooping together with arm or leg weakness, slurred speech, confusion or severe headache is a stroke and an emergency.",
+    "red_flags": [
+      "arm weakness",
+      "slurred speech",
+      "confusion",
+      "severe headache"
+    ],
+    "self_care": "Protect the eye.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb131",
+    "condition": "Sciatica (Back Pain Spreading Down the Leg)",
+    "description": "Back pain that shoots down one leg, sometimes with tingling or numbness, worse with sitting or bending.",
+    "keywords": [
+      "back pain",
+      "pain radiating down leg",
+      "tingling in feet",
+      "pain worse with movement",
+      "pain after lifting"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Chronic Disease Reference Set (draft, pending clinician review)",
+    "recommendation": "Stay gently active, avoid heavy lifting and use warmth. See a health worker if it lasts more than a couple of weeks.",
+    "caution": "Leg weakness, numbness around the groin or buttocks, or loss of control of the bladder or bowels is an emergency.",
+    "red_flags": [
+      "leg weakness",
+      "groin numbness",
+      "loss of bladder control"
+    ],
+    "self_care": "Gentle activity, avoid heavy lifting.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb132",
+    "condition": "Low Mood or Depression",
+    "description": "Weeks of feeling low or empty, loss of interest, poor sleep or appetite, tiredness and difficulty concentrating.",
+    "keywords": [
+      "low mood",
+      "loss of interest",
+      "poor sleep",
+      "loss of appetite",
+      "fatigue",
+      "stress"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Mental Health Reference Set (draft, pending clinician review)",
+    "recommendation": "Talk to someone you trust and see a doctor or counsellor within the next few days; depression is common and treatable. In India you can call Tele-MANAS 14416 for free support.",
+    "caution": "If you have thoughts of harming yourself or ending your life, call 112 or Tele-MANAS 14416 now or go to the nearest hospital with someone you trust.",
+    "red_flags": [
+      "thoughts of self-harm",
+      "unable to care for self",
+      "not eating or drinking"
+    ],
+    "self_care": "Routine, sleep, talking to someone.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb133",
+    "condition": "Anxiety or Panic Attack",
+    "description": "Sudden strong fear with a pounding heart, fast breathing, trembling, sweating and a tight chest that peaks within minutes and then eases.",
+    "keywords": [
+      "palpitations",
+      "shortness of breath",
+      "tight chest",
+      "shaking",
+      "sweating",
+      "fear of dying",
+      "stress"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Mental Health Reference Set (draft, pending clinician review)",
+    "recommendation": "Sit down and breathe slowly in through the nose and out through the mouth. See a health worker if attacks keep returning.",
+    "caution": "If it is the first time, or there is chest pain spreading to the arm or jaw, heavy sweating or it does not settle, treat it as a possible heart problem and seek emergency care.",
+    "red_flags": [
+      "chest pain spreading to arm",
+      "first ever episode",
+      "does not settle",
+      "fainting"
+    ],
+    "self_care": "Slow breathing.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb134",
+    "condition": "Alcohol Withdrawal",
+    "description": "A heavy drinker who has stopped or cut down with shaking, sweating, fast heartbeat, restlessness, seeing or hearing things, confusion or fits.",
+    "keywords": [
+      "alcohol use",
+      "shaking",
+      "sweating",
+      "restlessness",
+      "convulsions",
+      "confusion",
+      "seeing things",
+      "fast heartbeat"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Mental Health Reference Set (draft, pending clinician review)",
+    "recommendation": "Go to a hospital - severe alcohol withdrawal can be life-threatening and needs medical supervision. Do not leave the person alone.",
+    "caution": "Do not stop heavy drinking suddenly without medical help, and do not give more alcohol. Fits or confusion need emergency care.",
+    "red_flags": [
+      "fits",
+      "confusion",
+      "seeing things",
+      "very fast heartbeat"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb135",
+    "condition": "Poisoning from Illicit Liquor (Methanol)",
+    "description": "After drinking home-brewed or illicit liquor: headache, blurred or lost vision, vomiting, belly pain, fast breathing and drowsiness or confusion.",
+    "keywords": [
+      "drank illicit liquor",
+      "blurred vision",
+      "vomiting",
+      "abdominal pain",
+      "fast breathing",
+      "confusion",
+      "headache"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Toxicology & Environmental Emergencies Reference Set (draft, pending clinician review)",
+    "recommendation": "Go to a hospital immediately - this can cause blindness and death and needs urgent treatment. Tell staff exactly what was drunk and when; others who drank it may also be at risk.",
+    "caution": "Do not induce vomiting or give more alcohol. Vision changes after drinking illicit liquor are an emergency.",
+    "red_flags": [
+      "vision loss",
+      "confusion",
+      "fast breathing",
+      "fits"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb136",
+    "condition": "Acute Glaucoma (Sudden High Eye Pressure)",
+    "description": "Sudden severe eye pain with a red eye, blurred vision, halos around lights, headache, nausea and vomiting.",
+    "keywords": [
+      "eye pain",
+      "red eye",
+      "blurred vision",
+      "halos around lights",
+      "headache",
+      "nausea",
+      "vomiting"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Eye, Ear, Mouth & Dental Reference Set (draft, pending clinician review)",
+    "recommendation": "Go to an eye hospital or emergency department immediately; sight can be lost within hours.",
+    "caution": "Do not wait or use eye drops that were not prescribed for this. Any sudden vision loss is an emergency.",
+    "red_flags": [
+      "sudden vision loss",
+      "severe pain",
+      "vomiting"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb137",
+    "condition": "Stye (Eyelid Lump)",
+    "description": "A small, red, painful lump on the edge of the eyelid, sometimes with watering.",
+    "keywords": [
+      "eyelid lump",
+      "swollen eyelids",
+      "watery eyes",
+      "redness"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Eye, Ear, Mouth & Dental Reference Set (draft, pending clinician review)",
+    "recommendation": "Apply a clean warm cloth for a few minutes several times a day and wash hands often. Do not squeeze it.",
+    "caution": "See a doctor if redness spreads over the face or eyelid, there is fever, vision changes, or no improvement after about a week.",
+    "red_flags": [
+      "spreading redness",
+      "fever",
+      "vision change"
+    ],
+    "self_care": "Warm compress, hygiene.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb138",
+    "condition": "Corneal Infection or Ulcer (Painful Red Eye)",
+    "description": "A very painful red eye with sensitivity to light, watering or discharge, hazy vision, often after an injury with a plant or dust, or with contact lens use.",
+    "keywords": [
+      "eye pain",
+      "red eye",
+      "light sensitivity",
+      "eye discharge",
+      "blurred vision",
+      "eye injury",
+      "watery eyes"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Eye, Ear, Mouth & Dental Reference Set (draft, pending clinician review)",
+    "recommendation": "See an eye doctor the same day. Do not rub the eye and do not use traditional eye drops or leaves.",
+    "caution": "Sudden loss of vision, a white spot on the eye or severe pain needs emergency care.",
+    "red_flags": [
+      "vision loss",
+      "white spot on the eye",
+      "severe pain"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb139",
+    "condition": "Mouth Ulcers",
+    "description": "One or several small, painful sores inside the mouth that make eating and drinking uncomfortable.",
+    "keywords": [
+      "mouth sores",
+      "pain when chewing",
+      "tingling in mouth"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Eye, Ear, Mouth & Dental Reference Set (draft, pending clinician review)",
+    "recommendation": "Avoid spicy and hard foods, rinse gently with warm salt water and keep the mouth clean.",
+    "caution": "See a doctor or dentist if an ulcer lasts more than three weeks, is very large, or you have fever or cannot drink.",
+    "red_flags": [
+      "lasting more than three weeks",
+      "cannot drink",
+      "fever"
+    ],
+    "self_care": "Soft foods, mouth hygiene.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb140",
+    "condition": "Gum Disease (Gingivitis)",
+    "description": "Red, swollen gums that bleed when brushing, with bad breath.",
+    "keywords": [
+      "bleeding gums",
+      "red swollen gums",
+      "bad taste in mouth"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Eye, Ear, Mouth & Dental Reference Set (draft, pending clinician review)",
+    "recommendation": "Brush gently twice a day, clean between teeth and see a dentist for cleaning.",
+    "caution": "Seek care promptly for loose teeth, pus from the gums, facial swelling or fever.",
+    "red_flags": [
+      "pus",
+      "facial swelling",
+      "fever",
+      "loose teeth"
+    ],
+    "self_care": "Brush gently, mouth hygiene.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb141",
+    "condition": "Haemorrhoids (Piles)",
+    "description": "Bright red blood on the toilet paper or after passing stool, with itching, discomfort or a lump near the anus, often with constipation.",
+    "keywords": [
+      "bright red blood with stool",
+      "straining to pass stool",
+      "constipation",
+      "itching around anus",
+      "lump near anus"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "General Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "Eat more fibre, drink water, avoid straining and sit in clean warm water for comfort. See a health worker to confirm the cause.",
+    "caution": "Seek care promptly for heavy bleeding, black stools, dizziness, weight loss, or bowel changes lasting more than three weeks.",
+    "red_flags": [
+      "heavy bleeding",
+      "black stools",
+      "dizziness",
+      "weight loss"
+    ],
+    "self_care": "Fibre, water, avoid straining.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb142",
+    "condition": "Anal Fissure",
+    "description": "Sharp pain during and after passing a hard stool with a small amount of bright red blood.",
+    "keywords": [
+      "bright red blood with stool",
+      "hard stools",
+      "straining to pass stool",
+      "constipation"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "General Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "Eat fibre, drink plenty of water and soak in clean warm water. See a health worker if it lasts more than two weeks.",
+    "caution": "Seek care for heavy bleeding, black stools, fever or a painful swelling near the anus.",
+    "red_flags": [
+      "heavy bleeding",
+      "black stools",
+      "fever",
+      "painful swelling"
+    ],
+    "self_care": "Fibre, water, warm soaks.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb143",
+    "condition": "Minor Cut or Wound",
+    "description": "A small cut, graze or puncture wound with light bleeding, without signs of infection.",
+    "keywords": [
+      "wound",
+      "bleeding from bite",
+      "broken skin",
+      "pain at sting site"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Skin Reference Set (draft, pending clinician review)",
+    "recommendation": "Press with a clean cloth until bleeding stops, wash well with clean running water and soap, cover with a clean dressing and check tetanus vaccination status.",
+    "caution": "See a health worker the same day for a deep, dirty or rusty-object wound, or if tetanus vaccination is not up to date. Do not put soil, ash or herbs on wounds.",
+    "red_flags": [
+      "deep wound",
+      "bleeding that will not stop",
+      "spreading redness",
+      "pus",
+      "rusty object"
+    ],
+    "self_care": "Clean, cover, check tetanus status.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb144",
+    "condition": "Sunburn",
+    "description": "Red, painful skin after too much sun, sometimes with blisters.",
+    "keywords": [
+      "red painful skin",
+      "blisters",
+      "peeling skin",
+      "heat exposure"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Skin Reference Set (draft, pending clinician review)",
+    "recommendation": "Move out of the sun, cool the skin with clean cool water and drink extra fluids. Do not burst blisters.",
+    "caution": "Seek care for large blisters, fever, confusion or faintness, which may mean heat illness.",
+    "red_flags": [
+      "large blisters",
+      "fever",
+      "confusion",
+      "fainting"
+    ],
+    "self_care": "Cool water, fluids, shade.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb145",
+    "condition": "Heat Rash (Prickly Heat)",
+    "description": "Tiny itchy red bumps in sweaty areas such as the neck, back and skin folds in hot weather.",
+    "keywords": [
+      "rash in skin folds",
+      "itchy skin",
+      "heat exposure",
+      "red rash"
+    ],
+    "acuity": 5,
+    "acuity_label": "ROUTINE",
+    "source": "Skin Reference Set (draft, pending clinician review)",
+    "recommendation": "Keep cool, wear loose cotton clothes, bathe with cool water and keep skin folds dry.",
+    "caution": "See a health worker if there is pus, fever or the rash does not settle in a few days.",
+    "red_flags": [
+      "pus",
+      "fever",
+      "spreading rash"
+    ],
+    "self_care": "Stay cool and dry.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb146",
+    "condition": "Joint Dislocation",
+    "description": "A joint such as the shoulder, finger or elbow that looks out of shape, is very painful and cannot be moved after a fall or injury.",
+    "keywords": [
+      "deformity",
+      "severe pain after injury",
+      "cannot move limb",
+      "swelling",
+      "fall",
+      "joint looks out of place"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Trauma & First Aid Reference Set (draft, pending clinician review)",
+    "recommendation": "Support the joint in the position found with a sling or padding, apply a cold pack wrapped in cloth and go to a hospital. Do not try to push it back.",
+    "caution": "A numb, pale or cold limb, or an open wound, needs emergency care.",
+    "red_flags": [
+      "numb limb",
+      "pale or cold limb",
+      "open wound"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb147",
+    "condition": "Rib Fracture or Chest Wall Injury",
+    "description": "Sharp chest pain made worse by breathing, coughing or moving after a blow or fall to the chest.",
+    "keywords": [
+      "chest pain when breathing",
+      "severe pain after injury",
+      "fall",
+      "bruising",
+      "shortness of breath"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Trauma & First Aid Reference Set (draft, pending clinician review)",
+    "recommendation": "Go to a hospital for an examination and X-ray. Support the chest with a folded cloth when coughing and breathe gently and deeply.",
+    "caution": "Severe breathlessness, coughing blood, blue lips or a rapidly worsening pain is an emergency.",
+    "red_flags": [
+      "severe breathlessness",
+      "coughing blood",
+      "blue lips"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb148",
+    "condition": "Spinal Injury (Neck or Back)",
+    "description": "Neck or back pain after a fall, accident or blow, sometimes with numbness, weakness or inability to move the arms or legs.",
+    "keywords": [
+      "back pain",
+      "severe pain after injury",
+      "fall",
+      "numbness in arms or legs",
+      "arm weakness",
+      "loss of bladder control"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Trauma & First Aid Reference Set (draft, pending clinician review)",
+    "recommendation": "Do not move the person. Keep the head, neck and back in a straight line and call emergency services.",
+    "caution": "Do not sit the person up, twist the neck or give food or drink. Move only if there is immediate danger such as fire.",
+    "red_flags": [
+      "cannot feel legs",
+      "cannot move limbs",
+      "loss of bladder control",
+      "breathing difficulty"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb149",
+    "condition": "Near-Drowning",
+    "description": "A person rescued from water who may be coughing, breathless, vomiting, drowsy or unconscious, even if they seem to recover.",
+    "keywords": [
+      "rescued from water",
+      "difficulty breathing",
+      "cough",
+      "vomiting",
+      "confusion",
+      "blue lips",
+      "loss of consciousness"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Trauma & First Aid Reference Set (draft, pending clinician review)",
+    "recommendation": "Call emergency services. If the person is not breathing, start rescue breaths and chest compressions if you know how. Lay them on their side if breathing and keep them warm.",
+    "caution": "Everyone rescued from drowning needs a hospital check even if they seem well, because breathing problems can appear hours later. Do not squeeze water from the belly.",
+    "red_flags": [
+      "not breathing",
+      "drowsiness",
+      "blue lips",
+      "vomiting"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb150",
+    "condition": "Heat Exhaustion",
+    "description": "After heat exposure or heavy work: heavy sweating, weakness, headache, dizziness, nausea, muscle cramps and pale, cool skin.",
+    "keywords": [
+      "heat exposure",
+      "heavy sweating",
+      "weakness",
+      "dizzy",
+      "headache",
+      "nausea",
+      "muscle spasms",
+      "cold clammy skin"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Toxicology & Environmental Emergencies Reference Set (draft, pending clinician review)",
+    "recommendation": "Move to shade, lie down, loosen clothing, cool the skin with water and sip fluids or ORS. See a health worker the same day.",
+    "caution": "Confusion, fainting, fits or a very high body temperature is heat stroke and an emergency. Do not give fluids if the person is drowsy.",
+    "red_flags": [
+      "confusion",
+      "fainting",
+      "fits",
+      "very high temperature"
+    ],
+    "self_care": "Shade, fluids, rest.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb151",
+    "condition": "Acute Urinary Retention",
+    "description": "Sudden inability to pass urine with a painful, full lower belly, most often in older men with prostate enlargement.",
+    "keywords": [
+      "unable to pass urine",
+      "lower abdominal pain",
+      "frequent urination",
+      "restlessness"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "General Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "Go to a health facility the same day - a tube (catheter) may be needed to drain the bladder. Do not drink large amounts while waiting.",
+    "caution": "Fever, back pain, confusion or severe pain increases the urgency; seek emergency care.",
+    "red_flags": [
+      "fever",
+      "severe pain",
+      "confusion",
+      "blood in urine"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb152",
+    "condition": "Inflamed Testicle (Epididymitis)",
+    "description": "Gradual pain and swelling of one testicle with tenderness, sometimes with fever or burning on passing urine.",
+    "keywords": [
+      "testicular pain",
+      "testicular swelling",
+      "fever",
+      "burning urination"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "General Medicine Reference Set (draft, pending clinician review)",
+    "recommendation": "See a doctor the same day, because a twisted testicle must be ruled out. Rest and support the scrotum.",
+    "caution": "Sudden severe pain, nausea or vomiting suggests a twisted testicle and is an emergency.",
+    "red_flags": [
+      "sudden severe pain",
+      "vomiting",
+      "high fever"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb153",
+    "condition": "Collapsed Lung (Pneumothorax)",
+    "description": "Sudden sharp chest pain with breathlessness, sometimes after an injury or in a tall, thin person or someone with chronic lung disease.",
+    "keywords": [
+      "sudden shortness of breath",
+      "chest pain when breathing",
+      "chest pain",
+      "cough",
+      "fast breathing"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Trauma & First Aid Reference Set (draft, pending clinician review)",
+    "recommendation": "Go to a hospital immediately; sit upright and keep calm while arranging transport.",
+    "caution": "Do not wait to see if it passes. Blue lips, fainting or worsening breathlessness is an emergency.",
+    "red_flags": [
+      "blue lips",
+      "fainting",
+      "worsening breathlessness"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb154",
+    "condition": "Stable Angina (Chest Pressure on Effort)",
+    "description": "Chest pressure or tightness brought on by walking or effort and relieved within minutes by rest, sometimes spreading to the arm or jaw.",
+    "keywords": [
+      "chest pressure",
+      "chest pain",
+      "pain on climbing stairs",
+      "shortness of breath on exertion",
+      "left arm"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Chronic Disease Reference Set (draft, pending clinician review)",
+    "recommendation": "See a doctor within a day or two for assessment and tests. Stop and rest when the pain comes.",
+    "caution": "Pain at rest, lasting more than 10 minutes, with sweating, breathlessness or fainting is a possible heart attack - call emergency services.",
+    "red_flags": [
+      "pain at rest",
+      "pain lasting over 10 minutes",
+      "sweating",
+      "fainting"
+    ],
+    "self_care": "Rest when pain starts.",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb155",
+    "condition": "Palpitations (Fast or Irregular Heartbeat)",
+    "description": "A pounding, racing or irregular heartbeat, sometimes with dizziness or breathlessness.",
+    "keywords": [
+      "palpitations",
+      "irregular heartbeat",
+      "fast heartbeat",
+      "dizzy",
+      "shortness of breath"
+    ],
+    "acuity": 3,
+    "acuity_label": "URGENT",
+    "source": "Chronic Disease Reference Set (draft, pending clinician review)",
+    "recommendation": "Sit down and rest. See a doctor within a day or two for an examination and heart tracing.",
+    "caution": "Fainting, chest pain or severe breathlessness with palpitations is an emergency.",
+    "red_flags": [
+      "fainting",
+      "chest pain",
+      "severe breathlessness"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb156",
+    "condition": "Kerosene or Petrol Swallowed (Hydrocarbon Poisoning)",
+    "description": "A child or adult who has swallowed kerosene or petrol, with coughing, choking, vomiting and fast or difficult breathing.",
+    "keywords": [
+      "drank kerosene",
+      "cough",
+      "vomiting",
+      "difficulty breathing",
+      "child under five"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Toxicology & Environmental Emergencies Reference Set (draft, pending clinician review)",
+    "recommendation": "Go to a hospital immediately, even if the person seems well, because lung damage can appear later. Keep them calm and upright.",
+    "caution": "Do NOT make the person vomit and do not give milk, oil or water. Take the container to the hospital.",
+    "red_flags": [
+      "difficulty breathing",
+      "drowsiness",
+      "blue lips",
+      "vomiting"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb157",
+    "condition": "Carbon Monoxide Poisoning (Smoke from Stove or Fire in a Closed Room)",
+    "description": "Headache, dizziness, nausea, confusion or drowsiness in one or several people after burning charcoal, wood or fuel in a closed room.",
+    "keywords": [
+      "headache",
+      "dizzy",
+      "nausea",
+      "drowsiness",
+      "confusion",
+      "closed room burning fuel",
+      "vomiting",
+      "fainting"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Toxicology & Environmental Emergencies Reference Set (draft, pending clinician review)",
+    "recommendation": "Get everyone into fresh air immediately, open doors and windows, and take them to a hospital. Call emergency services.",
+    "caution": "Do not re-enter a smoky room without ventilation. Anyone who fainted or is drowsy needs urgent treatment.",
+    "red_flags": [
+      "fainting",
+      "confusion",
+      "chest pain",
+      "fits"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb158",
+    "condition": "Poisonous Plant or Mushroom Eaten",
+    "description": "Vomiting, belly pain, diarrhoea, confusion or seeing things after eating a wild plant, seeds, berries or mushrooms.",
+    "keywords": [
+      "ate wild plant or mushroom",
+      "vomiting",
+      "abdominal pain",
+      "diarrhea",
+      "confusion",
+      "seeing things"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Toxicology & Environmental Emergencies Reference Set (draft, pending clinician review)",
+    "recommendation": "Go to a hospital immediately and take a sample or photo of what was eaten.",
+    "caution": "Do not make the person vomit. Do not wait for symptoms to worsen, as some plant poisonings appear late.",
+    "red_flags": [
+      "confusion",
+      "fits",
+      "fainting",
+      "blood in vomit"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  },
+  {
+    "id": "kb159",
+    "condition": "Swallowed Poison or Overdose (Unknown Substance)",
+    "description": "Someone who has swallowed poison, rat killer, strong chemicals or too many tablets, with vomiting, belly pain, drowsiness, confusion or breathing difficulty.",
+    "keywords": [
+      "swallowed poison",
+      "vomiting",
+      "abdominal pain",
+      "drowsiness",
+      "confusion",
+      "difficulty breathing"
+    ],
+    "acuity": 1,
+    "acuity_label": "EMERGENCY",
+    "source": "Toxicology & Environmental Emergencies Reference Set (draft, pending clinician review)",
+    "recommendation": "Call emergency services and go to a hospital immediately. Take the container, strips or bottle with you.",
+    "caution": "Do not make the person vomit and do not give milk, salt water or home remedies. Even if the person seems well, they need a medical check.",
+    "red_flags": [
+      "drowsiness",
+      "breathing difficulty",
+      "fits",
+      "unconscious"
+    ],
+    "self_care": "",
+    "review_status": "DRAFT - requires licensed clinician review before any real-world use",
+    "reviewed_by": null,
+    "reviewed_on": null,
+    "reviewer_comments": ""
+  }
+]

@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0B2E33">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="icon" href="/icon-192.png">
+    <title>AI-Driven Clinical Triage System</title>
+    <style>
+         :root {
+            --paper: #F1F5F4;
+            --panel: #FFFFFF;
+            --ink: #0B2E33;
+            --ink-soft: #4B6367;
+            --teal: #028090;
+            --teal-deep: #065A66;
+            --mint: #02C39A;
+            --line: #DCE6E4;
+            --mono: "SFMono-Regular", Consolas, monospace;
+            --serif: Georgia, serif;
+            --sans: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            --acuity-1: #B3261E;
+            --acuity-1-bg: #FBEAE9;
+            --acuity-3: #B7791F;
+            --acuity-3-bg: #FBF3E3;
+            --acuity-5: #1E7A5F;
+            --acuity-5-bg: #E6F4EF;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            background: var(--paper);
+            color: var(--ink);
+            font-family: var(--sans);
+        }
+        
+        .topbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 32px;
+            border-bottom: 1px solid var(--line);
+            background: var(--panel);
+        }
+        
+        .brand {
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+        }
+        
+        .brand h1 {
+            font-family: var(--serif);
+            font-size: 19px;
+            margin: 0;
+        }
+        
+        .brand .tag {
+            font-size: 12px;
+            color: var(--ink-soft);
+            font-family: var(--mono);
+        }
+        
+        .status {
+            font-family: var(--mono);
+            font-size: 11px;
+            padding: 5px 10px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .status.live {
+            color: #065A66;
+            background: #E6F4F2;
+            border: 1px solid #BFE0DC;
+        }
+        
+        .status.fallback {
+            color: #7A5A12;
+            background: #FBF3E3;
+            border: 1px solid #EAD9AE;
+        }
+        
+        .status .dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: currentColor;
+        }
+        
+        .layout {
+            display: grid;
+            grid-template-columns: 1fr 420px;
+            max-width: 1400px;
+            margin: 0 auto;
+            min-height: calc(100vh - 60px);
+        }
+        
+        @media (max-width:920px) {
+            .layout {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* ---- chat column ---- */
+        
+        .chat-col {
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid var(--line);
+        }
+        
+        .chat-log {
+            flex: 1;
+            padding: 28px 32px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        
+        .bubble {
+            max-width: 72%;
+            padding: 12px 16px;
+            border-radius: 14px;
+            font-size: 13.5px;
+            line-height: 1.55;
+        }
+        
+        .bubble.patient {
+            align-self: flex-end;
+            background: var(--teal-deep);
+            color: #fff;
+            border-bottom-right-radius: 4px;
+        }
+        
+        .bubble.nurse {
+            align-self: flex-start;
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-bottom-left-radius: 4px;
+        }
+        
+        .bubble.nurse .role {
+            font-family: var(--mono);
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: .06em;
+            color: var(--ink-soft);
+            display: block;
+            margin-bottom: 4px;
+        }
+        
+        .chat-input {
+            display: flex;
+            gap: 10px;
+            padding: 20px 32px;
+            border-top: 1px solid var(--line);
+            background: var(--panel);
+        }
+        
+        .chat-input input {
+            flex: 1;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 12px 14px;
+            font-size: 13.5px;
+            font-family: var(--sans);
+            background: #FAFCFB;
+        }
+        
+        .chat-input input:focus {
+            outline: 2px solid var(--teal);
+            outline-offset: 1px;
+        }
+        
+        .chat-input button {
+            padding: 0 22px;
+            border: none;
+            border-radius: 8px;
+            background: var(--teal-deep);
+            color: #fff;
+            font-size: 13.5px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        
+        .chat-input button:hover {
+            background: var(--teal);
+        }
+        
+        .chat-input button:disabled {
+            background: #A9BDBD;
+            cursor: not-allowed;
+        }
+        
+        .yesno-row {
+            display: flex;
+            gap: 10px;
+            padding: 0 32px 20px;
+        }
+        
+        .yesno-row button {
+            flex: 1;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            border: 1px solid var(--line);
+        }
+        
+        .yesno-row .yes-btn {
+            background: var(--teal-deep);
+            color: #fff;
+            border: none;
+        }
+        
+        .yesno-row .yes-btn:hover {
+            background: var(--teal);
+        }
+        
+        .yesno-row .no-btn {
+            background: var(--panel);
+            color: var(--ink);
+        }
+        
+        .yesno-row .no-btn:hover {
+            border-color: var(--teal);
+            color: var(--teal-deep);
+        }
+        
+        .yesno-row button:disabled {
+            opacity: .4;
+            cursor: not-allowed;
+        }
+        
+        .progress {
+            font-family: var(--mono);
+            font-size: 10.5px;
+            color: var(--ink-soft);
+            padding: 0 32px 8px;
+        }
+        
+        .starter-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            padding: 0 32px 16px;
+        }
+        
+        .starter {
+            font-size: 11px;
+            font-family: var(--mono);
+            padding: 5px 9px;
+            border-radius: 14px;
+            border: 1px solid var(--line);
+            background: #FAFCFB;
+            color: var(--ink-soft);
+            cursor: pointer;
+        }
+        
+        .starter:hover {
+            border-color: var(--teal);
+            color: var(--teal-deep);
+        }
+        /* ---- pipeline column ---- */
+        
+        .stage {
+            padding: 28px 26px;
+            overflow-y: auto;
+        }
+        
+        .stage h2 {
+            font-family: var(--serif);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            color: var(--ink-soft);
+            margin: 0 0 18px;
+        }
+        
+        .agent-step {
+            position: relative;
+            padding-left: 28px;
+            padding-bottom: 20px;
+            border-left: 2px solid var(--line);
+            opacity: .35;
+            transition: opacity .3s ease;
+        }
+        
+        .agent-step:last-child {
+            border-left: 2px solid transparent;
+        }
+        
+        .agent-step.active {
+            opacity: 1;
+        }
+        
+        .agent-step .node {
+            position: absolute;
+            left: -7px;
+            top: 0;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background: var(--panel);
+            border: 2px solid var(--line);
+        }
+        
+        .agent-step.active .node {
+            border-color: var(--mint);
+            background: var(--mint);
+        }
+        
+        .agent-name {
+            font-family: var(--serif);
+            font-size: 14px;
+            margin: 0 0 1px;
+        }
+        
+        .agent-role {
+            font-size: 10.5px;
+            color: var(--ink-soft);
+            font-family: var(--mono);
+            margin-bottom: 8px;
+        }
+        
+        .agent-body {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 12px 14px;
+        }
+        
+        .reasoning {
+            font-family: var(--mono);
+            font-size: 11px;
+            line-height: 1.6;
+            color: #2C4245;
+            white-space: pre-wrap;
+            margin: 0;
+        }
+        
+        .result-card {
+            margin-top: 20px;
+            border-radius: 10px;
+            padding: 18px 20px;
+            border: 1px solid var(--line);
+        }
+        
+        .acuity-pill {
+            display: inline-flex;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-family: var(--mono);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: .05em;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        
+        .result-card h3 {
+            font-family: var(--serif);
+            font-size: 16px;
+            margin: 10px 0 6px;
+        }
+        
+        .result-card .rec {
+            font-size: 12.5px;
+            line-height: 1.55;
+            color: var(--ink-soft);
+        }
+        
+        .warn {
+            font-size: 11.5px;
+            background: #FBF3E3;
+            border: 1px solid #EAD9AE;
+            color: #7A5A12;
+            padding: 8px 10px;
+            border-radius: 8px;
+            margin-top: 8px;
+        }
+        
+        .empty-state {
+            color: var(--ink-soft);
+            font-size: 12.5px;
+            line-height: 1.6;
+        }
+        
+        .thinking {
+            font-family: var(--mono);
+            font-size: 11.5px;
+            color: var(--ink-soft);
+            font-style: italic;
+        }
+
+        #consent { position: fixed; inset: 0; background: rgba(11,46,51,.75); display: none; align-items: center; justify-content: center; z-index: 9999; padding: 16px; }
+        #consent .box { background: #fff; color: #0B2E33; max-width: 520px; border-radius: 14px; padding: 22px 22px 18px; font-size: 15px; line-height: 1.5; box-shadow: 0 12px 40px rgba(0,0,0,.35); }
+        #consent h2 { margin: 0 0 8px; font-size: 19px; }
+        #consent ul { margin: 8px 0 12px 18px; padding: 0; }
+        #consent button { background: #028090; color: #fff; border: 0; border-radius: 10px; padding: 11px 18px; font-size: 15px; cursor: pointer; width: 100%; }
+        @media (max-width: 640px) { body { font-size: 15px; } }
+
+        .acct-bar { background:#fff; border-bottom:1px solid #d5e2e0; padding:8px 14px; font-size:14px; display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+        .acct-bar button { background:#028090; color:#fff; border:0; border-radius:8px; padding:6px 12px; cursor:pointer; font-size:14px; }
+        .acct-bar button.alt, .modal button.alt { background:#fff; color:#0B2E33; border:1px solid #9bb; }
+        .modal { position:fixed; inset:0; background:rgba(11,46,51,.6); display:none; align-items:center; justify-content:center; z-index:9000; padding:14px; }
+        .modal-box { background:#fff; color:#0B2E33; border-radius:14px; padding:20px; max-width:430px; width:100%; max-height:90vh; overflow:auto; }
+        .modal-box.wide { max-width:680px; }
+        .modal-box h2 { margin:0 0 6px; font-size:19px; } .modal-box label { display:block; margin:10px 0 3px; font-size:14px; }
+        .modal-box input[type=text], .modal-box input[type=password], .modal-box input:not([type]) { width:100%; padding:9px; border:1px solid #9bb; border-radius:8px; font-size:15px; }
+        .modal-box label.remember { font-size:13px; } .modal-box label.remember input { width:auto; }
+        .modal-actions { margin-top:14px; display:flex; gap:8px; } .modal button { background:#028090; color:#fff; border:0; border-radius:8px; padding:9px 16px; font-size:15px; cursor:pointer; }
+        .modal button.danger { background:#B42318; } .auth-msg { min-height:20px; margin-top:8px; font-size:14px; color:#B42318; }
+        .tab-row { display:flex; gap:6px; margin:8px 0; } .tab { flex:1; } .tab.on { background:#0B2E33 !important; color:#fff !important; }
+        .muted { color:#5b7378; font-size:13px; } .small { font-size:12px; }
+        .hist-row { border:1px solid #dde; border-radius:10px; padding:9px 11px; margin:8px 0; }
+        .hist-row .pill { color:#fff; border-radius:12px; padding:2px 9px; font-size:12px; font-weight:600; }
+        .hist-row .EMERGENCY { background:#B42318; } .hist-row .URGENT { background:#C77700; } .hist-row .ROUTINE { background:#2E7D4F; }
+        .acct-tools { margin-top:14px; font-size:14px; } .acct-tools input { padding:7px; border:1px solid #9bb; border-radius:8px; }
+    </style>
+</head>
+
+<body>
+<div id="consent" role="dialog" aria-modal="true" aria-labelledby="consentTitle">
+  <div class="box">
+    <h2 id="consentTitle">Before you start</h2>
+    <ul>
+      <li>This tool gives <b>general guidance only</b>. It is <b>not a doctor</b> and does not diagnose.</li>
+      <li>If someone is very ill, <b>get emergency help now</b> - do not wait for this tool.</li>
+      <li>What you type stays on this clinic computer. <span id="consentStore">It may be saved for a limited time to check the tool's safety, and you can ask for it to be deleted.</span></li>
+      <li>Please do not type names, phone numbers or addresses.</li>
+    </ul>
+    <button id="consentOk">I understand</button>
+  </div>
+</div>
+<script>
+(function(){
+  try { if (localStorage.getItem("consent_v1")) return; } catch(e) {}
+  var box = document.getElementById("consent"); box.style.display = "flex";
+  fetch("/health").then(function(r){return r.json();}).then(function(d){
+    var el = document.getElementById("consentStore");
+    if (d.store_sessions === false) el.textContent = "Nothing you type is saved.";
+    else if (d.retention_days) el.textContent = "It is saved for " + d.retention_days + " days to check the tool's safety, and you can ask for it to be deleted.";
+  }).catch(function(){});
+  document.getElementById("consentOk").onclick = function(){ try { localStorage.setItem("consent_v1","1"); } catch(e) {} box.style.display = "none"; };
+})();
+if ("serviceWorker" in navigator) { window.addEventListener("load", function(){ navigator.serviceWorker.register("/sw.js").catch(function(){}); }); }
+</script>
+    <div class="topbar">
+        <div class="brand">
+            <h1>AI-Driven Clinical Triage System</h1>
+            <span class="tag">yes/no decision-tree intake · connected to live backend</span>
+        </div>
+        <div class="status" id="statusBadge">checking backend...</div>
+    </div>
+
+    <div id="acctBar" class="acct-bar"></div>
+    <div id="authModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+      <div class="modal-box">
+        <h2 id="authTitle">Your free account</h2>
+        <p class="muted">You do <b>not</b> need an account to use this tool. An account only lets you keep a <b>private history</b> of your own results.</p>
+        <div class="tab-row"><button id="tabLogin" class="tab on">Log in</button><button id="tabReg" class="tab">Create account</button></div>
+        <label>Username</label><input id="authUser" autocomplete="username" maxlength="32" placeholder="e.g. lakshmi_k (not your real name)">
+        <label>Password</label><input id="authPass" type="password" autocomplete="current-password" maxlength="200" placeholder="at least 8 characters">
+        <label class="remember"><input type="checkbox" id="authRemember"> Keep me signed in on this device (do not tick on a shared phone)</label>
+        <div id="authMsg" class="auth-msg"></div>
+        <div class="modal-actions"><button id="authGo">Log in</button><button id="authClose" class="alt">Cancel</button></div>
+        <p class="muted small">There is no password recovery by email. If you forget it, ask a health worker to help you create a new account.</p>
+      </div>
+    </div>
+    <div id="histModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="histTitle">
+      <div class="modal-box wide">
+        <h2 id="histTitle">My history</h2>
+        <p class="muted">Only you can see these results. You can show a saved report to a nearby clinician.</p>
+        <div id="histBody">Loading...</div>
+        <details class="acct-tools"><summary>Account settings</summary>
+          <input id="pwOld" type="password" placeholder="Current password" maxlength="200"> <input id="pwNew" type="password" placeholder="New password (8+ characters)" maxlength="200">
+          <button id="pwGo" class="alt">Change password</button> <span id="pwMsg" class="muted"></span><br><br>
+          <button id="delAcct" class="danger">Delete my account and all my history</button>
+        </details>
+        <div class="modal-actions"><button id="histClose" class="alt">Close</button></div>
+      </div>
+    </div>
+
+    <div class="layout">
+        <div class="chat-col">
+            <div class="chat-log" id="chatLog">
+                <div class="bubble nurse">
+                    <span class="role">Intake Agent</span> Tell me your main symptom to start, then I'll ask a series of quick yes/no questions — chosen by a trained decision-tree model — to narrow down what's going on.
+                </div>
+            </div>
+            <div class="progress" id="progressLine" style="display:none;"></div>
+            <div class="starter-row" id="starterRow"></div>
+            <div class="chat-input" id="textInputRow">
+                <input type="text" id="chatInput" placeholder="Describe your main symptom to begin...">
+                <button id="sendBtn">Start</button>
+            </div>
+            <div class="yesno-row" id="yesnoRow" style="display:none;">
+                <button class="no-btn" id="noBtn">No</button>
+                <button class="yes-btn" id="yesBtn">Yes</button>
+            </div>
+        </div>
+
+        <div class="stage">
+            <h2>Agent Pipeline</h2>
+            <div id="pipelineArea">
+                <div class="empty-state" id="emptyState">The pipeline runs automatically once the Intake Agent has gathered enough information through the conversation.</div>
+                <div id="pipeline" style="display:none;"></div>
+                <div id="resultArea"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Served by the backend (http://localhost:8001/) -> same origin. Opened as a plain file or from
+        // another server (e.g. http.server) -> fall back to the default backend port.
+        const API_BASE = (location.protocol.startsWith("http") && location.port === "8001")
+            ? location.origin
+            : "http://127.0.0.1:8001";
+
+        // Optional account: if the user is signed in, the token is sent so results are saved to THEIR private history.
+        function getToken() { try { return sessionStorage.getItem("tok") || localStorage.getItem("tok"); } catch (e) { return null; } }
+        function apiFetch(path, opts) {
+            opts = opts || {};
+            const t = getToken();
+            if (t) opts.headers = Object.assign({ "Authorization": "Bearer " + t }, opts.headers || {});
+            return fetch(API_BASE + path, opts);
+        }
+
+        const AGENTS = [{
+            key: "intake",
+            name: "Intake Agent",
+            role: "conversational symptom gathering"
+        }, {
+            key: "retrieval",
+            name: "Retrieval Agent",
+            role: "RAG · knowledge base grounding"
+        }, {
+            key: "triage",
+            name: "Triage Agent",
+            role: "urgency classification"
+        }, {
+            key: "recommendation",
+            name: "Recommendation Agent",
+            role: "next-step guidance"
+        }, ];
+
+        let currentSessionId = null;
+        let currentSymptom = null;
+        let candidatesShown = false; window.__bannerShown = false;
+
+        const STARTERS = [
+            "I have chest pain",
+            "Sudden chest pain radiating to my left arm, sweating and dizzy for the last hour",
+            "Burning when I urinate",
+            "Runny nose and sore throat",
+            "Severe sore throat, painful to swallow, and my glands feel swollen",
+            "Twisted my ankle playing football, some swelling but I can still walk",
+            "My head is paining and my eyes are red and gritty",
+            "Started vomiting and had diarrhea a few hours after eating at a restaurant",
+        ];
+        const starterRow = document.getElementById("starterRow");
+        STARTERS.forEach(s => {
+            const el = document.createElement("div");
+            el.className = "starter";
+            el.textContent = s.length > 38 ? s.slice(0, 38) + "…" : s;
+            el.title = s;
+            el.onclick = () => {
+                document.getElementById("chatInput").value = s;
+            };
+            starterRow.appendChild(el);
+        });
+
+        function acuityColors(label) {
+            if (label === "EMERGENCY") return {
+                c: "var(--acuity-1)",
+                bg: "var(--acuity-1-bg)"
+            };
+            if (label === "URGENT") return {
+                c: "var(--acuity-3)",
+                bg: "var(--acuity-3-bg)"
+            };
+            return {
+                c: "var(--acuity-5)",
+                bg: "var(--acuity-5-bg)"
+            };
+        }
+
+        async function checkHealth() {
+            const badge = document.getElementById("statusBadge");
+            try {
+                const res = await apiFetch("/health");
+                if (!res.ok) throw new Error("status " + res.status);
+                const data = await res.json();
+                const mode = data && data.mode ? data.mode : "backend responded, but health payload was unexpected";
+                badge.className = "status " + (data && data.ollama_connected ? "live" : "fallback");
+                const extra = [data.conditions_in_knowledge_base ? data.conditions_in_knowledge_base + " conditions" : "",
+                               data.retrieval ? data.retrieval.replace("hybrid[", "").replace("]", "") : "",
+                               data.database ? "db: " + data.database : ""].filter(Boolean).join(" · ");
+                badge.innerHTML = `<span class="dot"></span> ${mode}${extra ? " — " + extra : ""}`;
+            } catch (e) {
+                badge.className = "status fallback";
+                badge.innerHTML = `<span class="dot"></span> backend unreachable (${e.message}) — check API_BASE port`;
+            }
+        }
+        checkHealth();
+
+        function addBubble(text, who, role) {
+            const log = document.getElementById("chatLog");
+            const b = document.createElement("div");
+            b.className = "bubble " + who;
+            if (who === "nurse") {
+                b.innerHTML = `<span class="role">${role || "Intake Agent"}</span>${text}`;
+            } else {
+                b.textContent = text;
+            }
+            log.appendChild(b);
+            log.scrollTop = log.scrollHeight;
+            return b;
+        }
+
+        function buildSkeleton() {
+            const pipeline = document.getElementById("pipeline");
+            pipeline.innerHTML = "";
+            AGENTS.forEach(a => {
+                const step = document.createElement("div");
+                step.className = "agent-step";
+                step.id = "step-" + a.key;
+                step.innerHTML = `<div class="node"></div><div class="agent-name">${a.name}</div>
+      <div class="agent-role">${a.role}</div>
+      <div class="agent-body"><pre class="reasoning">waiting...</pre></div>`;
+                pipeline.appendChild(step);
+            });
+            pipeline.style.display = "block";
+            document.getElementById("emptyState").style.display = "none";
+            document.getElementById("resultArea").innerHTML = "";
+        }
+
+        function formatStage(stage, result) {
+            if (stage === "intake") {
+                return `Symptoms: ${(result.extracted_symptoms||[]).join(", ") || "n/a"}\n` +
+                    `Duration: ${result.duration}\n` +
+                    `Severity flags: ${(result.severity_flags||[]).join(", ") || "none"}\n\n${result.reasoning || ""}`;
+            }
+            if (stage === "retrieval") {
+                const lines = (result.matches || []).map((m, i) =>
+                    `  ${i+1}. ${m.condition}  (similarity=${m.similarity.toFixed(2)})`);
+                return `Top matches:\n${lines.join("\n")}\n\n${result.reasoning || ""}`;
+            }
+            if (stage === "triage") {
+                let out = `Acuity: ${result.acuity_label}   Confidence: ${(result.confidence*100).toFixed(0)}%\n` +
+                    `Matched condition: ${result.matched_condition}\n`;
+                if (result.qa_log && result.qa_log.length) {
+                    out += `\nQuestion log:\n`;
+                    result.qa_log.forEach((turn, i) => {
+                        if (turn.is_opener) {
+                            out += `  ${turn.question}\n`;
+                        } else {
+                            out += `  Q${i}: ${turn.question}\n     A: ${turn.answer ? "Yes" : "No"}\n`;
+                        }
+                    });
+                }
+                out += `\n${result.reasoning || ""}`;
+                return out;
+            }
+            if (stage === "recommendation") {
+                return `${result.final_recommendation}\n\n${result.reasoning || ""}`;
+            }
+            return JSON.stringify(result, null, 2);
+        }
+
+        function esc(t) {
+            return String(t == null ? "" : t).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+        }
+
+        function renderResult(final) {
+            const colors = acuityColors(final.acuity_label);
+            const area = document.getElementById("resultArea");
+            area.innerHTML = `
+    <div class="result-card" style="background:${colors.bg};border-color:${colors.c}33;">
+      ${final.urgent_banner ? `<div class="warn" style="background:#FDECEA;border-color:#F4B6B0;color:#8A1C12;font-weight:600;">🚨 ${esc(final.urgent_banner)}</div>` : ""}
+      <span class="acuity-pill" style="background:${colors.c};">${esc(final.acuity_label)}</span>
+      <h3>${esc(final.condition) || "Unknown"}</h3>
+      <div class="rec">${esc(final.recommendation)}</div>
+      ${final.caution ? `<div class="warn">⚠ ${esc(final.caution)}</div>` : ""}
+      ${final.differential_note ? `<div class="warn" style="background:#EEF3FB;border-color:#C7D6EE;color:#2C4A7C;">ℹ ${esc(final.differential_note)}</div>` : ""}
+      ${final.emergency_contacts ? `<div class="warn" style="background:#FFF6E5;border-color:#F2D9A6;color:#7A4B00;">☎ ${esc(final.emergency_contacts)}</div>` : ""}
+      ${final.low_confidence ? `<div class="warn" style="background:#EEF3FB;border-color:#C7D6EE;color:#2C4A7C;">ℹ This tool could not match your description to a condition it knows well (${esc(final.low_confidence_reason)}). A health worker needs to assess you.${(final.considered_conditions||[]).length ? " Considered: " + esc(final.considered_conditions.join("; ")) + "." : ""}</div>` : ""}
+      ${(getToken() && window.__storeSessions !== false) ? `<div style="margin-top:8px;font-size:12px;color:#2E7D4F;">✔ Saved to your private history (use "My history" at the top).</div>` : ""}
+      ${final.knowledge_status ? `<div style="margin-top:8px;font-size:11px;opacity:.8;">📋 ${esc(final.knowledge_status)}</div>` : ""}
+      ${(final.references||[]).length ? `<div style="margin-top:4px;font-size:11px;opacity:.8;">📚 Checked against: ${(final.references||[]).map(r => esc(r.title)).join(" · ")}</div>` : ""}
+      ${final.disclaimer ? `<div style="margin-top:8px;font-size:11px;opacity:.75;">${esc(final.disclaimer)}</div>` : ""}
+      <button id="downloadReportBtn" style="margin-top:14px;width:100%;padding:11px;border:none;border-radius:8px;background:var(--teal-deep);color:#fff;font-size:13px;font-weight:600;cursor:pointer;">Download Formal Report (PDF)</button>
+    </div>`;
+
+  document.getElementById("downloadReportBtn").addEventListener("click", ()=>downloadReport());
+}
+
+let lastPipeline = null;
+
+async function downloadReport(){
+  const btn = document.getElementById("downloadReportBtn");
+  if(!lastPipeline){
+    alert("No completed triage session found yet. Finish answering the questions until you see the final result card, then try downloading again.");
+    return;
+  }
+  btn.disabled = true;
+  btn.textContent = "Generating PDF...";
+  try{
+    const res = await apiFetch("/report/pdf", {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({pipeline: lastPipeline}),
+    });
+    if(!res.ok){
+      const errText = await res.text();
+      throw new Error(`backend returned status ${res.status}: ${errText.slice(0,200)}`);
+    }
+    const contentType = res.headers.get("content-type") || "";
+    if(!contentType.includes("pdf")){
+      const errText = await res.text();
+      throw new Error(`expected a PDF but got "${contentType}": ${errText.slice(0,200)}`);
+    }
+    const blob = await res.blob();
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "triage_report.pdf";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+  }catch(e){
+    console.error("Report download failed:", e);
+    alert("Could not generate report: " + e.message + "\n\nCheck that your backend (uvicorn) is still running and API_BASE at the top of this file matches its port.");
+  }
+  btn.disabled = false;
+  btn.textContent = "Download Formal Report (PDF)";
+}
+
+async function sendMessage(){
+  const input = document.getElementById("chatInput");
+  const text = input.value.trim();
+  if(!text) return;
+  const btn = document.getElementById("sendBtn");
+
+  addBubble(text, "patient");
+  input.value = "";
+  btn.disabled = true;
+
+  const thinking = addBubble("thinking...", "nurse", "Intake Agent");
+
+  try{
+    const res = await apiFetch("/dt/start", {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({message: text}),
+    });
+    if(!res.ok) throw new Error("status " + res.status);
+    const data = await res.json();
+    thinking.remove();
+    handleDTResponse(data);
+  }catch(e){
+    thinking.remove();
+    addBubble(`Could not reach backend (${e.message}). Check that uvicorn is running and API_BASE matches its port.`, "nurse", "System");
+  }
+
+  btn.disabled = false;
+}
+
+async function answerYesNo(answer){
+  const yesBtn = document.getElementById("yesBtn");
+  const noBtn = document.getElementById("noBtn");
+  yesBtn.disabled = true; noBtn.disabled = true;
+
+  addBubble(answer ? "Yes" : "No", "patient");
+  const thinking = addBubble("thinking...", "nurse", "Intake Agent");
+
+  try{
+    const res = await apiFetch("/dt/answer", {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({session_id: currentSessionId, symptom: currentSymptom, answer: answer}),
+    });
+    if(!res.ok) throw new Error("status " + res.status);
+    const data = await res.json();
+    thinking.remove();
+    handleDTResponse(data);
+  }catch(e){
+    thinking.remove();
+    addBubble(`Could not reach backend (${e.message}).`, "nurse", "System");
+  }
+
+  yesBtn.disabled = false; noBtn.disabled = false;
+}
+
+async function handleDTResponse(data){
+  currentSessionId = data.session_id;
+
+  if(data.type === "question"){
+    currentSymptom = data.symptom;
+    if(data.urgent_banner && !window.__bannerShown){
+      addBubble("🚨 " + data.urgent_banner + (data.emergency_contacts ? "  " + data.emergency_contacts : ""), "nurse", "Safety check");
+      window.__bannerShown = true;
+    }
+    if(!candidatesShown && data.candidates_considered){
+      addBubble(`Based on that, I'm considering ${data.candidates_considered.length} possible conditions: ${data.candidates_considered.join(", ")}. Let me narrow it down.`, "nurse", "Retrieval Agent (RAG)");
+      candidatesShown = true;
+    }
+    if(data.elimination_note && !data.elimination_note.startsWith("No major shift")){
+      addBubble(data.elimination_note, "nurse", "Triage Agent — reasoning");
+    }
+    addBubble(data.text, "nurse", "Triage Agent");
+    document.getElementById("textInputRow").style.display = "none";
+    document.getElementById("yesnoRow").style.display = "flex";
+    const progress = document.getElementById("progressLine");
+    progress.style.display = "block";
+    progress.textContent = `Question ${data.questions_so_far} — narrowing within the RAG-retrieved candidates (asks as many as needed, no fixed count)`;
+  } else if(data.type === "result"){
+    lastPipeline = data.pipeline;
+    addBubble("That's enough to assess this — running the full pipeline now.", "nurse", "Intake Agent");
+    document.getElementById("yesnoRow").style.display = "none";
+    document.getElementById("progressLine").style.display = "none";
+    document.getElementById("textInputRow").style.display = "flex";
+    document.getElementById("chatInput").placeholder = "Describe a new symptom to start again...";
+    document.getElementById("sendBtn").textContent = "Start";
+
+    buildSkeleton();
+    for(const step of data.pipeline){
+      if(step.stage === "final"){
+        renderResult(step.result);
+      } else {
+        const el = document.getElementById("step-" + step.stage);
+        if(el){
+          el.classList.add("active");
+          el.querySelector(".reasoning").textContent = formatStage(step.stage, step.result);
+        }
+      }
+      await new Promise(r=>setTimeout(r, 400));
+    }
+    currentSessionId = null;
+    currentSymptom = null;
+    candidatesShown = false; window.__bannerShown = false;
+  } else {
+    addBubble(data.text || "Unexpected response from backend.", "nurse", "System");
+  }
+}
+
+document.getElementById("sendBtn").addEventListener("click", sendMessage);
+document.getElementById("chatInput").addEventListener("keydown", (e)=>{
+  if(e.key === "Enter") sendMessage();
+});
+document.getElementById("yesBtn").addEventListener("click", ()=>answerYesNo(true));
+document.getElementById("noBtn").addEventListener("click", ()=>answerYesNo(false));
+    </script>
+<script>
+(function () {
+  const $ = (id) => document.getElementById(id);
+  const esc = (t) => String(t == null ? "" : t).replace(/[&<>"']/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  let mode = "login";
+  const who = () => { try { return sessionStorage.getItem("uname") || localStorage.getItem("uname"); } catch (e) { return null; } };
+  const store = (tok, name, remember) => { const s = remember ? localStorage : sessionStorage; s.setItem("tok", tok); s.setItem("uname", name); };
+  const clear = () => { ["tok", "uname"].forEach((k) => { try { sessionStorage.removeItem(k); localStorage.removeItem(k); } catch (e) {} }); };
+
+  function bar() {
+    const n = who();
+    $("acctBar").innerHTML = n && getToken()
+      ? `Signed in as <b>${esc(n)}</b> &middot; results are saved to your private history <button id="bHist">My history</button> <button id="bOut" class="alt">Log out</button>`
+      : `You can use this tool <b>without an account</b>. <button id="bIn">Log in / create a free account</button> to keep a private history of your results.`;
+    if ($("bHist")) { $("bHist").onclick = openHistory; $("bOut").onclick = () => { clear(); bar(); }; }
+    if ($("bIn")) $("bIn").onclick = () => openAuth("login");
+  }
+  function openAuth(m) { setMode(m); $("authMsg").textContent = ""; $("authPass").value = ""; $("authModal").style.display = "flex"; $("authUser").focus(); }
+  function setMode(m) {
+    mode = m; $("tabLogin").classList.toggle("on", m === "login"); $("tabReg").classList.toggle("on", m === "register");
+    $("authGo").textContent = m === "login" ? "Log in" : "Create account";
+    $("authPass").autocomplete = m === "login" ? "current-password" : "new-password";
+  }
+  $("tabLogin").onclick = () => setMode("login"); $("tabReg").onclick = () => setMode("register");
+  $("authClose").onclick = () => $("authModal").style.display = "none";
+  $("authGo").onclick = async () => {
+    $("authMsg").textContent = "";
+    try {
+      const r = await fetch(API_BASE + (mode === "login" ? "/auth/login" : "/auth/register"), { method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ username: $("authUser").value, password: $("authPass").value }) });
+      const d = await r.json();
+      if (!r.ok) throw new Error(typeof d.detail === "string" ? d.detail : "Please check the username and password");
+      store(d.token, $("authUser").value.trim().toLowerCase(), $("authRemember").checked);
+      $("authModal").style.display = "none"; bar();
+    } catch (e) { $("authMsg").textContent = e.message; }
+  };
+
+  async function openHistory() {
+    $("histModal").style.display = "flex"; $("histBody").textContent = "Loading...";
+    try {
+      const r = await apiFetch("/history?limit=100");
+      if (r.status === 401) { clear(); bar(); $("histModal").style.display = "none"; openAuth("login"); return; }
+      const d = await r.json();
+      if (!d.sessions.length) { $("histBody").innerHTML = "<p>No saved results yet. When you are signed in, each completed check is saved here.</p>"; return; }
+      $("histBody").innerHTML = d.sessions.map((s) => `<div class="hist-row" data-id="${esc(s.id)}">
+        <span class="pill ${esc(s.acuity)}">${esc(s.acuity || "-")}</span> <b>${esc(s.condition || "-")}</b>
+        <div class="muted">${esc(new Date(s.created_at * 1000).toLocaleString())}</div>
+        <div style="margin-top:6px"><button class="alt bOpen">View</button> <button class="alt bPdf">Download report (PDF)</button> <button class="alt bDel">Delete</button></div>
+        <div class="detail"></div></div>`).join("");
+      document.querySelectorAll("#histBody .hist-row").forEach((row) => {
+        const id = row.dataset.id;
+        row.querySelector(".bOpen").onclick = async () => {
+          const box = row.querySelector(".detail"); box.innerHTML = "Loading...";
+          const s = await (await apiFetch("/history/" + encodeURIComponent(id))).json();
+          const f = (s.pipeline.find((x) => x.stage === "final") || {}).result || {};
+          box.innerHTML = `<p>${esc(f.urgent_banner || "")}</p><p><b>What to do:</b> ${esc(f.recommendation)}</p><p><b>Be careful:</b> ${esc(f.caution)}</p>
+            <p class="muted">${esc(f.emergency_contacts || "")}</p><p class="muted">${esc(f.disclaimer || "")}</p>`;
+        };
+        row.querySelector(".bPdf").onclick = async () => {
+          const r2 = await apiFetch("/history/" + encodeURIComponent(id) + "/report.pdf"); if (!r2.ok) return alert("Could not download the report");
+          const b = await r2.blob(); const a = document.createElement("a"); a.href = URL.createObjectURL(b); a.download = "my_health_check_" + id.slice(0, 8) + ".pdf"; a.click();
+        };
+        row.querySelector(".bDel").onclick = async () => { if (confirm("Delete this saved result?")) { await apiFetch("/history/" + encodeURIComponent(id), { method: "DELETE" }); openHistory(); } };
+      });
+    } catch (e) { $("histBody").textContent = "Could not load your history: " + e.message; }
+  }
+  $("histClose").onclick = () => $("histModal").style.display = "none";
+  $("pwGo").onclick = async () => {
+    const r = await apiFetch("/auth/password", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ old_password: $("pwOld").value, new_password: $("pwNew").value }) });
+    const d = await r.json().catch(() => ({})); $("pwMsg").textContent = r.ok ? "Password changed." : (d.detail || "Could not change password");
+    if (r.ok) { $("pwOld").value = ""; $("pwNew").value = ""; }
+  };
+  $("delAcct").onclick = async () => {
+    if (!confirm("This permanently deletes your account and ALL your saved results. Continue?")) return;
+    const r = await apiFetch("/auth/me", { method: "DELETE" });
+    if (r.ok) { clear(); bar(); $("histModal").style.display = "none"; alert("Your account and history were deleted."); } else { alert("Could not delete the account."); }
+  };
+  bar();
+})();
+</script>
+</body>
+
+</html>
